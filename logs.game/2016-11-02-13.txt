@@ -1,0 +1,290 @@
+02.11 13:02:30 NET: Client (conid:28156914) connected to ball.0 (clients:1)
+02.11 13:02:38 ++ NET: null req: user.login { password => 123, name => Bob, messageType => user.login }
+02.11 13:02:38 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'Bob' AND Password = E'123'
+02.11 13:02:38 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'Bob' AND Password = E'123', _type => core/server.query }
+02.11 13:02:38 -<<-: core/server.query ok
+02.11 13:02:38 STATS: ball.0 cache connection, 21 calls, total 0.03843092918396 sec spent, avg 1.83 ms
+02.11 13:02:38 == NET: null ret: user.login { type => user.login, errorCode => userNotFound }
+02.11 13:03:26 TIMER: Check auto-disconnect...
+02.11 13:03:26 STATS: ball.0 cache, locks:0
+02.11 13:03:26 TIMER: Check auto-disconnect...
+02.11 13:03:26 STATS: ball.0 cache, locks:0
+02.11 13:03:26 TIMER: Check auto-disconnect...
+02.11 13:03:26 STATS: ball.0 cache, locks:0
+02.11 13:03:26 TIMER: Check auto-disconnect...
+02.11 13:03:26 NET: Client (name:null conid:28156914 TCP) disconnected from ball.0 (clients:0)
+02.11 13:03:26 STATS: ball.0 cache, locks:0
+02.11 13:07:12 NET: Client (conid:67840419) connected to ball.0 (clients:1)
+02.11 13:07:19 ++ NET: null req: user.register { password => 123, name => Bob, messageType => user.register }
+02.11 13:07:19 == NET: null ret: user.register { type => user.register, errorCode => nameExists }
+02.11 13:07:26 TIMER: Check auto-disconnect...
+02.11 13:07:26 STATS: ball.0 cache, locks:0
+02.11 13:07:26 TIMER: Check auto-disconnect...
+02.11 13:07:26 STATS: ball.0 cache, locks:0
+02.11 13:08:30 NET: Client (name:null conid:67840419 TCP) disconnected from ball.0 (clients:0)
+02.11 13:09:26 TIMER: Check auto-disconnect...
+02.11 13:09:26 STATS: ball.0 cache, locks:0
+02.11 13:09:26 TIMER: Check auto-disconnect...
+02.11 13:09:26 STATS: ball.0 cache, locks:0
+02.11 13:09:26 TIMER: Check auto-disconnect...
+02.11 13:09:26 STATS: ball.0 cache, locks:0
+02.11 13:09:26 TIMER: Check auto-disconnect...
+02.11 13:09:26 STATS: ball.0 cache, locks:0
+02.11 13:09:26 TIMER: Check auto-disconnect...
+02.11 13:09:26 STATS: ball.0 cache, locks:0
+02.11 13:09:26 TIMER: Check auto-disconnect...
+02.11 13:09:26 STATS: ball.0 cache, locks:0
+02.11 13:09:26 TIMER: Check auto-disconnect...
+02.11 13:09:26 STATS: ball.0 cache, locks:0
+02.11 13:09:26 TIMER: Check auto-disconnect...
+02.11 13:09:26 STATS: ball.0 cache, locks:0
+02.11 13:09:26 TIMER: Check auto-disconnect...
+02.11 13:09:26 STATS: ball.0 cache, locks:0
+02.11 13:09:26 TIMER: Check auto-disconnect...
+02.11 13:09:26 STATS: ball.0 cache, locks:0
+02.11 13:09:26 TIMER: Check auto-disconnect...
+02.11 13:09:26 STATS: ball.0 cache, locks:0
+02.11 13:09:26 TIMER: Check auto-disconnect...
+02.11 13:09:26 STATS: ball.0 cache, locks:0
+02.11 13:09:26 TIMER: Check auto-disconnect...
+02.11 13:09:26 STATS: ball.0 cache, locks:0
+02.11 13:09:26 TIMER: Check auto-disconnect...
+02.11 13:09:26 STATS: ball.0 cache, locks:0
+02.11 13:09:26 TIMER: Check auto-disconnect...
+02.11 13:09:26 STATS: ball.0 cache, locks:0
+02.11 13:09:26 TIMER: Check auto-disconnect...
+02.11 13:09:26 STATS: ball.0 cache, locks:0
+02.11 13:09:26 TIMER: Check auto-disconnect...
+02.11 13:09:26 STATS: ball.0 cache, locks:0
+02.11 13:09:26 TIMER: Check auto-disconnect...
+02.11 13:09:26 STATS: ball.0 cache, locks:0
+02.11 13:09:26 TIMER: Check auto-disconnect...
+02.11 13:09:26 STATS: ball.0 cache, locks:0
+02.11 13:09:26 TIMER: Check auto-disconnect...
+02.11 13:09:26 STATS: ball.0 cache, locks:0
+02.11 13:09:26 TIMER: Check auto-disconnect...
+02.11 13:09:26 STATS: ball.0 cache, locks:0
+02.11 13:09:26 TIMER: Check auto-disconnect...
+02.11 13:09:26 STATS: ball.0 cache, locks:0
+02.11 13:09:26 TIMER: Check auto-disconnect...
+02.11 13:09:26 STATS: ball.0 cache, locks:0
+02.11 13:09:26 TIMER: Check auto-disconnect...
+02.11 13:09:26 STATS: ball.0 cache, locks:0
+02.11 13:09:26 TIMER: Check auto-disconnect...
+02.11 13:09:26 STATS: ball.0 cache, locks:0
+02.11 13:09:26 TIMER: Check auto-disconnect...
+02.11 13:09:26 STATS: ball.0 cache, locks:0
+02.11 13:34:32 NET: Client (conid:41434904) connected to ball.0 (clients:1)
+02.11 13:35:26 TIMER: Check auto-disconnect...
+02.11 13:35:26 STATS: ball.0 cache, locks:0
+02.11 13:35:37 NET: Client (name:null conid:41434904 TCP) disconnected from ball.0 (clients:0)
+02.11 13:36:26 TIMER: Check auto-disconnect...
+02.11 13:36:26 STATS: ball.0 cache, locks:0
+02.11 13:37:15 NET: Client (conid:52841972) connected to ball.0 (clients:1)
+02.11 13:37:26 ++ NET: null req: user.login { password => 123, name => bob, messageType => user.login }
+02.11 13:37:26 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'bob' AND Password = E'123'
+02.11 13:37:26 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'bob' AND Password = E'123', _type => core/server.query }
+02.11 13:37:26 -<<-: core/server.query ok
+02.11 13:37:26 STATS: ball.0 cache connection, 22 calls, total 0.0410737991333008 sec spent, avg 1.87 ms
+02.11 13:37:26 == NET: null ret: user.login { type => user.login, errorCode => userNotFound }
+02.11 13:37:26 TIMER: Check auto-disconnect...
+02.11 13:37:26 STATS: ball.0 cache, locks:0
+02.11 13:37:30 ++ NET: null req: user.register { password => 123, name => bob, messageType => user.register }
+02.11 13:37:30 == NET: null ret: user.register { type => user.register, errorCode => nameExists }
+02.11 13:37:38 ++ NET: null req: user.login { password => bob, name => bob, messageType => user.login }
+02.11 13:37:38 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'bob' AND Password = E'bob'
+02.11 13:37:38 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'bob' AND Password = E'bob', _type => core/server.query }
+02.11 13:37:38 -<<-: core/server.query ok
+02.11 13:37:38 == NET: null ret: user.login { type => user.login, errorCode => userNotFound }
+02.11 13:37:54 ++ NET: null req: user.login { password => bob, name => bob, messageType => user.login }
+02.11 13:37:54 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'bob' AND Password = E'bob'
+02.11 13:37:54 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'bob' AND Password = E'bob', _type => core/server.query }
+02.11 13:37:54 -<<-: core/server.query ok
+02.11 13:37:54 == NET: null ret: user.login { type => user.login, errorCode => userNotFound }
+02.11 13:37:54 ++ NET: null req: user.login { password => bob, name => bob, messageType => user.login }
+02.11 13:37:54 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'bob' AND Password = E'bob'
+02.11 13:37:54 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'bob' AND Password = E'bob', _type => core/server.query }
+02.11 13:37:54 -<<-: core/server.query ok
+02.11 13:37:54 == NET: null ret: user.login { type => user.login, errorCode => userNotFound }
+02.11 13:37:54 ++ NET: null req: user.login { password => bob, name => bob, messageType => user.login }
+02.11 13:37:54 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'bob' AND Password = E'bob'
+02.11 13:37:54 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'bob' AND Password = E'bob', _type => core/server.query }
+02.11 13:37:54 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+02.11 13:37:54 == NET: null ret: user.login { type => user.login, errorCode => userNotFound }
+02.11 13:37:55 ++ NET: null req: user.login { password => bob, name => bob, messageType => user.login }
+02.11 13:37:55 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'bob' AND Password = E'bob'
+02.11 13:37:55 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'bob' AND Password = E'bob', _type => core/server.query }
+02.11 13:37:55 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+02.11 13:37:55 == NET: null ret: user.login { type => user.login, errorCode => userNotFound }
+02.11 13:37:55 ++ NET: null req: user.register { password => bob, name => bob, messageType => user.register }
+02.11 13:37:55 == NET: null ret: user.register { type => user.register, errorCode => nameExists }
+02.11 13:38:05 NET: Client (name:null conid:52841972 TCP) disconnected from ball.0 (clients:0)
+02.11 13:38:26 TIMER: Check auto-disconnect...
+02.11 13:38:26 STATS: ball.0 cache, locks:0
+02.11 13:38:26 TIMER: Check auto-disconnect...
+02.11 13:38:26 STATS: ball.0 cache, locks:0
+02.11 13:38:26 TIMER: Check auto-disconnect...
+02.11 13:38:26 STATS: ball.0 cache, locks:0
+02.11 13:38:26 TIMER: Check auto-disconnect...
+02.11 13:38:26 STATS: ball.0 cache, locks:0
+02.11 13:38:26 TIMER: Check auto-disconnect...
+02.11 13:38:26 STATS: ball.0 cache, locks:0
+02.11 13:38:26 TIMER: Check auto-disconnect...
+02.11 13:38:26 STATS: ball.0 cache, locks:0
+02.11 13:43:41 NET: Client (conid:43972308) connected to ball.0 (clients:1)
+02.11 13:43:48 ++ NET: null req: user.login { password => bob, name => bob, messageType => user.login }
+02.11 13:43:48 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'bob' AND Password = E'bob'
+02.11 13:43:48 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'bob' AND Password = E'bob', _type => core/server.query }
+02.11 13:43:48 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+02.11 13:43:48 STATS: ball.0 cache connection, 28 calls, total 0.0523445606231689 sec spent, avg 1.87 ms
+02.11 13:43:48 == NET: null ret: user.login { type => user.login, errorCode => userNotFound }
+02.11 13:43:52 ++ NET: null req: user.register { password => bob, name => bob, messageType => user.register }
+02.11 13:43:52 == NET: null ret: user.register { type => user.register, errorCode => nameExists }
+02.11 13:44:26 TIMER: Check auto-disconnect...
+02.11 13:44:26 STATS: ball.0 cache, locks:0
+02.11 13:44:58 NET: Client (name:null conid:43972308 TCP) disconnected from ball.0 (clients:0)
+02.11 13:45:26 TIMER: Check auto-disconnect...
+02.11 13:45:26 STATS: ball.0 cache, locks:0
+02.11 13:45:26 TIMER: Check auto-disconnect...
+02.11 13:45:26 STATS: ball.0 cache, locks:0
+02.11 13:45:26 TIMER: Check auto-disconnect...
+02.11 13:45:26 STATS: ball.0 cache, locks:0
+02.11 13:45:26 TIMER: Check auto-disconnect...
+02.11 13:45:26 STATS: ball.0 cache, locks:0
+02.11 13:45:26 TIMER: Check auto-disconnect...
+02.11 13:45:26 STATS: ball.0 cache, locks:0
+02.11 13:49:34 NET: Client (conid:51193439) connected to ball.0 (clients:1)
+02.11 13:49:48 ++ NET: null req: user.register { password => 1, name => dood, messageType => user.register }
+02.11 13:49:48 DB: SELECT ID FROM Users WHERE Name = E'dood'
+02.11 13:49:48 ->>-: core/server.query { q => SELECT ID FROM Users WHERE Name = E'dood', _type => core/server.query }
+02.11 13:49:48 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+02.11 13:49:48 STATS: ball.0 cache connection, 29 calls, total 0.0642554759979248 sec spent, avg 2.22 ms
+02.11 13:49:48 DB: SELECT nextval('Users_id_seq') AS id
+02.11 13:49:48 ->>-: core/server.query { q => SELECT nextval('Users_id_seq') AS id, _type => core/server.query }
+02.11 13:49:48 -<<-: core/server.query { list => {{ id => 3 }}, errorCode => ok, _type => core/server.query }
+02.11 13:49:48 ->>-: core/user.register { password => 1, name => dood, fullParams => { password => 1, name => dood, networkid => , networktype => , messageType => user.register, id => 3 }, networkid => , connectionID => 51193439, networktype => , email => , id => 3, _type => core/user.register }
+02.11 13:49:48 -<<-: core/user.register { errorCode => ok, _type => core/user.register }
+02.11 13:49:48 -<<-: core/user.registerResponse { password => 1, name => dood, _isNotify => true, fullParams => { password => 1, name => dood, networkid => , networktype => , messageType => user.register, id => 3 }, networkid => , connectionID => 51193439, networktype => , email => , id => 3, _type => core/user.registerResponse }
+02.11 13:49:48 == NET: null ret: user.register { type => user.register, errorCode => ok }
+02.11 13:49:56 ++ NET: null req: user.login { password => 1, name => dood, messageType => user.login }
+02.11 13:49:56 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'dood' AND Password = E'1'
+02.11 13:49:56 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'dood' AND Password = E'1', _type => core/server.query }
+02.11 13:49:56 -<<-: core/server.query { list => {{ name => dood, networkid => , isbanned => false, id => 3 }}, errorCode => ok, _type => core/server.query }
+02.11 13:49:56 ->>-: core/user.isOnlineID { id => 3, _type => core/user.isOnlineID }
+02.11 13:49:56 -<<-: core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+02.11 13:49:56 ->>-: core/cache.get { type => user, v => -1, id => 3, _type => core/cache.get }
+02.11 13:49:56 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {name => dood, deleted => false, email => , networktype =>   , password => 1, isbanned => false, regdate => 2016-11-02 13:49:48.726683+03, language =>   , networkid => , params => { inventory => { list => [] }, vars => {}, attrs => {}, effects => { list => [] } }}, version => 1, id => 3 } }
+02.11 13:49:56 ->>-: core/cache.get { type => questdata, v => -1, id => 3, _type => core/cache.get }
+02.11 13:49:56 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => {}}, version => 0, id => 3 } }
+02.11 13:49:56 NET: Client login (conid:51193439, id:3, name:dood)
+02.11 13:49:56 ->>-: core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 3, _type => core/user.loginPost, ipAddr => 172.16.20.227 }
+02.11 13:49:56 -<<-: core/user.loginPost { _type => core/user.loginPost }
+02.11 13:49:56 DB: SELECT ID FROM TempUserLogins WHERE UserID = 3 AND Date = 'today'::timestamp
+02.11 13:49:56 ->>-: core/server.query { q => SELECT ID FROM TempUserLogins WHERE UserID = 3 AND Date = 'today'::timestamp, _type => core/server.query }
+02.11 13:49:56 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+02.11 13:49:56 PENDING: INSERT INTO TempUserLogins (UserID, Date) VALUES (3, 'today'::timestamp)
+02.11 13:49:56 == NET: dood ret: user.login { name => dood, type => user.login, errorCode => ok, id => 3 }
+02.11 13:49:56 == NET: dood ret: user.join { name => dood, type => user.join }
+02.11 13:49:56 ->>-: core/server.ping { _type => core/server.ping, _notify => {{ q => INSERT INTO TempUserLogins (UserID, Date) VALUES (3, 'today'::timestamp), _type => core/server.pending }} }
+02.11 13:49:56 -<<-: core/server.ping { errorCode => ok, _type => core/server.ping }
+02.11 13:50:01 ->>-: core/cache.update { diff => {language => en, params => { attrs => { _lastTime.24hr => 1478083796, lastLoginDate => 307, lastLoadDate => 1103 } }}, type => user, unlock => false, id => 3, _type => core/cache.update }
+02.11 13:50:01 -<<-: core/cache.update { errorCode => ok, version => 2, _type => core/cache.update }
+02.11 13:50:26 TIMER: Check auto-disconnect...
+02.11 13:50:26 STATS: ball.0 cache, locks:2
+02.11 13:50:56 NET: Client (name:dood conid:51193439 TCP) disconnected from ball.0 (clients:0)
+02.11 13:50:56 DB: SELECT id FROM battle WHERE firstid=3 OR secondid=3 AND finished <> true
+02.11 13:50:56 ->>-: core/server.query { q => SELECT id FROM battle WHERE firstid=3 OR secondid=3 AND finished <> true, _type => core/server.query }
+02.11 13:50:56 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+02.11 13:50:56 STATS: ball.0 cache connection, 40 calls, total 0.334953308105469 sec spent, avg 8.37 ms
+02.11 13:50:56 ->>-: ball/cache.battle.infoRoom { roomId => 0, _type => ball/cache.battle.infoRoom }
+02.11 13:50:56 -<<-: ball/cache.battle.infoRoom { errorCode => _requestException, _type => ball/cache.battle.infoRoom }
+02.11 13:50:56 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => ball/cache.battle.infoRoom }
+02.11 13:50:56 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/BallBattleModule.hx line 169
+Called from modules/BallBattleModule.hx line 186
+Called from snipe/slave/Server.hx line 994
+02.11 13:50:56 ->>-: core/cache.update { diff => {}, type => user, unlock => true, id => 3, _type => core/cache.update }
+02.11 13:50:56 -<<-: core/cache.update { errorCode => ok, version => 3, _type => core/cache.update }
+02.11 13:50:56 ->>-: core/cache.update { diff => {}, type => questdata, unlock => true, id => 3, _type => core/cache.update }
+02.11 13:50:56 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+02.11 13:50:56 ->>-: core/user.logoutPost { networkid => , networktype =>   , id => 3, _type => core/user.logoutPost }
+02.11 13:50:56 -<<-: core/user.logoutPost { errorCode => ok, _type => core/user.logoutPost }
+02.11 13:51:16 NET: Client (conid:81225485) connected to ball.0 (clients:1)
+02.11 13:51:23 ++ NET: null req: user.login { password => 1, name => dood, messageType => user.login }
+02.11 13:51:23 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'dood' AND Password = E'1'
+02.11 13:51:23 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'dood' AND Password = E'1', _type => core/server.query }
+02.11 13:51:23 -<<-: core/server.query { list => {{ name => dood, networkid => , isbanned => false, id => 3 }}, errorCode => ok, _type => core/server.query }
+02.11 13:51:23 ->>-: core/user.isOnlineID { id => 3, _type => core/user.isOnlineID }
+02.11 13:51:23 -<<-: core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+02.11 13:51:23 ->>-: core/cache.get { type => user, v => -1, id => 3, _type => core/cache.get }
+02.11 13:51:23 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {name => dood, deleted => false, email => , networktype =>   , password => 1, isbanned => false, regdate => 2016-11-02 13:49:48.726683+03, language => en, networkid => , params => { inventory => { list => [] }, vars => {}, attrs => { _lastTime.24hr => 1478083796, lastLoginDate => 307, lastLoadDate => 1103 }, effects => { list => [] } }}, version => 0, id => 3 } }
+02.11 13:51:23 ->>-: core/cache.get { type => questdata, v => -1, id => 3, _type => core/cache.get }
+02.11 13:51:23 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => { quests => { list => [] } }}, version => 0, id => 3 } }
+02.11 13:51:23 NET: Client login (conid:81225485, id:3, name:dood)
+02.11 13:51:23 ->>-: core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 3, _type => core/user.loginPost, ipAddr => 172.16.20.227 }
+02.11 13:51:23 -<<-: core/user.loginPost { _type => core/user.loginPost }
+02.11 13:51:23 == NET: dood ret: user.login { name => dood, type => user.login, errorCode => ok, id => 3 }
+02.11 13:51:23 == NET: dood ret: user.join { name => dood, type => user.join }
+02.11 13:51:26 TIMER: Check auto-disconnect...
+02.11 13:51:26 STATS: ball.0 cache, locks:2
+02.11 13:51:31 NET: Client (name:dood conid:81225485 TCP) disconnected from ball.0 (clients:0)
+02.11 13:51:31 DB: SELECT id FROM battle WHERE firstid=3 OR secondid=3 AND finished <> true
+02.11 13:51:31 ->>-: core/server.query { q => SELECT id FROM battle WHERE firstid=3 OR secondid=3 AND finished <> true, _type => core/server.query }
+02.11 13:51:31 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+02.11 13:51:31 ->>-: ball/cache.battle.infoRoom { roomId => 0, _type => ball/cache.battle.infoRoom }
+02.11 13:51:31 -<<-: ball/cache.battle.infoRoom { errorCode => _requestException, _type => ball/cache.battle.infoRoom }
+02.11 13:51:31 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => ball/cache.battle.infoRoom }
+02.11 13:51:31 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/BallBattleModule.hx line 169
+Called from modules/BallBattleModule.hx line 186
+Called from snipe/slave/Server.hx line 994
+02.11 13:51:31 ->>-: core/cache.update { diff => {language => en}, type => user, unlock => true, id => 3, _type => core/cache.update }
+02.11 13:51:31 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+02.11 13:51:31 ->>-: core/cache.update { diff => {}, type => questdata, unlock => true, id => 3, _type => core/cache.update }
+02.11 13:51:31 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+02.11 13:51:31 ->>-: core/user.logoutPost { networkid => , networktype =>   , id => 3, _type => core/user.logoutPost }
+02.11 13:51:31 -<<-: core/user.logoutPost { errorCode => ok, _type => core/user.logoutPost }
+02.11 13:52:26 TIMER: Check auto-disconnect...
+02.11 13:52:26 STATS: ball.0 cache, locks:0
+02.11 13:52:26 TIMER: Check auto-disconnect...
+02.11 13:52:26 STATS: ball.0 cache, locks:0
+02.11 13:52:26 TIMER: Check auto-disconnect...
+02.11 13:52:26 STATS: ball.0 cache, locks:0
+02.11 13:52:26 TIMER: Check auto-disconnect...
+02.11 13:52:26 STATS: ball.0 cache, locks:0
+02.11 13:52:26 TIMER: Check auto-disconnect...
+02.11 13:52:26 STATS: ball.0 cache, locks:0
+02.11 13:52:26 TIMER: Check auto-disconnect...
+02.11 13:52:26 STATS: ball.0 cache, locks:0
+02.11 13:52:26 TIMER: Check auto-disconnect...
+02.11 13:52:26 STATS: ball.0 cache, locks:0
+02.11 13:52:26 TIMER: Check auto-disconnect...
+02.11 13:52:26 STATS: ball.0 cache, locks:0
+02.11 13:52:26 TIMER: Check auto-disconnect...
+02.11 13:52:26 STATS: ball.0 cache, locks:0
+02.11 13:52:26 TIMER: Check auto-disconnect...
+02.11 13:52:26 STATS: ball.0 cache, locks:0
+02.11 13:52:26 TIMER: Check auto-disconnect...
+02.11 13:52:26 STATS: ball.0 cache, locks:0
+02.11 13:52:26 TIMER: Check auto-disconnect...
+02.11 13:52:26 STATS: ball.0 cache, locks:0
+02.11 13:52:26 TIMER: Check auto-disconnect...
+02.11 13:52:26 STATS: ball.0 cache, locks:0
+02.11 13:52:26 TIMER: Check auto-disconnect...
+02.11 13:52:26 STATS: ball.0 cache, locks:0
+02.11 13:52:26 TIMER: Check auto-disconnect...
+02.11 13:52:26 STATS: ball.0 cache, locks:0
+02.11 13:52:26 TIMER: Check auto-disconnect...
+02.11 13:52:26 STATS: ball.0 cache, locks:0
+02.11 13:52:26 TIMER: Check auto-disconnect...
+02.11 13:52:26 STATS: ball.0 cache, locks:0
+02.11 13:52:26 TIMER: Check auto-disconnect...
+02.11 13:52:26 STATS: ball.0 cache, locks:0
+02.11 13:52:26 TIMER: Check auto-disconnect...
+02.11 13:52:26 STATS: ball.0 cache, locks:0
+02.11 13:52:26 TIMER: Check auto-disconnect...
+02.11 13:52:26 STATS: ball.0 cache, locks:0
+02.11 13:52:26 TIMER: Check auto-disconnect...
+02.11 13:52:26 STATS: ball.0 cache, locks:0

@@ -1,0 +1,30 @@
+bronse_scrols,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+card_name,abil_1,,,,abil_2,,,,abil_3,,,,abil_3,,,,abil_4_periodic,,,,,,abil_4_periodic,,,,,
+,effect_1,effect_2,reload_time,reload_buff,effect_3,effect_4,reload_time,reload_buff,effect_5,effect_6,reload_time,reload_buff,effect_7,effect_8,reload_time,reload_buff,effect_9,effect_10,reload_time,reload_buff,dmg_per_sec,duration,effect_11,effect_12,reload_time,reload_buff,dmg_per_sec,duration
+critical_chanse,crit_chance +2% per agil,crit_attack +100%dmg,0,0,crit_chance +100%,crit_attack +100%dmg,9s.,-0.25s per agil,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+shield,block_chance +2% per agil,0,0,0,block_absorb -5% per str,0,0,0,block 100% dmg,0,9s.,-0.25s per int,return 2% dmg per str.,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+flame,dmg +2% per agil,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,flame chance +10%,0,0,0,dmg +2% per int,5,0,0,0,0,0,0
+tnt,take_hit chance tnt +3% per agil,0,0,0,attack chance tnt + 3% per str,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+slowdown,slowdown_attack chanse +2% per int,0,0,0,slowdown_hit chance +2% per agil,0,0,0, dmg +2% per int,0,0,0,0,0,0,0,slowdown_attack chance +25% ,0,9,-0.25s. per int,dmg +3%,4,0,0,0,0,0,0
+lifesteal,lifesteal_attack +3% per str,0,0,0,lifesteal_attack chance +3% per agil,lifesteal +15% ,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+poison,atrophy_attack chance +3% agil ,atrophy -20% dmg,0,0,0,0,0,0,0,0,0,0,0,0,0,0,poison_attack chance +100%,0,0,0,dmg +2% per int,4,poison_hit chance +100%,0,0,0,dmg +2% per str,4
+silver_scrols,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+card_name,abil_1,,,,abil_2,,,,abil_3,,,,abil_3,,,,abil_4_periodic,,,,,,abil_4_periodic,,,,,
+critical_chanse,effect_1,effect_2,reload_time,reload_buff,effect_3,effect_4,reload_time,reload_buff,effect_5,effect_6,reload_time,reload_buff,effect_7,effect_8,reload_time,reload_buff,effect_9,effect_10,reload_time,reload_buff,dmg_per_sec,duration,effect_11,effect_12,reload_time,reload_buff,dmg_per_sec,duration
+,crit_chance +3% per agil,crit_attack +100%dmg,0,0,crit_chance +100%,crit_attack +100%dmg,9s.,-0.25s per agil,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+shield,block_chance +3% per agil,0,0,0,block_absorb -6% per str,0,0,0,block 100% dmg,0,9s.,-0.25s per int,return 3% dmg per str.,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+flame,dmg +3% per agil,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,flame chance +15%,0,0,0,dmg +3% per int,5,0,0,0,0,0,0
+tnt,take_hit chance tnt +4% per agil,0,0,0,attack chance tnt + 4% per str,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+slowdown,slowdown_attack chanse +3% per int,0,0,0,slowdown_hit chance +3% per agil,0,0,0, dmg +3% per int,0,0,0,0,0,0,0,slowdown_attack chance +25% ,0,9,-0.25s. per int,dmg +4%,4,0,0,0,0,0,0
+lifesteal,lifesteal_attack +4% per str,0,0,0,lifesteal_attack chance +4% per agil,lifesteal +20% ,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+poison,atrophy_attack chance +4% agil ,atrophy -25% dmg,0,0,0,0,0,0,0,0,0,0,0,0,0,0,poison_attack chance +100%,0,0,0,dmg +3% per int,4,poison_hit chance +100%,0,0,0,dmg +3% per str,4
+gold_scrols,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+card_name,abil_1,,,,abil_2,,,,abil_3,,,,abil_3,,,,abil_4_periodic,,,,,,abil_4_periodic,,,,,
+critical_chanse,effect_1,effect_2,reload_time,reload_buff,effect_3,effect_4,reload_time,reload_buff,effect_5,effect_6,reload_time,reload_buff,effect_7,effect_8,reload_time,reload_buff,effect_9,effect_10,reload_time,reload_buff,dmg_per_sec,duration,effect_11,effect_12,reload_time,reload_buff,dmg_per_sec,duration
+,crit_chance +4% per agil,crit_attack +100%dmg,0,0,crit_chance +100%,crit_attack +100%dmg,9s.,-0.25s per agil,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+shield,block_chance +4% per agil,0,0,0,block_absorb -7% per str,0,0,0,block 100% dmg,0,9s.,-0.25s per int,return 4% dmg per str.,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+flame,dmg +3% per agil,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,flame chance +20%,0,0,0,dmg +4% per int,5,0,0,0,0,0,0
+tnt,take_hit chance tnt +5% per agil,0,0,0,attack chance tnt + 5% per str,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+slowdown,slowdown_attack chanse +4% per int,0,0,0,slowdown_hit chance +4% per agil,0,0,0, dmg +4% per int,0,0,0,0,0,0,0,slowdown_attack chance +30% ,0,9,-0.25s. per int,dmg +5%,4,0,0,0,0,0,0
+lifesteal,lifesteal_attack +5% per str,0,0,0,lifesteal_attack chance +5% per agil,lifesteal +25% ,0,0,"exchange_xp_hit if enemy_hp > my_hp more 20% , or my hp < 10%",0,20,-0.25s per int,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+poison,atrophy_attack chance +5% agil ,atrophy -30% dmg,0,0,0,0,0,0,0,0,0,0,0,0,0,0,poison_attack chance +100%,0,0,0,dmg +4% per int,4,poison_hit chance +100%,0,0,0,dmg +4% per str,4

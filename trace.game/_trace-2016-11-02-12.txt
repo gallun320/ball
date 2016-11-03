@@ -1,0 +1,25 @@
+02.11 12:13:47 TRACE: Invalid message 'GET / HTTP/1.1
+User-Agent: websocket-sharp/1.0
+Host: 172.16.35.23:2010
+Upgrade: websocket
+Connection: Upgrade
+Sec-WebSocket-Key: IFOaMxzVgje3kpMK7dbJxg==
+Sec-WebSocket-Version: 13
+
+'
+02.11 12:13:47 TRACE: 
+Called from snipe/slave/MetaServer.hx line 494
+Called from snipe/slave/ThreadServerModified.hx line 135
+Called from snipe/slave/ThreadServerModified.hx line 160
+02.11 12:14:56 TRACE: Invalid field access : length
+02.11 12:14:56 TRACE: 
+Called from /usr/share/haxe/std/StringTools.hx line 229
+Called from /usr/share/haxe/std/StringTools.hx line 253
+Called from snipe/slave/modules/UserModuleCore.hx line 335
+Called from snipe/slave/Server.hx line 887
+Called from snipe/slave/Server.hx line 1124
+02.11 12:14:56 TRACE: Could not login.
+02.11 12:14:56 TRACE: 
+Called from snipe/slave/Server.hx line 1151
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202

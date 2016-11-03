@@ -1,0 +1,11 @@
+11.10 12:19:42 TRACE: Class cast error
+11.10 12:19:42 TRACE: 
+Called from snipe/lib/Params.hx line 76
+Called from snipe/slave/modules/UserModuleCore.hx line 225
+Called from snipe/slave/modules/UserModuleCore.hx line 203
+Called from snipe/slave/Server.hx line 1101
+11.10 12:19:42 TRACE: Could not register.
+11.10 12:19:42 TRACE: 
+Called from snipe/slave/Server.hx line 1116
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202

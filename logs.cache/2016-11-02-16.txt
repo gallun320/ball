@@ -1,0 +1,247 @@
+02.11 16:02:26 NET: ball.0 (thread) request core/server.query { q => SELECT id FROM battle WHERE firstid=3 OR secondid=3 AND finished <> true, _type => core/server.query }
+02.11 16:02:26 DB: SELECT id FROM battle WHERE firstid=3 OR secondid=3 AND finished <> true
+02.11 16:02:26 QUEUE: ball.0 (thread) response core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+02.11 16:02:26 TIME: core/server.query : 1.04 ms
+02.11 16:02:26 NET: ball.0 (thread) request ball/cache.battle.infoRoom { roomId => 0, _type => ball/cache.battle.infoRoom }
+02.11 16:02:26 STATS: cache [battle], get [16 calls, 0 cache hits, 15 cache misses, 0 same version, 15 not found]
+02.11 16:02:26 STATS: cache [battle], segments [16 calls, 0 hits, 15 misses]
+02.11 16:02:26 STATS: cache [battle], database [11818 calls, 15 reads, 0 writes]
+02.11 16:02:26 STATS: cache [battle], lock [0 calls, 0 attempts, 0 failures]
+02.11 16:02:26 READDB: SELECT * FROM Battle WHERE ID = 0
+02.11 16:02:26 TRACE: ball/cache.battle.infoRoom : Invalid field access : get
+02.11 16:02:26 TRACE: ball/cache.battle.infoRoom : 
+Called from modules/BallCache.hx line 70
+Called from modules/BallCache.hx line 63
+Called from modules/BallCache.hx line 47
+Called from snipe/cache/CacheServer.hx line 487
+02.11 16:02:26 QUEUE: ball.0 (thread) response ball/cache.battle.infoRoom { errorCode => _requestException, _type => ball/cache.battle.infoRoom }
+02.11 16:02:26 NET: ball.0 (thread) request core/cache.update { diff => {}, type => user, unlock => true, id => 3, _type => core/cache.update }
+02.11 16:02:26 STATS: cache [user], get [20 calls, 2 cache hits, 18 cache misses, 0 same version, 0 not found]
+02.11 16:02:26 STATS: cache [user], segments [84 calls, 49 hits, 34 misses]
+02.11 16:02:26 STATS: cache [user], database [11818 calls, 18 reads, 27 writes]
+02.11 16:02:26 STATS: cache [user], lock [18 calls, 18 attempts, 0 failures]
+02.11 16:02:26 STATS: cache manager [1], get [34 calls, total 0.03 sec spent, avg 0.93 ms]
+02.11 16:02:26 STATS: cache manager [1], update [44 calls, total 0.01 sec spent, avg 0.14 ms]
+02.11 16:02:26 QUEUE: ball.0 (thread) response core/cache.update { errorCode => ok, version => 2, _type => core/cache.update }
+02.11 16:02:26 TIME: core/cache.update : 0.65 ms
+02.11 16:02:26 NET: ball.0 (thread) request core/cache.update { diff => {}, type => questdata, unlock => true, id => 3, _type => core/cache.update }
+02.11 16:02:26 STATS: cache [questdata], get [16 calls, 1 cache hits, 15 cache misses, 0 same version, 0 not found]
+02.11 16:02:26 STATS: cache [questdata], segments [63 calls, 32 hits, 30 misses]
+02.11 16:02:26 STATS: cache [questdata], database [11818 calls, 15 reads, 15 writes]
+02.11 16:02:26 STATS: cache [questdata], lock [16 calls, 16 attempts, 0 failures]
+02.11 16:02:26 QUEUE: ball.0 (thread) response core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+02.11 16:02:26 TIME: core/cache.update : 0.81 ms
+02.11 16:02:26 NET: ball.0 (thread) request core/user.logoutPost { networkid => , networktype =>   , id => 3, _type => core/user.logoutPost }
+02.11 16:02:26 QUEUE: ball.0 (thread) response core/user.logoutPost { errorCode => ok, _type => core/user.logoutPost }
+02.11 16:02:26 TIME: core/user.logoutPost : 0.11 ms
+02.11 16:02:26 WRITEDB: UPDATE Users SET name = E'dood', deleted = E'false', email = E'', networktype = E'  ', password = E'1', isbanned = E'false', regdate = E'2016-11-02 13:49:48.726683+03', language = E'en', networkid = E'', params = E'{"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1478083796,"lastLoginDate":307,"lastLoadDate":1103},"effects":{"list":[]}}' WHERE ID = 3
+02.11 16:02:26 WRITEDB: UPDATE UserQuests SET params = E'oy6:questsoy4:listahgg' WHERE ID = 3
+02.11 16:02:28 TIMER: Clans cache...
+02.11 16:02:28 TIMER: Clans cache: 0ms
+02.11 16:02:37 BLOCKREMOVE: user 3 removed
+02.11 16:02:37 BLOCKREMOVE: questdata 3 removed
+02.11 16:03:28 TIMER: Clans cache...
+02.11 16:03:28 TIMER: Clans cache: 0ms
+02.11 16:03:28 TIMER: Clans cache...
+02.11 16:03:28 TIMER: Clans cache: 0ms
+02.11 16:03:28 TIMER: Clans cache...
+02.11 16:03:28 TIMER: Clans cache: 0ms
+02.11 16:03:28 TIMER: Clans cache...
+02.11 16:03:28 TIMER: Clans cache: 0ms
+02.11 16:03:28 TIMER: Clans cache...
+02.11 16:03:28 TIMER: Clans cache: 0ms
+02.11 16:03:28 TIMER: Clans cache...
+02.11 16:03:28 TIMER: Clans cache: 0ms
+02.11 16:03:28 TIMER: Clans cache...
+02.11 16:03:28 TIMER: Clans cache: 0ms
+02.11 16:03:28 TIMER: Clans cache...
+02.11 16:03:28 TIMER: Clans cache: 0ms
+02.11 16:03:28 TIMER: Clans cache...
+02.11 16:03:28 TIMER: Clans cache: 0ms
+02.11 16:03:28 TIMER: Clans cache...
+02.11 16:03:28 TIMER: Clans cache: 0ms
+02.11 16:03:28 TIMER: Clans cache...
+02.11 16:03:28 TIMER: Clans cache: 0ms
+02.11 16:03:28 TIMER: Clans cache...
+02.11 16:03:28 TIMER: Clans cache: 0ms
+02.11 16:03:28 TIMER: Clans cache...
+02.11 16:03:28 TIMER: Clans cache: 0ms
+02.11 16:03:28 TIMER: Clans cache...
+02.11 16:03:28 TIMER: Clans cache: 0ms
+02.11 16:03:28 TIMER: Clans cache...
+02.11 16:03:28 TIMER: Clans cache: 0ms
+02.11 16:03:28 TIMER: Clans cache...
+02.11 16:03:28 TIMER: Clans cache: 0ms
+02.11 16:03:28 TIMER: Clans cache...
+02.11 16:03:28 TIMER: Clans cache: 0ms
+02.11 16:03:28 TIMER: Clans cache...
+02.11 16:03:28 TIMER: Clans cache: 0ms
+02.11 16:03:28 TIMER: Clans cache...
+02.11 16:03:28 TIMER: Clans cache: 0ms
+02.11 16:03:28 TIMER: Clans cache...
+02.11 16:03:28 TIMER: Clans cache: 0ms
+02.11 16:03:28 TIMER: Clans cache...
+02.11 16:03:28 TIMER: Clans cache: 0ms
+02.11 16:03:28 TIMER: Clans cache...
+02.11 16:03:28 TIMER: Clans cache: 0ms
+02.11 16:03:28 TIMER: Clans cache...
+02.11 16:03:28 TIMER: Clans cache: 0ms
+02.11 16:03:28 TIMER: Clans cache...
+02.11 16:03:28 TIMER: Clans cache: 0ms
+02.11 16:03:28 TIMER: Clans cache...
+02.11 16:03:28 TIMER: Clans cache: 0ms
+02.11 16:03:28 TIMER: Clans cache...
+02.11 16:03:28 TIMER: Clans cache: 0ms
+02.11 16:03:28 TIMER: Clans cache...
+02.11 16:03:28 TIMER: Clans cache: 0ms
+02.11 16:03:28 TIMER: Clans cache...
+02.11 16:03:28 TIMER: Clans cache: 0ms
+02.11 16:03:28 TIMER: Clans cache...
+02.11 16:03:28 TIMER: Clans cache: 0ms
+02.11 16:03:28 TIMER: Clans cache...
+02.11 16:03:28 TIMER: Clans cache: 0ms
+02.11 16:03:28 TIMER: Clans cache...
+02.11 16:03:28 TIMER: Clans cache: 0ms
+02.11 16:03:28 TIMER: Clans cache...
+02.11 16:03:28 TIMER: Clans cache: 0ms
+02.11 16:03:28 TIMER: Clans cache...
+02.11 16:03:28 TIMER: Clans cache: 0ms
+02.11 16:03:28 TIMER: Clans cache...
+02.11 16:03:28 TIMER: Clans cache: 0ms
+02.11 16:03:28 TIMER: Clans cache...
+02.11 16:03:28 TIMER: Clans cache: 0ms
+02.11 16:03:28 TIMER: Clans cache...
+02.11 16:03:28 TIMER: Clans cache: 0ms
+02.11 16:39:02 NET: ball.0 (thread) request core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'dood' AND Password = E'1', _type => core/server.query }
+02.11 16:39:02 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'dood' AND Password = E'1'
+02.11 16:39:02 QUEUE: ball.0 (thread) response core/server.query { list => {{ name => dood, networkid => , isbanned => false, id => 3 }}, errorCode => ok, _type => core/server.query }
+02.11 16:39:02 TIME: core/server.query : 1.37 ms
+02.11 16:39:02 NET: ball.0 (thread) request core/user.isOnlineID { id => 3, _type => core/user.isOnlineID }
+02.11 16:39:02 QUEUE: ball.0 (thread) response core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+02.11 16:39:02 TIME: core/user.isOnlineID : 0.09 ms
+02.11 16:39:02 NET: ball.0 (thread) request core/cache.get { type => user, v => -1, id => 3, _type => core/cache.get }
+02.11 16:39:02 STATS: cache [user], get [20 calls, 2 cache hits, 18 cache misses, 0 same version, 0 not found]
+02.11 16:39:02 STATS: cache [user], segments [86 calls, 51 hits, 34 misses]
+02.11 16:39:02 STATS: cache [user], database [14013 calls, 18 reads, 28 writes]
+02.11 16:39:02 STATS: cache [user], lock [19 calls, 19 attempts, 0 failures]
+02.11 16:39:02 READDB: SELECT * FROM Users WHERE ID = 3
+02.11 16:39:02 STATS: cache manager [1], get [35 calls, total 0.04 sec spent, avg 1.03 ms]
+02.11 16:39:02 STATS: cache manager [1], update [45 calls, total 0.01 sec spent, avg 0.15 ms]
+02.11 16:39:02 QUEUE: ball.0 (thread) response core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {name => dood, deleted => false, email => , networktype =>   , password => 1, isbanned => false, regdate => 2016-11-02 13:49:48.726683+03, language => en, networkid => , params => { inventory => { list => [] }, vars => {}, attrs => { _lastTime.24hr => 1478083796, lastLoginDate => 307, lastLoadDate => 1103 }, effects => { list => [] } }}, version => 0, id => 3 } }
+02.11 16:39:02 TIME: core/cache.get : 4.75 ms
+02.11 16:39:02 NET: ball.0 (thread) request core/cache.get { type => questdata, v => -1, id => 3, _type => core/cache.get }
+02.11 16:39:02 STATS: cache [questdata], get [16 calls, 1 cache hits, 15 cache misses, 0 same version, 0 not found]
+02.11 16:39:02 STATS: cache [questdata], segments [65 calls, 34 hits, 30 misses]
+02.11 16:39:02 STATS: cache [questdata], database [14013 calls, 15 reads, 16 writes]
+02.11 16:39:02 STATS: cache [questdata], lock [17 calls, 17 attempts, 0 failures]
+02.11 16:39:02 READDB: SELECT * FROM UserQuests WHERE ID = 3
+02.11 16:39:02 QUEUE: ball.0 (thread) response core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => { quests => { list => [] } }}, version => 0, id => 3 } }
+02.11 16:39:02 TIME: core/cache.get : 1.3 ms
+02.11 16:39:02 NET: ball.0 (thread) request core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 3, _type => core/user.loginPost, ipAddr => 172.16.20.227 }
+02.11 16:39:02 QUEUE: ball.0 (thread) response core/user.loginPost { _type => core/user.loginPost }
+02.11 16:39:02 TIME: core/user.loginPost : 0.12 ms
+02.11 16:39:08 NET: ball.0 (thread) request core/cache.update { diff => {language => en}, type => user, unlock => false, id => 3, _type => core/cache.update }
+02.11 16:39:08 QUEUE: ball.0 (thread) response core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+02.11 16:39:08 TIME: core/cache.update : 0.13 ms
+02.11 16:39:08 WRITEDB: UPDATE Users SET name = E'dood', deleted = E'false', email = E'', networktype = E'  ', password = E'1', isbanned = E'false', regdate = E'2016-11-02 13:49:48.726683+03', language = E'en', networkid = E'', params = E'{"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1478083796,"lastLoginDate":307,"lastLoadDate":1103},"effects":{"list":[]}}' WHERE ID = 3
+02.11 16:39:28 TIMER: Clans cache...
+02.11 16:39:28 TIMER: Clans cache: 0ms
+02.11 16:39:30 NET: ball.0 (thread) request core/server.query { q => SELECT id FROM battle WHERE firstid=3 OR secondid=3 AND finished <> true, _type => core/server.query }
+02.11 16:39:30 DB: SELECT id FROM battle WHERE firstid=3 OR secondid=3 AND finished <> true
+02.11 16:39:30 QUEUE: ball.0 (thread) response core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+02.11 16:39:30 TIME: core/server.query : 0.77 ms
+02.11 16:39:30 NET: ball.0 (thread) request ball/cache.battle.infoRoom { roomId => 0, _type => ball/cache.battle.infoRoom }
+02.11 16:39:30 STATS: cache [battle], get [17 calls, 0 cache hits, 16 cache misses, 0 same version, 16 not found]
+02.11 16:39:30 STATS: cache [battle], segments [17 calls, 0 hits, 16 misses]
+02.11 16:39:30 STATS: cache [battle], database [14042 calls, 16 reads, 0 writes]
+02.11 16:39:30 STATS: cache [battle], lock [0 calls, 0 attempts, 0 failures]
+02.11 16:39:30 READDB: SELECT * FROM Battle WHERE ID = 0
+02.11 16:39:30 TRACE: ball/cache.battle.infoRoom : Invalid field access : get
+02.11 16:39:30 TRACE: ball/cache.battle.infoRoom : 
+Called from modules/BallCache.hx line 70
+Called from modules/BallCache.hx line 63
+Called from modules/BallCache.hx line 47
+Called from snipe/cache/CacheServer.hx line 487
+02.11 16:39:30 QUEUE: ball.0 (thread) response ball/cache.battle.infoRoom { errorCode => _requestException, _type => ball/cache.battle.infoRoom }
+02.11 16:39:30 NET: ball.0 (thread) request core/cache.update { diff => {}, type => user, unlock => true, id => 3, _type => core/cache.update }
+02.11 16:39:30 QUEUE: ball.0 (thread) response core/cache.update { errorCode => ok, version => 2, _type => core/cache.update }
+02.11 16:39:30 TIME: core/cache.update : 0.11 ms
+02.11 16:39:30 NET: ball.0 (thread) request core/cache.update { diff => {}, type => questdata, unlock => true, id => 3, _type => core/cache.update }
+02.11 16:39:30 QUEUE: ball.0 (thread) response core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+02.11 16:39:30 TIME: core/cache.update : 0.1 ms
+02.11 16:39:30 NET: ball.0 (thread) request core/user.logoutPost { networkid => , networktype =>   , id => 3, _type => core/user.logoutPost }
+02.11 16:39:30 QUEUE: ball.0 (thread) response core/user.logoutPost { errorCode => ok, _type => core/user.logoutPost }
+02.11 16:39:30 TIME: core/user.logoutPost : 0.13 ms
+02.11 16:39:31 WRITEDB: UPDATE Users SET name = E'dood', deleted = E'false', email = E'', networktype = E'  ', password = E'1', isbanned = E'false', regdate = E'2016-11-02 13:49:48.726683+03', language = E'en', networkid = E'', params = E'{"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1478083796,"lastLoginDate":307,"lastLoadDate":1103},"effects":{"list":[]}}' WHERE ID = 3
+02.11 16:39:31 WRITEDB: UPDATE UserQuests SET params = E'oy6:questsoy4:listahgg' WHERE ID = 3
+02.11 16:39:41 BLOCKREMOVE: user 3 removed
+02.11 16:39:41 BLOCKREMOVE: questdata 3 removed
+02.11 16:40:28 TIMER: Clans cache...
+02.11 16:40:28 TIMER: Clans cache: 0ms
+02.11 16:40:28 TIMER: Clans cache...
+02.11 16:40:28 TIMER: Clans cache: 0ms
+02.11 16:40:28 TIMER: Clans cache...
+02.11 16:40:28 TIMER: Clans cache: 0ms
+02.11 16:40:28 TIMER: Clans cache...
+02.11 16:40:28 TIMER: Clans cache: 0ms
+02.11 16:40:28 TIMER: Clans cache...
+02.11 16:40:28 TIMER: Clans cache: 0ms
+02.11 16:40:28 TIMER: Clans cache...
+02.11 16:40:28 TIMER: Clans cache: 0ms
+02.11 16:40:28 TIMER: Clans cache...
+02.11 16:40:28 TIMER: Clans cache: 0ms
+02.11 16:40:28 TIMER: Clans cache...
+02.11 16:40:28 TIMER: Clans cache: 0ms
+02.11 16:40:28 TIMER: Clans cache...
+02.11 16:40:28 TIMER: Clans cache: 0ms
+02.11 16:40:28 TIMER: Clans cache...
+02.11 16:40:28 TIMER: Clans cache: 0ms
+02.11 16:40:28 TIMER: Clans cache...
+02.11 16:40:28 TIMER: Clans cache: 0ms
+02.11 16:40:28 TIMER: Clans cache...
+02.11 16:40:28 TIMER: Clans cache: 0ms
+02.11 16:40:28 TIMER: Clans cache...
+02.11 16:40:28 TIMER: Clans cache: 0ms
+02.11 16:40:28 TIMER: Clans cache...
+02.11 16:40:28 TIMER: Clans cache: 0ms
+02.11 16:40:28 TIMER: Clans cache...
+02.11 16:40:28 TIMER: Clans cache: 0ms
+02.11 16:40:28 TIMER: Clans cache...
+02.11 16:40:28 TIMER: Clans cache: 0ms
+02.11 16:40:28 TIMER: Clans cache...
+02.11 16:40:28 TIMER: Clans cache: 0ms
+02.11 16:40:28 TIMER: Clans cache...
+02.11 16:40:28 TIMER: Clans cache: 0ms
+02.11 16:40:28 TIMER: Clans cache...
+02.11 16:40:28 TIMER: Clans cache: 0ms
+02.11 16:40:28 TIMER: Clans cache...
+02.11 16:40:28 TIMER: Clans cache: 0ms
+02.11 16:40:28 PENDING: INSERT INTO LogUserOnlineCount (Date, Min, Max, Avg) VALUES (now(), 0, 1, 0)
+02.11 16:40:28 TIMER: Clans cache...
+02.11 16:40:28 TIMER: Clans cache: 0ms
+02.11 16:40:28 TIMER: Clans cache...
+02.11 16:40:28 TIMER: Clans cache: 0ms
+02.11 16:40:28 TIMER: Clans cache...
+02.11 16:40:28 TIMER: Clans cache: 0ms
+02.11 16:40:28 TIMER: Clans cache...
+02.11 16:40:28 TIMER: Clans cache: 0ms
+02.11 16:40:28 TIMER: Clans cache...
+02.11 16:40:28 TIMER: Clans cache: 0ms
+02.11 16:40:28 TIMER: Clans cache...
+02.11 16:40:28 TIMER: Clans cache: 0ms
+02.11 16:40:28 TIMER: Clans cache...
+02.11 16:40:28 TIMER: Clans cache: 0ms
+02.11 16:40:28 TIMER: Clans cache...
+02.11 16:40:28 TIMER: Clans cache: 0ms
+02.11 16:40:28 TIMER: Clans cache...
+02.11 16:40:28 TIMER: Clans cache: 0ms
+02.11 16:40:28 TIMER: Clans cache...
+02.11 16:40:28 TIMER: Clans cache: 0ms
+02.11 16:40:28 TIMER: Clans cache...
+02.11 16:40:28 TIMER: Clans cache: 0ms
+02.11 16:40:28 TIMER: Clans cache...
+02.11 16:40:28 TIMER: Clans cache: 0ms
+02.11 16:40:28 TIMER: Clans cache...
+02.11 16:40:28 TIMER: Clans cache: 0ms
+02.11 16:40:28 TIMER: Clans cache...
+02.11 16:40:28 TIMER: Clans cache: 0ms

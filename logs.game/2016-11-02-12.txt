@@ -1,0 +1,650 @@
+02.11 12:13:33 ->>-: core/server.login { host => 172.16.35.23, name => ball.0, port => 2010, type => game, _type => core/server.login, externalHost => 172.16.35.23, externalPort => 2010 }
+02.11 12:13:33 -<<-: server.login ok
+02.11 12:13:33 DB: SELECT * FROM LocalizationStrings
+02.11 12:13:33 ->>-: core/server.query { q => SELECT * FROM LocalizationStrings, _type => core/server.query }
+02.11 12:13:33 -<<-: core/server.query ok
+02.11 12:13:33 TIMER: Starting timer...
+02.11 12:13:33 TIMER: Timer running...
+02.11 12:13:33 DB: SELECT * FROM GameVars
+02.11 12:13:33 ->>-: core/server.query { q => SELECT * FROM GameVars, _type => core/server.query }
+02.11 12:13:33 -<<-: core/server.query ok
+02.11 12:13:33 DB: SELECT * FROM QuestParameterTypes ORDER BY ID
+02.11 12:13:33 ->>-: core/server.query { q => SELECT * FROM QuestParameterTypes ORDER BY ID, _type => core/server.query }
+02.11 12:13:33 -<<-: core/server.query ok
+02.11 12:13:33 DB: SELECT * FROM QuestConditionTypes ORDER BY ID
+02.11 12:13:33 ->>-: core/server.query { q => SELECT * FROM QuestConditionTypes ORDER BY ID, _type => core/server.query }
+02.11 12:13:33 -<<-: core/server.query ok
+02.11 12:13:33 DB: SELECT * FROM QuestChains WHERE IsEnabled = 't'
+02.11 12:13:33 ->>-: core/server.query { q => SELECT * FROM QuestChains WHERE IsEnabled = 't', _type => core/server.query }
+02.11 12:13:33 -<<-: core/server.query ok
+02.11 12:13:33 DB: SELECT * FROM Quests WHERE ChainID NOT IN (SELECT ID FROM QuestChains WHERE IsEnabled = 'f')
+02.11 12:13:33 ->>-: core/server.query { q => SELECT * FROM Quests WHERE ChainID NOT IN (SELECT ID FROM QuestChains WHERE IsEnabled = 'f'), _type => core/server.query }
+02.11 12:13:33 -<<-: core/server.query ok
+02.11 12:13:33 ->>-: core/quest.getDaily { _type => core/quest.getDaily }
+02.11 12:13:33 -<<-: core/quest.getDaily ok
+02.11 12:13:33 DB: SELECT * FROM UserAttributeTypes
+02.11 12:13:33 ->>-: core/server.query { q => SELECT * FROM UserAttributeTypes, _type => core/server.query }
+02.11 12:13:33 -<<-: core/server.query ok
+02.11 12:13:33 DB: SELECT * FROM UserVariableTypes
+02.11 12:13:33 ->>-: core/server.query { q => SELECT * FROM UserVariableTypes, _type => core/server.query }
+02.11 12:13:33 -<<-: core/server.query ok
+02.11 12:13:33 DB: SELECT i.ID, i.GroupID, i.StringID, i.Name, i.Note, i.Params, i.TypeID, it.StringID AS Type, it.SlotID AS SlotID, ig.Name AS Group FROM Items AS i JOIN ItemTypes AS it ON i.TypeID = it.ID JOIN ItemGroups AS ig ON i.GroupID = ig.ID
+02.11 12:13:33 ->>-: core/server.query { q => SELECT i.ID, i.GroupID, i.StringID, i.Name, i.Note, i.Params, i.TypeID, it.StringID AS Type, it.SlotID AS SlotID, ig.Name AS Group FROM Items AS i JOIN ItemTypes AS it ON i.TypeID = it.ID JOIN ItemGroups AS ig ON i.GroupID = ig.ID, _type => core/server.query }
+02.11 12:13:33 -<<-: core/server.query ok
+02.11 12:13:33 DB: SELECT * FROM ItemGroups
+02.11 12:13:33 ->>-: core/server.query { q => SELECT * FROM ItemGroups, _type => core/server.query }
+02.11 12:13:33 -<<-: core/server.query ok
+02.11 12:13:33 DB: SELECT * FROM Bundles ORDER BY ID
+02.11 12:13:33 ->>-: core/server.query { q => SELECT * FROM Bundles ORDER BY ID, _type => core/server.query }
+02.11 12:13:33 -<<-: core/server.query ok
+02.11 12:13:33 DB: SELECT * FROM BundleItems ORDER BY ID
+02.11 12:13:33 ->>-: core/server.query { q => SELECT * FROM BundleItems ORDER BY ID, _type => core/server.query }
+02.11 12:13:33 -<<-: core/server.query ok
+02.11 12:13:33 SHOP: loading items...
+02.11 12:13:33 ->>-: core/shop.getList { _type => core/shop.getList }
+02.11 12:13:33 -<<-: core/shop.getList ok
+02.11 12:13:33 SHOP: 0 items loaded (0 sec)
+02.11 12:13:33 DB: SELECT * FROM EffectAttributeTypes
+02.11 12:13:33 ->>-: core/server.query { q => SELECT * FROM EffectAttributeTypes, _type => core/server.query }
+02.11 12:13:33 -<<-: core/server.query ok
+02.11 12:13:33 DB: SELECT * FROM Effects
+02.11 12:13:33 ->>-: core/server.query { q => SELECT * FROM Effects, _type => core/server.query }
+02.11 12:13:33 -<<-: core/server.query ok
+02.11 12:13:33 DB: SELECT *, date_part('epoch', DateStart) AS TimeStart, date_part('epoch', DateEnd) AS TimeEnd FROM CalendarEvents ORDER BY ID
+02.11 12:13:33 ->>-: core/server.query { q => SELECT *, date_part('epoch', DateStart) AS TimeStart, date_part('epoch', DateEnd) AS TimeEnd FROM CalendarEvents ORDER BY ID, _type => core/server.query }
+02.11 12:13:33 -<<-: core/server.query ok
+02.11 12:13:33 DB: SELECT *, date_part('epoch', Date) AS TimeStart FROM CalendarEventStages ORDER BY EventID, StageID
+02.11 12:13:33 ->>-: core/server.query { q => SELECT *, date_part('epoch', Date) AS TimeStart FROM CalendarEventStages ORDER BY EventID, StageID, _type => core/server.query }
+02.11 12:13:33 -<<-: core/server.query ok
+02.11 12:13:33 DB: SELECT * FROM Badges
+02.11 12:13:33 ->>-: core/server.query { q => SELECT * FROM Badges, _type => core/server.query }
+02.11 12:13:33 -<<-: core/server.query ok
+02.11 12:13:38 -<<-: battle.testEvent null
+02.11 12:13:43 -<<-: battle.testEvent null
+02.11 12:13:47 NET: Client (conid:97744359) connected to ball.0 (clients:1)
+02.11 12:13:47 TRACE: Invalid message 'GET / HTTP/1.1
+User-Agent: websocket-sharp/1.0
+Host: 172.16.35.23:2010
+Upgrade: websocket
+Connection: Upgrade
+Sec-WebSocket-Key: IFOaMxzVgje3kpMK7dbJxg==
+Sec-WebSocket-Version: 13
+
+'
+02.11 12:13:47 TRACE: 
+Called from snipe/slave/MetaServer.hx line 494
+Called from snipe/slave/ThreadServerModified.hx line 135
+Called from snipe/slave/ThreadServerModified.hx line 160
+02.11 12:13:47 NET: Client (name:null conid:97744359 TCP) disconnected from ball.0 (clients:0)
+02.11 12:13:48 -<<-: battle.testEvent null
+02.11 12:13:53 -<<-: battle.testEvent null
+02.11 12:13:58 -<<-: battle.testEvent null
+02.11 12:14:03 -<<-: battle.testEvent null
+02.11 12:14:08 -<<-: battle.testEvent null
+02.11 12:14:13 -<<-: battle.testEvent null
+02.11 12:14:18 -<<-: battle.testEvent null
+02.11 12:14:23 -<<-: battle.testEvent null
+02.11 12:14:28 -<<-: battle.testEvent null
+02.11 12:14:33 -<<-: battle.testEvent null
+02.11 12:14:33 TIMER: Check auto-disconnect...
+02.11 12:14:33 STATS: ball.0 cache, locks:0
+02.11 12:14:38 -<<-: battle.testEvent null
+02.11 12:14:43 -<<-: battle.testEvent null
+02.11 12:14:48 -<<-: battle.testEvent null
+02.11 12:14:52 NET: Client (conid:99305654) connected to ball.0 (clients:1)
+02.11 12:14:53 -<<-: battle.testEvent null
+02.11 12:14:56 ++ NET: null req: user.login { name => Boop, messageType => user.login }
+02.11 12:14:56 TRACE: Invalid field access : length
+02.11 12:14:56 TRACE: 
+Called from /usr/share/haxe/std/StringTools.hx line 229
+Called from /usr/share/haxe/std/StringTools.hx line 253
+Called from snipe/slave/modules/UserModuleCore.hx line 335
+Called from snipe/slave/Server.hx line 887
+Called from snipe/slave/Server.hx line 1124
+02.11 12:14:56 TRACE: Could not login.
+02.11 12:14:56 TRACE: 
+Called from snipe/slave/Server.hx line 1151
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+02.11 12:14:58 -<<-: battle.testEvent null
+02.11 12:15:03 -<<-: battle.testEvent null
+02.11 12:15:08 -<<-: battle.testEvent null
+02.11 12:15:13 -<<-: battle.testEvent null
+02.11 12:15:18 -<<-: battle.testEvent null
+02.11 12:15:23 -<<-: battle.testEvent null
+02.11 12:15:28 -<<-: battle.testEvent null
+02.11 12:15:33 -<<-: battle.testEvent null
+02.11 12:15:33 TIMER: Check auto-disconnect...
+02.11 12:15:33 STATS: ball.0 cache, locks:0
+02.11 12:15:38 -<<-: battle.testEvent null
+02.11 12:15:43 -<<-: battle.testEvent null
+02.11 12:15:48 -<<-: battle.testEvent null
+02.11 12:15:53 -<<-: battle.testEvent null
+02.11 12:15:58 -<<-: battle.testEvent null
+02.11 12:16:03 -<<-: battle.testEvent null
+02.11 12:16:08 -<<-: battle.testEvent null
+02.11 12:16:13 -<<-: battle.testEvent null
+02.11 12:16:18 -<<-: battle.testEvent null
+02.11 12:16:23 -<<-: battle.testEvent null
+02.11 12:16:28 -<<-: battle.testEvent null
+02.11 12:16:33 -<<-: battle.testEvent null
+02.11 12:16:33 TIMER: Check auto-disconnect...
+02.11 12:16:33 STATS: ball.0 cache, locks:0
+02.11 12:16:38 -<<-: battle.testEvent null
+02.11 12:16:43 -<<-: battle.testEvent null
+02.11 12:16:48 -<<-: battle.testEvent null
+02.11 12:16:53 -<<-: battle.testEvent null
+02.11 12:16:58 -<<-: battle.testEvent null
+02.11 12:17:03 -<<-: battle.testEvent null
+02.11 12:17:08 -<<-: battle.testEvent null
+02.11 12:17:13 -<<-: battle.testEvent null
+02.11 12:17:18 -<<-: battle.testEvent null
+02.11 12:17:23 -<<-: battle.testEvent null
+02.11 12:17:28 -<<-: battle.testEvent null
+02.11 12:17:33 -<<-: battle.testEvent null
+02.11 12:17:33 TIMER: Check auto-disconnect...
+02.11 12:17:33 STATS: ball.0 cache, locks:0
+02.11 12:17:38 -<<-: battle.testEvent null
+02.11 12:17:43 -<<-: battle.testEvent null
+02.11 12:17:48 -<<-: battle.testEvent null
+02.11 12:17:53 -<<-: battle.testEvent null
+02.11 12:17:58 -<<-: battle.testEvent null
+02.11 12:18:03 -<<-: battle.testEvent null
+02.11 12:18:08 -<<-: battle.testEvent null
+02.11 12:18:13 -<<-: battle.testEvent null
+02.11 12:18:18 -<<-: battle.testEvent null
+02.11 12:18:23 -<<-: battle.testEvent null
+02.11 12:18:28 -<<-: battle.testEvent null
+02.11 12:18:33 -<<-: battle.testEvent null
+02.11 12:18:33 TIMER: Check auto-disconnect...
+02.11 12:18:33 NET: Client (name:null conid:99305654 TCP) disconnected from ball.0 (clients:0)
+02.11 12:18:33 STATS: ball.0 cache, locks:0
+02.11 12:18:38 -<<-: battle.testEvent null
+02.11 12:18:43 -<<-: battle.testEvent null
+02.11 12:18:48 -<<-: battle.testEvent null
+02.11 12:18:53 -<<-: battle.testEvent null
+02.11 12:18:58 -<<-: battle.testEvent null
+02.11 12:19:03 -<<-: battle.testEvent null
+02.11 12:19:08 -<<-: battle.testEvent null
+02.11 12:19:13 -<<-: battle.testEvent null
+02.11 12:19:18 -<<-: battle.testEvent null
+02.11 12:19:23 -<<-: battle.testEvent null
+02.11 12:19:28 -<<-: battle.testEvent null
+02.11 12:19:33 -<<-: battle.testEvent null
+02.11 12:19:33 TIMER: Check auto-disconnect...
+02.11 12:19:33 STATS: ball.0 cache, locks:0
+02.11 12:19:38 -<<-: battle.testEvent null
+02.11 12:19:43 -<<-: battle.testEvent null
+02.11 12:19:48 -<<-: battle.testEvent null
+02.11 12:19:53 -<<-: battle.testEvent null
+02.11 12:19:58 -<<-: battle.testEvent null
+02.11 12:20:03 -<<-: battle.testEvent null
+02.11 12:20:08 -<<-: battle.testEvent null
+02.11 12:20:13 -<<-: battle.testEvent null
+02.11 12:20:18 -<<-: battle.testEvent null
+02.11 12:20:23 -<<-: battle.testEvent null
+02.11 12:20:28 -<<-: battle.testEvent null
+02.11 12:20:33 -<<-: battle.testEvent null
+02.11 12:20:33 TIMER: Check auto-disconnect...
+02.11 12:20:33 STATS: ball.0 cache, locks:0
+02.11 12:20:38 -<<-: battle.testEvent null
+02.11 12:20:43 -<<-: battle.testEvent null
+02.11 12:20:48 -<<-: battle.testEvent null
+02.11 12:20:53 -<<-: battle.testEvent null
+02.11 12:20:58 -<<-: battle.testEvent null
+02.11 12:21:03 -<<-: battle.testEvent null
+02.11 12:21:08 -<<-: battle.testEvent null
+02.11 12:21:13 -<<-: battle.testEvent null
+02.11 12:21:18 -<<-: battle.testEvent null
+02.11 12:21:23 -<<-: battle.testEvent null
+02.11 12:21:28 -<<-: battle.testEvent null
+02.11 12:21:33 -<<-: battle.testEvent null
+02.11 12:21:33 TIMER: Check auto-disconnect...
+02.11 12:21:33 STATS: ball.0 cache, locks:0
+02.11 12:21:38 -<<-: battle.testEvent null
+02.11 12:21:43 -<<-: battle.testEvent null
+02.11 12:21:48 -<<-: battle.testEvent null
+02.11 12:21:53 -<<-: battle.testEvent null
+02.11 12:21:58 -<<-: battle.testEvent null
+02.11 12:22:03 -<<-: battle.testEvent null
+02.11 12:22:08 -<<-: battle.testEvent null
+02.11 12:22:13 -<<-: battle.testEvent null
+02.11 12:22:18 -<<-: battle.testEvent null
+02.11 12:22:23 -<<-: battle.testEvent null
+02.11 12:22:28 -<<-: battle.testEvent null
+02.11 12:22:33 -<<-: battle.testEvent null
+02.11 12:22:33 TIMER: Check auto-disconnect...
+02.11 12:22:33 STATS: ball.0 cache, locks:0
+02.11 12:22:38 -<<-: battle.testEvent null
+02.11 12:22:43 -<<-: battle.testEvent null
+02.11 12:22:48 -<<-: battle.testEvent null
+02.11 12:22:53 -<<-: battle.testEvent null
+02.11 12:22:58 -<<-: battle.testEvent null
+02.11 12:23:03 -<<-: battle.testEvent null
+02.11 12:23:08 -<<-: battle.testEvent null
+02.11 12:23:13 -<<-: battle.testEvent null
+02.11 12:23:18 -<<-: battle.testEvent null
+02.11 12:23:23 -<<-: battle.testEvent null
+02.11 12:23:28 -<<-: battle.testEvent null
+02.11 12:23:33 -<<-: battle.testEvent null
+02.11 12:23:33 TIMER: Check auto-disconnect...
+02.11 12:23:33 STATS: ball.0 cache, locks:0
+02.11 12:23:38 -<<-: battle.testEvent null
+02.11 12:23:43 -<<-: battle.testEvent null
+02.11 12:23:48 -<<-: battle.testEvent null
+02.11 12:23:53 -<<-: battle.testEvent null
+02.11 12:23:58 -<<-: battle.testEvent null
+02.11 12:24:03 -<<-: battle.testEvent null
+02.11 12:24:08 -<<-: battle.testEvent null
+02.11 12:24:13 -<<-: battle.testEvent null
+02.11 12:24:18 -<<-: battle.testEvent null
+02.11 12:24:23 -<<-: battle.testEvent null
+02.11 12:24:28 -<<-: battle.testEvent null
+02.11 12:24:33 -<<-: battle.testEvent null
+02.11 12:24:33 TIMER: Check auto-disconnect...
+02.11 12:24:33 STATS: ball.0 cache, locks:0
+02.11 12:24:38 -<<-: battle.testEvent null
+02.11 12:24:43 -<<-: battle.testEvent null
+02.11 12:24:48 -<<-: battle.testEvent null
+02.11 12:24:53 -<<-: battle.testEvent null
+02.11 12:24:58 -<<-: battle.testEvent null
+02.11 12:25:03 -<<-: battle.testEvent null
+02.11 12:25:08 -<<-: battle.testEvent null
+02.11 12:25:13 -<<-: battle.testEvent null
+02.11 12:25:18 -<<-: battle.testEvent null
+02.11 12:25:23 -<<-: battle.testEvent null
+02.11 12:25:28 -<<-: battle.testEvent null
+02.11 12:25:33 -<<-: battle.testEvent null
+02.11 12:25:33 TIMER: Check auto-disconnect...
+02.11 12:25:33 STATS: ball.0 cache, locks:0
+02.11 12:25:38 -<<-: battle.testEvent null
+02.11 12:25:43 -<<-: battle.testEvent null
+02.11 12:25:48 -<<-: battle.testEvent null
+02.11 12:25:53 -<<-: battle.testEvent null
+02.11 12:25:58 -<<-: battle.testEvent null
+02.11 12:26:03 -<<-: battle.testEvent null
+02.11 12:26:08 -<<-: battle.testEvent null
+02.11 12:26:13 -<<-: battle.testEvent null
+02.11 12:26:18 -<<-: battle.testEvent null
+02.11 12:26:23 -<<-: battle.testEvent null
+02.11 12:26:28 -<<-: battle.testEvent null
+02.11 12:26:33 -<<-: battle.testEvent null
+02.11 12:26:33 TIMER: Check auto-disconnect...
+02.11 12:26:33 STATS: ball.0 cache, locks:0
+02.11 12:26:38 -<<-: battle.testEvent null
+02.11 12:26:43 -<<-: battle.testEvent null
+02.11 12:26:48 -<<-: battle.testEvent null
+02.11 12:26:53 -<<-: battle.testEvent null
+02.11 12:26:58 -<<-: battle.testEvent null
+02.11 12:27:03 -<<-: battle.testEvent null
+02.11 12:27:08 -<<-: battle.testEvent null
+02.11 12:27:13 -<<-: battle.testEvent null
+02.11 12:27:18 -<<-: battle.testEvent null
+02.11 12:27:23 -<<-: battle.testEvent null
+02.11 12:27:28 -<<-: battle.testEvent null
+02.11 12:27:33 -<<-: battle.testEvent null
+02.11 12:27:33 TIMER: Check auto-disconnect...
+02.11 12:27:33 STATS: ball.0 cache, locks:0
+02.11 12:27:38 -<<-: battle.testEvent null
+02.11 12:27:43 -<<-: battle.testEvent null
+02.11 12:27:48 -<<-: battle.testEvent null
+02.11 12:27:53 -<<-: battle.testEvent null
+02.11 12:27:58 -<<-: battle.testEvent null
+02.11 12:28:03 -<<-: battle.testEvent null
+02.11 12:28:08 -<<-: battle.testEvent null
+02.11 12:28:13 -<<-: battle.testEvent null
+02.11 12:28:18 -<<-: battle.testEvent null
+02.11 12:28:23 -<<-: battle.testEvent null
+02.11 12:28:28 -<<-: battle.testEvent null
+02.11 12:28:33 -<<-: battle.testEvent null
+02.11 12:28:33 TIMER: Check auto-disconnect...
+02.11 12:28:33 STATS: ball.0 cache, locks:0
+02.11 12:28:38 -<<-: battle.testEvent null
+02.11 12:28:43 -<<-: battle.testEvent null
+02.11 12:28:48 -<<-: battle.testEvent null
+02.11 12:28:53 -<<-: battle.testEvent null
+02.11 12:28:58 -<<-: battle.testEvent null
+02.11 12:29:03 -<<-: battle.testEvent null
+02.11 12:29:08 -<<-: battle.testEvent null
+02.11 12:29:13 -<<-: battle.testEvent null
+02.11 12:29:18 -<<-: battle.testEvent null
+02.11 12:29:23 -<<-: battle.testEvent null
+02.11 12:29:28 -<<-: battle.testEvent null
+02.11 12:29:33 -<<-: battle.testEvent null
+02.11 12:29:33 TIMER: Check auto-disconnect...
+02.11 12:29:33 STATS: ball.0 cache, locks:0
+02.11 12:29:38 -<<-: battle.testEvent null
+02.11 12:29:43 -<<-: battle.testEvent null
+02.11 12:29:48 -<<-: battle.testEvent null
+02.11 12:29:53 -<<-: battle.testEvent null
+02.11 12:29:58 -<<-: battle.testEvent null
+02.11 12:30:03 -<<-: battle.testEvent null
+02.11 12:30:08 -<<-: battle.testEvent null
+02.11 12:30:13 -<<-: battle.testEvent null
+02.11 12:30:18 -<<-: battle.testEvent null
+02.11 12:30:23 -<<-: battle.testEvent null
+02.11 12:30:28 -<<-: battle.testEvent null
+02.11 12:30:33 -<<-: battle.testEvent null
+02.11 12:30:33 TIMER: Check auto-disconnect...
+02.11 12:30:33 STATS: ball.0 cache, locks:0
+02.11 12:30:38 -<<-: battle.testEvent null
+02.11 12:30:43 -<<-: battle.testEvent null
+02.11 12:30:48 -<<-: battle.testEvent null
+02.11 12:30:53 -<<-: battle.testEvent null
+02.11 12:30:58 -<<-: battle.testEvent null
+02.11 12:31:03 -<<-: battle.testEvent null
+02.11 12:31:08 -<<-: battle.testEvent null
+02.11 12:31:13 -<<-: battle.testEvent null
+02.11 12:31:18 -<<-: battle.testEvent null
+02.11 12:31:23 -<<-: battle.testEvent null
+02.11 12:31:28 -<<-: battle.testEvent null
+02.11 12:31:33 -<<-: battle.testEvent null
+02.11 12:31:33 TIMER: Check auto-disconnect...
+02.11 12:31:33 STATS: ball.0 cache, locks:0
+02.11 12:31:38 -<<-: battle.testEvent null
+02.11 12:31:43 -<<-: battle.testEvent null
+02.11 12:31:48 -<<-: battle.testEvent null
+02.11 12:31:53 -<<-: battle.testEvent null
+02.11 12:31:58 -<<-: battle.testEvent null
+02.11 12:32:03 -<<-: battle.testEvent null
+02.11 12:32:08 -<<-: battle.testEvent null
+02.11 12:32:13 -<<-: battle.testEvent null
+02.11 12:32:18 -<<-: battle.testEvent null
+02.11 12:32:23 -<<-: battle.testEvent null
+02.11 12:32:28 -<<-: battle.testEvent null
+02.11 12:32:33 -<<-: battle.testEvent null
+02.11 12:32:33 TIMER: Check auto-disconnect...
+02.11 12:32:33 STATS: ball.0 cache, locks:0
+02.11 12:32:38 -<<-: battle.testEvent null
+02.11 12:32:43 -<<-: battle.testEvent null
+02.11 12:32:48 -<<-: battle.testEvent null
+02.11 12:32:53 -<<-: battle.testEvent null
+02.11 12:32:58 -<<-: battle.testEvent null
+02.11 12:33:03 -<<-: battle.testEvent null
+02.11 12:33:08 -<<-: battle.testEvent null
+02.11 12:33:13 -<<-: battle.testEvent null
+02.11 12:33:18 -<<-: battle.testEvent null
+02.11 12:33:23 -<<-: battle.testEvent null
+02.11 12:33:28 -<<-: battle.testEvent null
+02.11 12:33:33 -<<-: battle.testEvent null
+02.11 12:33:33 TIMER: Check auto-disconnect...
+02.11 12:33:33 STATS: ball.0 cache, locks:0
+02.11 12:33:38 -<<-: battle.testEvent null
+02.11 12:33:43 -<<-: battle.testEvent null
+02.11 12:33:48 -<<-: battle.testEvent null
+02.11 12:33:53 -<<-: battle.testEvent null
+02.11 12:33:58 -<<-: battle.testEvent null
+02.11 12:34:03 -<<-: battle.testEvent null
+02.11 12:34:08 -<<-: battle.testEvent null
+02.11 12:34:13 -<<-: battle.testEvent null
+02.11 12:34:18 -<<-: battle.testEvent null
+02.11 12:34:23 -<<-: battle.testEvent null
+02.11 12:34:28 -<<-: battle.testEvent null
+02.11 12:34:33 -<<-: battle.testEvent null
+02.11 12:34:33 TIMER: Check auto-disconnect...
+02.11 12:34:33 STATS: ball.0 cache, locks:0
+02.11 12:34:38 -<<-: battle.testEvent null
+02.11 12:34:43 -<<-: battle.testEvent null
+02.11 12:34:48 -<<-: battle.testEvent null
+02.11 12:34:53 -<<-: battle.testEvent null
+02.11 12:34:58 -<<-: battle.testEvent null
+02.11 12:35:03 -<<-: battle.testEvent null
+02.11 12:35:08 -<<-: battle.testEvent null
+02.11 12:35:13 -<<-: battle.testEvent null
+02.11 12:35:18 -<<-: battle.testEvent null
+02.11 12:35:22 NET: Client (conid:71724557) connected to ball.0 (clients:1)
+02.11 12:35:22 ++ NET: null req: user.login { password => dadawdadad, name => bob, messageType => user.login }
+02.11 12:35:22 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'bob' AND Password = E'dadawdadad'
+02.11 12:35:22 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'bob' AND Password = E'dadawdadad', _type => core/server.query }
+02.11 12:35:22 -<<-: core/server.query ok
+02.11 12:35:22 STATS: ball.0 cache connection, 21 calls, total 0.271360635757446 sec spent, avg 12.92 ms
+02.11 12:35:22 == NET: null ret: user.login { type => user.login, errorCode => userNotFound }
+02.11 12:35:23 -<<-: battle.testEvent null
+02.11 12:35:28 -<<-: battle.testEvent null
+02.11 12:35:33 -<<-: battle.testEvent null
+02.11 12:35:33 TIMER: Check auto-disconnect...
+02.11 12:35:33 STATS: ball.0 cache, locks:0
+02.11 12:35:38 -<<-: battle.testEvent null
+02.11 12:35:43 -<<-: battle.testEvent null
+02.11 12:35:45 NET: Client (name:null conid:71724557 TCP) disconnected from ball.0 (clients:0)
+02.11 12:35:48 -<<-: battle.testEvent null
+02.11 12:35:53 -<<-: battle.testEvent null
+02.11 12:35:58 -<<-: battle.testEvent null
+02.11 12:36:03 -<<-: battle.testEvent null
+02.11 12:36:08 -<<-: battle.testEvent null
+02.11 12:36:13 -<<-: battle.testEvent null
+02.11 12:36:18 -<<-: battle.testEvent null
+02.11 12:36:23 -<<-: battle.testEvent null
+02.11 12:36:28 -<<-: battle.testEvent null
+02.11 12:36:33 -<<-: battle.testEvent null
+02.11 12:36:33 TIMER: Check auto-disconnect...
+02.11 12:36:33 STATS: ball.0 cache, locks:0
+02.11 12:36:38 -<<-: battle.testEvent null
+02.11 12:36:43 -<<-: battle.testEvent null
+02.11 12:36:48 -<<-: battle.testEvent null
+02.11 12:36:53 -<<-: battle.testEvent null
+02.11 12:36:58 -<<-: battle.testEvent null
+02.11 12:37:03 -<<-: battle.testEvent null
+02.11 12:37:08 -<<-: battle.testEvent null
+02.11 12:37:13 -<<-: battle.testEvent null
+02.11 12:37:18 -<<-: battle.testEvent null
+02.11 12:37:23 -<<-: battle.testEvent null
+02.11 12:37:28 -<<-: battle.testEvent null
+02.11 12:37:33 -<<-: battle.testEvent null
+02.11 12:37:33 TIMER: Check auto-disconnect...
+02.11 12:37:33 STATS: ball.0 cache, locks:0
+02.11 12:37:38 -<<-: battle.testEvent null
+02.11 12:37:43 -<<-: battle.testEvent null
+02.11 12:37:48 -<<-: battle.testEvent null
+02.11 12:37:53 -<<-: battle.testEvent null
+02.11 12:37:58 -<<-: battle.testEvent null
+02.11 12:38:03 -<<-: battle.testEvent null
+02.11 12:38:08 -<<-: battle.testEvent null
+02.11 12:38:13 -<<-: battle.testEvent null
+02.11 12:38:18 -<<-: battle.testEvent null
+02.11 12:38:23 -<<-: battle.testEvent null
+02.11 12:38:28 -<<-: battle.testEvent null
+02.11 12:38:33 -<<-: battle.testEvent null
+02.11 12:38:33 TIMER: Check auto-disconnect...
+02.11 12:38:33 STATS: ball.0 cache, locks:0
+02.11 12:38:38 -<<-: battle.testEvent null
+02.11 12:38:43 -<<-: battle.testEvent null
+02.11 12:38:48 -<<-: battle.testEvent null
+02.11 12:38:53 -<<-: battle.testEvent null
+02.11 12:38:58 -<<-: battle.testEvent null
+02.11 12:39:03 -<<-: battle.testEvent null
+02.11 12:39:08 -<<-: battle.testEvent null
+02.11 12:39:13 -<<-: battle.testEvent null
+02.11 12:39:18 -<<-: battle.testEvent null
+02.11 12:39:23 -<<-: battle.testEvent null
+02.11 12:39:28 -<<-: battle.testEvent null
+02.11 12:39:33 -<<-: battle.testEvent null
+02.11 12:39:33 TIMER: Check auto-disconnect...
+02.11 12:39:33 STATS: ball.0 cache, locks:0
+02.11 12:39:38 -<<-: battle.testEvent null
+02.11 12:39:43 -<<-: battle.testEvent null
+02.11 12:39:48 -<<-: battle.testEvent null
+02.11 12:39:53 -<<-: battle.testEvent null
+02.11 12:39:58 -<<-: battle.testEvent null
+02.11 12:40:03 -<<-: battle.testEvent null
+02.11 12:40:08 -<<-: battle.testEvent null
+02.11 12:40:13 -<<-: battle.testEvent null
+02.11 12:40:18 -<<-: battle.testEvent null
+02.11 12:40:23 -<<-: battle.testEvent null
+02.11 12:40:28 -<<-: battle.testEvent null
+02.11 12:40:33 TIMER: Check auto-disconnect...
+02.11 12:40:33 -<<-: battle.testEvent null
+02.11 12:40:33 STATS: ball.0 cache, locks:0
+02.11 12:40:38 -<<-: battle.testEvent null
+02.11 12:40:43 -<<-: battle.testEvent null
+02.11 12:40:48 -<<-: battle.testEvent null
+02.11 12:40:53 -<<-: battle.testEvent null
+02.11 12:40:58 -<<-: battle.testEvent null
+02.11 12:41:03 -<<-: battle.testEvent null
+02.11 12:41:08 -<<-: battle.testEvent null
+02.11 12:41:13 -<<-: battle.testEvent null
+02.11 12:41:18 -<<-: battle.testEvent null
+02.11 12:41:23 -<<-: battle.testEvent null
+02.11 12:41:28 -<<-: battle.testEvent null
+02.11 12:41:33 TIMER: Check auto-disconnect...
+02.11 12:41:33 -<<-: battle.testEvent null
+02.11 12:41:33 STATS: ball.0 cache, locks:0
+02.11 12:41:38 -<<-: battle.testEvent null
+02.11 12:41:43 -<<-: battle.testEvent null
+02.11 12:41:48 -<<-: battle.testEvent null
+02.11 12:41:53 -<<-: battle.testEvent null
+02.11 12:41:58 -<<-: battle.testEvent null
+02.11 12:42:03 -<<-: battle.testEvent null
+02.11 12:42:08 -<<-: battle.testEvent null
+02.11 12:42:13 -<<-: battle.testEvent null
+02.11 12:42:18 -<<-: battle.testEvent null
+02.11 12:42:23 -<<-: battle.testEvent null
+02.11 12:42:28 -<<-: battle.testEvent null
+02.11 12:42:33 TIMER: Check auto-disconnect...
+02.11 12:42:33 -<<-: battle.testEvent null
+02.11 12:42:33 STATS: ball.0 cache, locks:0
+02.11 12:42:38 -<<-: battle.testEvent null
+02.11 12:42:43 -<<-: battle.testEvent null
+02.11 12:42:48 -<<-: battle.testEvent null
+02.11 12:42:53 -<<-: battle.testEvent null
+02.11 12:42:58 -<<-: battle.testEvent null
+02.11 12:43:03 -<<-: battle.testEvent null
+02.11 12:43:08 -<<-: battle.testEvent null
+02.11 12:43:13 -<<-: battle.testEvent null
+02.11 12:43:18 -<<-: battle.testEvent null
+02.11 12:43:23 -<<-: battle.testEvent null
+02.11 12:43:28 -<<-: battle.testEvent null
+02.11 12:43:33 TIMER: Check auto-disconnect...
+02.11 12:43:33 -<<-: battle.testEvent null
+02.11 12:43:33 STATS: ball.0 cache, locks:0
+02.11 12:43:38 -<<-: battle.testEvent null
+02.11 12:43:43 -<<-: battle.testEvent null
+02.11 12:43:48 -<<-: battle.testEvent null
+02.11 12:43:53 -<<-: battle.testEvent null
+02.11 12:43:58 -<<-: battle.testEvent null
+02.11 12:44:03 -<<-: battle.testEvent null
+02.11 12:44:08 -<<-: battle.testEvent null
+02.11 12:44:09 NET: Client (conid:26091233) connected to ball.0 (clients:1)
+02.11 12:44:09 ++ NET: null req: user.login { password => , name => bob, messageType => user.login }
+02.11 12:44:09 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'bob' AND Password = E''
+02.11 12:44:09 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'bob' AND Password = E'', _type => core/server.query }
+02.11 12:44:09 -<<-: core/server.query ok
+02.11 12:44:09 STATS: ball.0 cache connection, 22 calls, total 0.290116548538208 sec spent, avg 13.19 ms
+02.11 12:44:09 == NET: null ret: user.login { type => user.login, errorCode => userNotFound }
+02.11 12:44:13 -<<-: battle.testEvent null
+02.11 12:44:18 -<<-: battle.testEvent null
+02.11 12:44:23 -<<-: battle.testEvent null
+02.11 12:44:28 -<<-: battle.testEvent null
+02.11 12:44:33 TIMER: Check auto-disconnect...
+02.11 12:44:33 -<<-: battle.testEvent null
+02.11 12:44:33 STATS: ball.0 cache, locks:0
+02.11 12:44:38 -<<-: battle.testEvent null
+02.11 12:44:42 NET: Client (name:null conid:26091233 TCP) disconnected from ball.0 (clients:0)
+02.11 12:44:43 -<<-: battle.testEvent null
+02.11 12:44:46 NET: Client (conid:42689217) connected to ball.0 (clients:1)
+02.11 12:44:46 ++ NET: null req: user.login { password => Bob, name => Bob, messageType => user.login }
+02.11 12:44:46 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'Bob' AND Password = E'Bob'
+02.11 12:44:46 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'Bob' AND Password = E'Bob', _type => core/server.query }
+02.11 12:44:46 -<<-: core/server.query ok
+02.11 12:44:46 == NET: null ret: user.login { type => user.login, errorCode => userNotFound }
+02.11 12:44:48 -<<-: battle.testEvent null
+02.11 12:44:53 -<<-: battle.testEvent null
+02.11 12:44:54 NET: Client (name:null conid:42689217 TCP) disconnected from ball.0 (clients:0)
+02.11 12:44:58 -<<-: battle.testEvent null
+02.11 12:45:03 -<<-: battle.testEvent null
+02.11 12:45:08 -<<-: battle.testEvent null
+02.11 12:45:26 ->>-: core/server.login { host => 172.16.35.23, name => ball.0, port => 2010, type => game, _type => core/server.login, externalHost => 172.16.35.23, externalPort => 2010 }
+02.11 12:45:26 -<<-: server.login ok
+02.11 12:45:26 DB: SELECT * FROM LocalizationStrings
+02.11 12:45:26 ->>-: core/server.query { q => SELECT * FROM LocalizationStrings, _type => core/server.query }
+02.11 12:45:26 -<<-: core/server.query ok
+02.11 12:45:26 TIMER: Starting timer...
+02.11 12:45:26 TIMER: Timer running...
+02.11 12:45:26 DB: SELECT * FROM GameVars
+02.11 12:45:26 ->>-: core/server.query { q => SELECT * FROM GameVars, _type => core/server.query }
+02.11 12:45:26 -<<-: core/server.query ok
+02.11 12:45:26 DB: SELECT * FROM QuestParameterTypes ORDER BY ID
+02.11 12:45:26 ->>-: core/server.query { q => SELECT * FROM QuestParameterTypes ORDER BY ID, _type => core/server.query }
+02.11 12:45:26 -<<-: core/server.query ok
+02.11 12:45:26 DB: SELECT * FROM QuestConditionTypes ORDER BY ID
+02.11 12:45:26 ->>-: core/server.query { q => SELECT * FROM QuestConditionTypes ORDER BY ID, _type => core/server.query }
+02.11 12:45:26 -<<-: core/server.query ok
+02.11 12:45:26 DB: SELECT * FROM QuestChains WHERE IsEnabled = 't'
+02.11 12:45:26 ->>-: core/server.query { q => SELECT * FROM QuestChains WHERE IsEnabled = 't', _type => core/server.query }
+02.11 12:45:26 -<<-: core/server.query ok
+02.11 12:45:26 DB: SELECT * FROM Quests WHERE ChainID NOT IN (SELECT ID FROM QuestChains WHERE IsEnabled = 'f')
+02.11 12:45:26 ->>-: core/server.query { q => SELECT * FROM Quests WHERE ChainID NOT IN (SELECT ID FROM QuestChains WHERE IsEnabled = 'f'), _type => core/server.query }
+02.11 12:45:26 -<<-: core/server.query ok
+02.11 12:45:26 ->>-: core/quest.getDaily { _type => core/quest.getDaily }
+02.11 12:45:26 -<<-: core/quest.getDaily ok
+02.11 12:45:26 DB: SELECT * FROM UserAttributeTypes
+02.11 12:45:26 ->>-: core/server.query { q => SELECT * FROM UserAttributeTypes, _type => core/server.query }
+02.11 12:45:26 -<<-: core/server.query ok
+02.11 12:45:26 DB: SELECT * FROM UserVariableTypes
+02.11 12:45:26 ->>-: core/server.query { q => SELECT * FROM UserVariableTypes, _type => core/server.query }
+02.11 12:45:26 -<<-: core/server.query ok
+02.11 12:45:26 DB: SELECT i.ID, i.GroupID, i.StringID, i.Name, i.Note, i.Params, i.TypeID, it.StringID AS Type, it.SlotID AS SlotID, ig.Name AS Group FROM Items AS i JOIN ItemTypes AS it ON i.TypeID = it.ID JOIN ItemGroups AS ig ON i.GroupID = ig.ID
+02.11 12:45:26 ->>-: core/server.query { q => SELECT i.ID, i.GroupID, i.StringID, i.Name, i.Note, i.Params, i.TypeID, it.StringID AS Type, it.SlotID AS SlotID, ig.Name AS Group FROM Items AS i JOIN ItemTypes AS it ON i.TypeID = it.ID JOIN ItemGroups AS ig ON i.GroupID = ig.ID, _type => core/server.query }
+02.11 12:45:26 -<<-: core/server.query ok
+02.11 12:45:26 DB: SELECT * FROM ItemGroups
+02.11 12:45:26 ->>-: core/server.query { q => SELECT * FROM ItemGroups, _type => core/server.query }
+02.11 12:45:26 -<<-: core/server.query ok
+02.11 12:45:26 DB: SELECT * FROM Bundles ORDER BY ID
+02.11 12:45:26 ->>-: core/server.query { q => SELECT * FROM Bundles ORDER BY ID, _type => core/server.query }
+02.11 12:45:26 -<<-: core/server.query ok
+02.11 12:45:26 DB: SELECT * FROM BundleItems ORDER BY ID
+02.11 12:45:26 ->>-: core/server.query { q => SELECT * FROM BundleItems ORDER BY ID, _type => core/server.query }
+02.11 12:45:26 -<<-: core/server.query ok
+02.11 12:45:26 SHOP: loading items...
+02.11 12:45:26 ->>-: core/shop.getList { _type => core/shop.getList }
+02.11 12:45:26 -<<-: core/shop.getList ok
+02.11 12:45:26 SHOP: 0 items loaded (0 sec)
+02.11 12:45:26 DB: SELECT * FROM EffectAttributeTypes
+02.11 12:45:26 ->>-: core/server.query { q => SELECT * FROM EffectAttributeTypes, _type => core/server.query }
+02.11 12:45:26 -<<-: core/server.query ok
+02.11 12:45:26 DB: SELECT * FROM Effects
+02.11 12:45:26 ->>-: core/server.query { q => SELECT * FROM Effects, _type => core/server.query }
+02.11 12:45:26 -<<-: core/server.query ok
+02.11 12:45:26 DB: SELECT *, date_part('epoch', DateStart) AS TimeStart, date_part('epoch', DateEnd) AS TimeEnd FROM CalendarEvents ORDER BY ID
+02.11 12:45:26 ->>-: core/server.query { q => SELECT *, date_part('epoch', DateStart) AS TimeStart, date_part('epoch', DateEnd) AS TimeEnd FROM CalendarEvents ORDER BY ID, _type => core/server.query }
+02.11 12:45:26 -<<-: core/server.query ok
+02.11 12:45:26 DB: SELECT *, date_part('epoch', Date) AS TimeStart FROM CalendarEventStages ORDER BY EventID, StageID
+02.11 12:45:26 ->>-: core/server.query { q => SELECT *, date_part('epoch', Date) AS TimeStart FROM CalendarEventStages ORDER BY EventID, StageID, _type => core/server.query }
+02.11 12:45:26 -<<-: core/server.query ok
+02.11 12:45:26 DB: SELECT * FROM Badges
+02.11 12:45:26 ->>-: core/server.query { q => SELECT * FROM Badges, _type => core/server.query }
+02.11 12:45:26 -<<-: core/server.query ok
+02.11 12:45:26 TIMER: Check auto-disconnect...
+02.11 12:45:26 STATS: ball.0 cache, locks:0
+02.11 12:45:26 TIMER: Check auto-disconnect...
+02.11 12:45:26 STATS: ball.0 cache, locks:0
+02.11 12:45:26 TIMER: Check auto-disconnect...
+02.11 12:45:26 STATS: ball.0 cache, locks:0
+02.11 12:45:26 TIMER: Check auto-disconnect...
+02.11 12:45:26 STATS: ball.0 cache, locks:0
+02.11 12:45:26 TIMER: Check auto-disconnect...
+02.11 12:45:26 STATS: ball.0 cache, locks:0
+02.11 12:45:26 TIMER: Check auto-disconnect...
+02.11 12:45:26 STATS: ball.0 cache, locks:0
+02.11 12:45:26 TIMER: Check auto-disconnect...
+02.11 12:45:26 STATS: ball.0 cache, locks:0
+02.11 12:45:26 TIMER: Check auto-disconnect...
+02.11 12:45:26 STATS: ball.0 cache, locks:0
+02.11 12:45:26 TIMER: Check auto-disconnect...
+02.11 12:45:26 STATS: ball.0 cache, locks:0
+02.11 12:45:26 TIMER: Check auto-disconnect...
+02.11 12:45:26 STATS: ball.0 cache, locks:0
+02.11 12:45:26 TIMER: Check auto-disconnect...
+02.11 12:45:26 STATS: ball.0 cache, locks:0
+02.11 12:45:26 TIMER: Check auto-disconnect...
+02.11 12:45:26 STATS: ball.0 cache, locks:0
+02.11 12:45:26 TIMER: Check auto-disconnect...
+02.11 12:45:26 STATS: ball.0 cache, locks:0
+02.11 12:45:26 TIMER: Check auto-disconnect...
+02.11 12:45:26 STATS: ball.0 cache, locks:0
+02.11 12:45:26 TIMER: Check auto-disconnect...
+02.11 12:45:26 STATS: ball.0 cache, locks:0
+02.11 12:45:26 TIMER: Check auto-disconnect...
+02.11 12:45:26 STATS: ball.0 cache, locks:0
+02.11 12:45:26 TIMER: Check auto-disconnect...
+02.11 12:45:26 STATS: ball.0 cache, locks:0

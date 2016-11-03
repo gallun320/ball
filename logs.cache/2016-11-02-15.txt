@@ -1,0 +1,431 @@
+02.11 15:10:22 NET: ball.0 (thread) request core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'dood' AND Password = E'123', _type => core/server.query }
+02.11 15:10:22 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'dood' AND Password = E'123'
+02.11 15:10:22 QUEUE: ball.0 (thread) response core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+02.11 15:10:22 TIME: core/server.query : 0.48 ms
+02.11 15:10:27 TIMER: Clans cache...
+02.11 15:10:27 TIMER: Clans cache: 0ms
+02.11 15:10:32 NET: ball.0 (thread) request core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'dood32' AND Password = E'123', _type => core/server.query }
+02.11 15:10:32 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'dood32' AND Password = E'123'
+02.11 15:10:32 QUEUE: ball.0 (thread) response core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+02.11 15:10:32 TIME: core/server.query : 0.56 ms
+02.11 15:11:27 TIMER: Clans cache...
+02.11 15:11:27 TIMER: Clans cache: 0ms
+02.11 15:11:27 TIMER: Clans cache...
+02.11 15:11:27 TIMER: Clans cache: 0ms
+02.11 15:13:24 NET: ball.0 (thread) request core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'dood' AND Password = E'dooderson', _type => core/server.query }
+02.11 15:13:24 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'dood' AND Password = E'dooderson'
+02.11 15:13:24 QUEUE: ball.0 (thread) response core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+02.11 15:13:24 TIME: core/server.query : 1.25 ms
+02.11 15:13:27 TIMER: Clans cache...
+02.11 15:13:27 TIMER: Clans cache: 0ms
+02.11 15:13:32 NET: ball.0 (thread) request core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'dood' AND Password = E'1', _type => core/server.query }
+02.11 15:13:32 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'dood' AND Password = E'1'
+02.11 15:13:32 QUEUE: ball.0 (thread) response core/server.query { list => {{ name => dood, networkid => , isbanned => false, id => 3 }}, errorCode => ok, _type => core/server.query }
+02.11 15:13:32 TIME: core/server.query : 1.16 ms
+02.11 15:13:32 NET: ball.0 (thread) request core/user.isOnlineID { id => 3, _type => core/user.isOnlineID }
+02.11 15:13:32 QUEUE: ball.0 (thread) response core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+02.11 15:13:32 TIME: core/user.isOnlineID : 0.2 ms
+02.11 15:13:32 NET: ball.0 (thread) request core/cache.get { type => user, v => -1, id => 3, _type => core/cache.get }
+02.11 15:13:32 STATS: cache [user], get [13 calls, 2 cache hits, 11 cache misses, 0 same version, 0 not found]
+02.11 15:13:32 STATS: cache [user], segments [59 calls, 37 hits, 21 misses]
+02.11 15:13:32 STATS: cache [user], database [8885 calls, 11 reads, 20 writes]
+02.11 15:13:32 STATS: cache [user], lock [13 calls, 13 attempts, 0 failures]
+02.11 15:13:32 READDB: SELECT * FROM Users WHERE ID = 3
+02.11 15:13:32 STATS: cache manager [1], get [24 calls, total 0.02 sec spent, avg 0.94 ms]
+02.11 15:13:32 STATS: cache manager [1], update [32 calls, total 0 sec spent, avg 0.14 ms]
+02.11 15:13:32 QUEUE: ball.0 (thread) response core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {name => dood, deleted => false, email => , networktype =>   , password => 1, isbanned => false, regdate => 2016-11-02 13:49:48.726683+03, language => en, networkid => , params => { inventory => { list => [] }, vars => {}, attrs => { _lastTime.24hr => 1478083796, lastLoginDate => 307, lastLoadDate => 1103 }, effects => { list => [] } }}, version => 0, id => 3 } }
+02.11 15:13:32 TIME: core/cache.get : 1.65 ms
+02.11 15:13:32 NET: ball.0 (thread) request core/cache.get { type => questdata, v => -1, id => 3, _type => core/cache.get }
+02.11 15:13:32 STATS: cache [questdata], get [11 calls, 1 cache hits, 10 cache misses, 0 same version, 0 not found]
+02.11 15:13:32 STATS: cache [questdata], segments [45 calls, 24 hits, 20 misses]
+02.11 15:13:32 STATS: cache [questdata], database [8885 calls, 10 reads, 11 writes]
+02.11 15:13:32 STATS: cache [questdata], lock [12 calls, 12 attempts, 0 failures]
+02.11 15:13:32 READDB: SELECT * FROM UserQuests WHERE ID = 3
+02.11 15:13:32 QUEUE: ball.0 (thread) response core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => { quests => { list => [] } }}, version => 0, id => 3 } }
+02.11 15:13:32 TIME: core/cache.get : 0.85 ms
+02.11 15:13:32 NET: ball.0 (thread) request core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 3, _type => core/user.loginPost, ipAddr => 172.16.20.227 }
+02.11 15:13:32 QUEUE: ball.0 (thread) response core/user.loginPost { _type => core/user.loginPost }
+02.11 15:13:32 TIME: core/user.loginPost : 0.07 ms
+02.11 15:13:39 NET: ball.0 (thread) request core/server.query { q => SELECT id FROM battle WHERE firstid=3 OR secondid=3 AND finished <> true, _type => core/server.query }
+02.11 15:13:39 DB: SELECT id FROM battle WHERE firstid=3 OR secondid=3 AND finished <> true
+02.11 15:13:39 QUEUE: ball.0 (thread) response core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+02.11 15:13:39 TIME: core/server.query : 0.81 ms
+02.11 15:13:39 NET: ball.0 (thread) request ball/cache.battle.infoRoom { roomId => 0, _type => ball/cache.battle.infoRoom }
+02.11 15:13:39 STATS: cache [battle], get [12 calls, 0 cache hits, 11 cache misses, 0 same version, 11 not found]
+02.11 15:13:39 STATS: cache [battle], segments [12 calls, 0 hits, 11 misses]
+02.11 15:13:39 STATS: cache [battle], database [8892 calls, 11 reads, 0 writes]
+02.11 15:13:39 STATS: cache [battle], lock [0 calls, 0 attempts, 0 failures]
+02.11 15:13:39 READDB: SELECT * FROM Battle WHERE ID = 0
+02.11 15:13:39 TRACE: ball/cache.battle.infoRoom : Invalid field access : get
+02.11 15:13:39 TRACE: ball/cache.battle.infoRoom : 
+Called from modules/BallCache.hx line 70
+Called from modules/BallCache.hx line 63
+Called from modules/BallCache.hx line 47
+Called from snipe/cache/CacheServer.hx line 487
+02.11 15:13:39 QUEUE: ball.0 (thread) response ball/cache.battle.infoRoom { errorCode => _requestException, _type => ball/cache.battle.infoRoom }
+02.11 15:13:39 NET: ball.0 (thread) request core/cache.update { diff => {language => en}, type => user, unlock => true, id => 3, _type => core/cache.update }
+02.11 15:13:39 QUEUE: ball.0 (thread) response core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+02.11 15:13:39 TIME: core/cache.update : 0.06 ms
+02.11 15:13:39 NET: ball.0 (thread) request core/cache.update { diff => {}, type => questdata, unlock => true, id => 3, _type => core/cache.update }
+02.11 15:13:39 QUEUE: ball.0 (thread) response core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+02.11 15:13:39 TIME: core/cache.update : 0.05 ms
+02.11 15:13:39 NET: ball.0 (thread) request core/user.logoutPost { networkid => , networktype =>   , id => 3, _type => core/user.logoutPost }
+02.11 15:13:39 QUEUE: ball.0 (thread) response core/user.logoutPost { errorCode => ok, _type => core/user.logoutPost }
+02.11 15:13:39 TIME: core/user.logoutPost : 0.04 ms
+02.11 15:13:40 WRITEDB: UPDATE Users SET name = E'dood', deleted = E'false', email = E'', networktype = E'  ', password = E'1', isbanned = E'false', regdate = E'2016-11-02 13:49:48.726683+03', language = E'en', networkid = E'', params = E'{"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1478083796,"lastLoginDate":307,"lastLoadDate":1103},"effects":{"list":[]}}' WHERE ID = 3
+02.11 15:13:40 WRITEDB: UPDATE UserQuests SET params = E'oy6:questsoy4:listahgg' WHERE ID = 3
+02.11 15:13:50 BLOCKREMOVE: user 3 removed
+02.11 15:13:50 BLOCKREMOVE: questdata 3 removed
+02.11 15:13:54 NET: ball.0 (thread) request core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'dooderson' AND Password = E'2', _type => core/server.query }
+02.11 15:13:54 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'dooderson' AND Password = E'2'
+02.11 15:13:54 QUEUE: ball.0 (thread) response core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+02.11 15:13:54 TIME: core/server.query : 1.01 ms
+02.11 15:14:01 NET: ball.0 (thread) request core/server.query { q => SELECT ID FROM Users WHERE Name = E'dooderson', _type => core/server.query }
+02.11 15:14:01 DB: SELECT ID FROM Users WHERE Name = E'dooderson'
+02.11 15:14:01 QUEUE: ball.0 (thread) response core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+02.11 15:14:01 TIME: core/server.query : 1.33 ms
+02.11 15:14:01 NET: ball.0 (thread) request core/server.query { q => SELECT nextval('Users_id_seq') AS id, _type => core/server.query }
+02.11 15:14:01 DB: SELECT nextval('Users_id_seq') AS id
+02.11 15:14:01 QUEUE: ball.0 (thread) response core/server.query { list => {{ id => 4 }}, errorCode => ok, _type => core/server.query }
+02.11 15:14:01 TIME: core/server.query : 17.1 ms
+02.11 15:14:01 NET: ball.0 (thread) request core/user.register { password => 2, name => dooderson, fullParams => { password => 2, name => dooderson, networkid => , networktype => , messageType => user.register, id => 4 }, networkid => , connectionID => 46389408, networktype => , email => , id => 4, _type => core/user.register }
+02.11 15:14:01 QUEUE: ball.0 (thread) response core/user.register { errorCode => ok, _type => core/user.register }
+02.11 15:14:01 TIME: core/user.register : 0.1 ms
+02.11 15:14:01 ASYNCDB: INSERT INTO Users (ID, Name, NetworkID, NetworkType, Password, Email, RegDate) VALUES (4,E'dooderson',E'',E'',E'2',E'', now())
+02.11 15:14:01 ASYNCDB: INSERT INTO UserRatings (UserID, Points) VALUES (4, 0)
+02.11 15:14:01 READDB: SELECT * FROM Users WHERE ID = 4
+02.11 15:14:01 READDB: SELECT * FROM Users WHERE ID = 1
+02.11 15:14:01 READDB: SELECT ID FROM UserQuests WHERE ID = 4
+02.11 15:14:01 READDB: INSERT INTO UserQuests (ID) VALUES (4)
+02.11 15:14:01 QUEUE: ball.0 (thread) response core/user.registerResponse { password => 2, name => dooderson, _isNotify => true, fullParams => { password => 2, name => dooderson, networkid => , networktype => , messageType => user.register, id => 4 }, networkid => , connectionID => 46389408, networktype => , email => , id => 4, _type => core/user.registerResponse }
+02.11 15:14:06 WRITEDB: UPDATE Users SET name = E'dooderson', deleted = E'false', email = E'', networktype = E'  ', password = E'2', isbanned = E'false', regdate = E'2016-11-02 15:14:01.214274+03', language = E'  ', networkid = E'', params = E'{"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}' WHERE ID = 4
+02.11 15:14:11 BLOCKREMOVE: user 1 removed
+02.11 15:14:16 BLOCKREMOVE: user 4 removed
+02.11 15:14:27 TIMER: Clans cache...
+02.11 15:14:27 TIMER: Clans cache: 0ms
+02.11 15:14:27 TIMER: Clans cache...
+02.11 15:14:27 TIMER: Clans cache: 0ms
+02.11 15:14:27 TIMER: Clans cache...
+02.11 15:14:27 TIMER: Clans cache: 0ms
+02.11 15:14:27 TIMER: Clans cache...
+02.11 15:14:27 TIMER: Clans cache: 0ms
+02.11 15:14:27 TIMER: Clans cache...
+02.11 15:14:27 TIMER: Clans cache: 0ms
+02.11 15:19:03 NET: ball.0 (thread) request core/server.query { q => SELECT ID FROM Users WHERE Name = E'dooderson', _type => core/server.query }
+02.11 15:19:03 DB: SELECT ID FROM Users WHERE Name = E'dooderson'
+02.11 15:19:03 QUEUE: ball.0 (thread) response core/server.query { list => {{ id => 4 }}, errorCode => ok, _type => core/server.query }
+02.11 15:19:03 TIME: core/server.query : 1.42 ms
+02.11 15:19:06 NET: ball.0 (thread) request core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'dooderson' AND Password = E'2', _type => core/server.query }
+02.11 15:19:06 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'dooderson' AND Password = E'2'
+02.11 15:19:06 QUEUE: ball.0 (thread) response core/server.query { list => {{ name => dooderson, networkid => , isbanned => false, id => 4 }}, errorCode => ok, _type => core/server.query }
+02.11 15:19:06 TIME: core/server.query : 1.4 ms
+02.11 15:19:06 NET: ball.0 (thread) request core/user.isOnlineID { id => 4, _type => core/user.isOnlineID }
+02.11 15:19:06 QUEUE: ball.0 (thread) response core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+02.11 15:19:06 TIME: core/user.isOnlineID : 0.13 ms
+02.11 15:19:06 NET: ball.0 (thread) request core/cache.get { type => user, v => -1, id => 4, _type => core/cache.get }
+02.11 15:19:06 STATS: cache [user], get [16 calls, 2 cache hits, 14 cache misses, 0 same version, 0 not found]
+02.11 15:19:06 STATS: cache [user], segments [68 calls, 41 hits, 26 misses]
+02.11 15:19:06 STATS: cache [user], database [9219 calls, 14 reads, 22 writes]
+02.11 15:19:06 STATS: cache [user], lock [15 calls, 15 attempts, 0 failures]
+02.11 15:19:06 READDB: SELECT * FROM Users WHERE ID = 4
+02.11 15:19:06 STATS: cache manager [1], get [27 calls, total 0.03 sec spent, avg 0.95 ms]
+02.11 15:19:06 STATS: cache manager [1], update [35 calls, total 0 sec spent, avg 0.13 ms]
+02.11 15:19:06 QUEUE: ball.0 (thread) response core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {name => dooderson, deleted => false, email => , networktype =>   , password => 2, isbanned => false, regdate => 2016-11-02 15:14:01.214274+03, language =>   , networkid => , params => { inventory => { list => [] }, vars => {}, attrs => {}, effects => { list => [] } }}, version => 0, id => 4 } }
+02.11 15:19:06 TIME: core/cache.get : 1.64 ms
+02.11 15:19:06 NET: ball.0 (thread) request core/cache.get { type => questdata, v => -1, id => 4, _type => core/cache.get }
+02.11 15:19:06 STATS: cache [questdata], get [12 calls, 1 cache hits, 11 cache misses, 0 same version, 0 not found]
+02.11 15:19:06 STATS: cache [questdata], segments [49 calls, 26 hits, 22 misses]
+02.11 15:19:06 STATS: cache [questdata], database [9219 calls, 11 reads, 12 writes]
+02.11 15:19:06 STATS: cache [questdata], lock [13 calls, 13 attempts, 0 failures]
+02.11 15:19:06 READDB: SELECT * FROM UserQuests WHERE ID = 4
+02.11 15:19:06 QUEUE: ball.0 (thread) response core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => {}}, version => 0, id => 4 } }
+02.11 15:19:06 TIME: core/cache.get : 1.1 ms
+02.11 15:19:06 NET: ball.0 (thread) request core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 4, _type => core/user.loginPost, ipAddr => 172.16.20.227 }
+02.11 15:19:06 QUEUE: ball.0 (thread) response core/user.loginPost { _type => core/user.loginPost }
+02.11 15:19:06 TIME: core/user.loginPost : 0.07 ms
+02.11 15:19:06 NET: ball.0 (thread) request core/server.query { q => SELECT ID FROM TempUserLogins WHERE UserID = 4 AND Date = 'today'::timestamp, _type => core/server.query }
+02.11 15:19:06 DB: SELECT ID FROM TempUserLogins WHERE UserID = 4 AND Date = 'today'::timestamp
+02.11 15:19:06 QUEUE: ball.0 (thread) response core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+02.11 15:19:06 TIME: core/server.query : 0.7 ms
+02.11 15:19:07 PENDING: INSERT INTO TempUserLogins (UserID, Date) VALUES (4, 'today'::timestamp)
+02.11 15:19:11 NET: ball.0 (thread) request core/server.query { q => SELECT id FROM battle WHERE firstid=4 OR secondid=4 AND finished <> true, _type => core/server.query }
+02.11 15:19:11 DB: SELECT id FROM battle WHERE firstid=4 OR secondid=4 AND finished <> true
+02.11 15:19:11 QUEUE: ball.0 (thread) response core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+02.11 15:19:11 TIME: core/server.query : 0.76 ms
+02.11 15:19:11 NET: ball.0 (thread) request ball/cache.battle.infoRoom { roomId => 0, _type => ball/cache.battle.infoRoom }
+02.11 15:19:11 STATS: cache [battle], get [13 calls, 0 cache hits, 12 cache misses, 0 same version, 12 not found]
+02.11 15:19:11 STATS: cache [battle], segments [13 calls, 0 hits, 12 misses]
+02.11 15:19:11 STATS: cache [battle], database [9224 calls, 12 reads, 0 writes]
+02.11 15:19:11 STATS: cache [battle], lock [0 calls, 0 attempts, 0 failures]
+02.11 15:19:11 READDB: SELECT * FROM Battle WHERE ID = 0
+02.11 15:19:11 TRACE: ball/cache.battle.infoRoom : Invalid field access : get
+02.11 15:19:11 TRACE: ball/cache.battle.infoRoom : 
+Called from modules/BallCache.hx line 70
+Called from modules/BallCache.hx line 63
+Called from modules/BallCache.hx line 47
+Called from snipe/cache/CacheServer.hx line 487
+02.11 15:19:11 QUEUE: ball.0 (thread) response ball/cache.battle.infoRoom { errorCode => _requestException, _type => ball/cache.battle.infoRoom }
+02.11 15:19:11 NET: ball.0 (thread) request core/cache.update { diff => {language => en, params => { attrs => { _lastTime.24hr => 1478089146, lastLoginDate => 307, lastLoadDate => 1103 } }}, type => user, unlock => true, id => 4, _type => core/cache.update }
+02.11 15:19:11 QUEUE: ball.0 (thread) response core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+02.11 15:19:11 TIME: core/cache.update : 0.23 ms
+02.11 15:19:11 NET: ball.0 (thread) request core/cache.update { diff => {}, type => questdata, unlock => true, id => 4, _type => core/cache.update }
+02.11 15:19:11 QUEUE: ball.0 (thread) response core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+02.11 15:19:11 TIME: core/cache.update : 0.05 ms
+02.11 15:19:11 NET: ball.0 (thread) request core/user.logoutPost { networkid => , networktype =>   , id => 4, _type => core/user.logoutPost }
+02.11 15:19:11 QUEUE: ball.0 (thread) response core/user.logoutPost { errorCode => ok, _type => core/user.logoutPost }
+02.11 15:19:11 TIME: core/user.logoutPost : 0.05 ms
+02.11 15:19:12 WRITEDB: UPDATE Users SET name = E'dooderson', deleted = E'false', email = E'', networktype = E'  ', password = E'2', isbanned = E'false', regdate = E'2016-11-02 15:14:01.214274+03', language = E'en', networkid = E'', params = E'{"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1478089146,"lastLoginDate":307,"lastLoadDate":1103},"effects":{"list":[]}}' WHERE ID = 4
+02.11 15:19:12 WRITEDB: UPDATE UserQuests SET params = E'oy6:questsoy4:listahgg' WHERE ID = 4
+02.11 15:19:22 BLOCKREMOVE: user 4 removed
+02.11 15:19:22 BLOCKREMOVE: questdata 4 removed
+02.11 15:19:27 TIMER: Clans cache...
+02.11 15:19:27 TIMER: Clans cache: 0ms
+02.11 15:19:31 NET: ball.0 (thread) request core/server.query { q => SELECT ID FROM Users WHERE Name = E'dood', _type => core/server.query }
+02.11 15:19:31 DB: SELECT ID FROM Users WHERE Name = E'dood'
+02.11 15:19:31 QUEUE: ball.0 (thread) response core/server.query { list => {{ id => 3 }}, errorCode => ok, _type => core/server.query }
+02.11 15:19:31 TIME: core/server.query : 1.03 ms
+02.11 15:19:37 NET: ball.0 (thread) request core/server.query { q => SELECT ID FROM Users WHERE Name = E'dood', _type => core/server.query }
+02.11 15:19:37 DB: SELECT ID FROM Users WHERE Name = E'dood'
+02.11 15:19:37 QUEUE: ball.0 (thread) response core/server.query { list => {{ id => 3 }}, errorCode => ok, _type => core/server.query }
+02.11 15:19:37 TIME: core/server.query : 1.21 ms
+02.11 15:19:38 NET: ball.0 (thread) request core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'dood' AND Password = E'12', _type => core/server.query }
+02.11 15:19:38 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'dood' AND Password = E'12'
+02.11 15:19:38 QUEUE: ball.0 (thread) response core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+02.11 15:19:38 TIME: core/server.query : 0.95 ms
+02.11 15:19:51 NET: ball.0 (thread) request core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'dooderson' AND Password = E'12', _type => core/server.query }
+02.11 15:19:51 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'dooderson' AND Password = E'12'
+02.11 15:19:51 QUEUE: ball.0 (thread) response core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+02.11 15:19:51 TIME: core/server.query : 0.56 ms
+02.11 15:19:59 NET: ball.0 (thread) request core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'dood' AND Password = E'1', _type => core/server.query }
+02.11 15:19:59 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'dood' AND Password = E'1'
+02.11 15:19:59 QUEUE: ball.0 (thread) response core/server.query { list => {{ name => dood, networkid => , isbanned => false, id => 3 }}, errorCode => ok, _type => core/server.query }
+02.11 15:19:59 TIME: core/server.query : 1.4 ms
+02.11 15:19:59 NET: ball.0 (thread) request core/user.isOnlineID { id => 3, _type => core/user.isOnlineID }
+02.11 15:19:59 QUEUE: ball.0 (thread) response core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+02.11 15:19:59 TIME: core/user.isOnlineID : 0.15 ms
+02.11 15:19:59 NET: ball.0 (thread) request core/cache.get { type => user, v => -1, id => 3, _type => core/cache.get }
+02.11 15:19:59 READDB: SELECT * FROM Users WHERE ID = 3
+02.11 15:19:59 QUEUE: ball.0 (thread) response core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {name => dood, deleted => false, email => , networktype =>   , password => 1, isbanned => false, regdate => 2016-11-02 13:49:48.726683+03, language => en, networkid => , params => { inventory => { list => [] }, vars => {}, attrs => { _lastTime.24hr => 1478083796, lastLoginDate => 307, lastLoadDate => 1103 }, effects => { list => [] } }}, version => 0, id => 3 } }
+02.11 15:19:59 TIME: core/cache.get : 1.43 ms
+02.11 15:19:59 NET: ball.0 (thread) request core/cache.get { type => questdata, v => -1, id => 3, _type => core/cache.get }
+02.11 15:19:59 READDB: SELECT * FROM UserQuests WHERE ID = 3
+02.11 15:19:59 QUEUE: ball.0 (thread) response core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => { quests => { list => [] } }}, version => 0, id => 3 } }
+02.11 15:19:59 TIME: core/cache.get : 1.13 ms
+02.11 15:19:59 NET: ball.0 (thread) request core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 3, _type => core/user.loginPost, ipAddr => 172.16.20.227 }
+02.11 15:19:59 QUEUE: ball.0 (thread) response core/user.loginPost { _type => core/user.loginPost }
+02.11 15:19:59 TIME: core/user.loginPost : 0.09 ms
+02.11 15:19:59 NET: ball.0 (thread) request core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'Aimer' AND Password = E'kO2YJdf', _type => core/server.query }
+02.11 15:19:59 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'Aimer' AND Password = E'kO2YJdf'
+02.11 15:19:59 QUEUE: ball.0 (thread) response core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+02.11 15:19:59 TIME: core/server.query : 0.63 ms
+02.11 15:20:07 NET: ball.0 (thread) request core/server.query { q => SELECT id FROM battle WHERE firstid=3 OR secondid=3 AND finished <> true, _type => core/server.query }
+02.11 15:20:07 DB: SELECT id FROM battle WHERE firstid=3 OR secondid=3 AND finished <> true
+02.11 15:20:07 QUEUE: ball.0 (thread) response core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+02.11 15:20:07 TIME: core/server.query : 1.91 ms
+02.11 15:20:07 NET: ball.0 (thread) request ball/cache.battle.infoRoom { roomId => 0, _type => ball/cache.battle.infoRoom }
+02.11 15:20:07 READDB: SELECT * FROM Battle WHERE ID = 0
+02.11 15:20:07 TRACE: ball/cache.battle.infoRoom : Invalid field access : get
+02.11 15:20:07 TRACE: ball/cache.battle.infoRoom : 
+Called from modules/BallCache.hx line 70
+Called from modules/BallCache.hx line 63
+Called from modules/BallCache.hx line 47
+Called from snipe/cache/CacheServer.hx line 487
+02.11 15:20:07 QUEUE: ball.0 (thread) response ball/cache.battle.infoRoom { errorCode => _requestException, _type => ball/cache.battle.infoRoom }
+02.11 15:20:07 NET: ball.0 (thread) request core/cache.update { diff => {language => en}, type => user, unlock => true, id => 3, _type => core/cache.update }
+02.11 15:20:07 STATS: cache [user], get [18 calls, 2 cache hits, 16 cache misses, 0 same version, 0 not found]
+02.11 15:20:07 STATS: cache [user], segments [74 calls, 43 hits, 30 misses]
+02.11 15:20:07 STATS: cache [user], database [9279 calls, 16 reads, 23 writes]
+02.11 15:20:07 STATS: cache [user], lock [16 calls, 16 attempts, 0 failures]
+02.11 15:20:07 STATS: cache manager [1], get [30 calls, total 0.03 sec spent, avg 0.96 ms]
+02.11 15:20:07 STATS: cache manager [1], update [38 calls, total 0.01 sec spent, avg 0.13 ms]
+02.11 15:20:07 QUEUE: ball.0 (thread) response core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+02.11 15:20:07 TIME: core/cache.update : 0.54 ms
+02.11 15:20:07 NET: ball.0 (thread) request core/cache.update { diff => {}, type => questdata, unlock => true, id => 3, _type => core/cache.update }
+02.11 15:20:07 STATS: cache [questdata], get [14 calls, 1 cache hits, 13 cache misses, 0 same version, 0 not found]
+02.11 15:20:07 STATS: cache [questdata], segments [55 calls, 28 hits, 26 misses]
+02.11 15:20:07 STATS: cache [questdata], database [9279 calls, 13 reads, 13 writes]
+02.11 15:20:07 STATS: cache [questdata], lock [14 calls, 14 attempts, 0 failures]
+02.11 15:20:07 QUEUE: ball.0 (thread) response core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+02.11 15:20:07 TIME: core/cache.update : 0.6 ms
+02.11 15:20:07 NET: ball.0 (thread) request core/user.logoutPost { networkid => , networktype =>   , id => 3, _type => core/user.logoutPost }
+02.11 15:20:07 QUEUE: ball.0 (thread) response core/user.logoutPost { errorCode => ok, _type => core/user.logoutPost }
+02.11 15:20:07 TIME: core/user.logoutPost : 0.2 ms
+02.11 15:20:07 WRITEDB: UPDATE Users SET name = E'dood', deleted = E'false', email = E'', networktype = E'  ', password = E'1', isbanned = E'false', regdate = E'2016-11-02 13:49:48.726683+03', language = E'en', networkid = E'', params = E'{"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1478083796,"lastLoginDate":307,"lastLoadDate":1103},"effects":{"list":[]}}' WHERE ID = 3
+02.11 15:20:07 WRITEDB: UPDATE UserQuests SET params = E'oy6:questsoy4:listahgg' WHERE ID = 3
+02.11 15:20:17 BLOCKREMOVE: user 3 removed
+02.11 15:20:17 BLOCKREMOVE: questdata 3 removed
+02.11 15:20:27 TIMER: Clans cache...
+02.11 15:20:27 TIMER: Clans cache: 0ms
+02.11 15:20:27 TIMER: Clans cache...
+02.11 15:20:27 TIMER: Clans cache: 0ms
+02.11 15:20:27 TIMER: Clans cache...
+02.11 15:20:27 TIMER: Clans cache: 0ms
+02.11 15:20:27 TIMER: Clans cache...
+02.11 15:20:27 TIMER: Clans cache: 0ms
+02.11 15:20:27 TIMER: Clans cache...
+02.11 15:20:27 TIMER: Clans cache: 0ms
+02.11 15:20:27 TIMER: Clans cache...
+02.11 15:20:27 TIMER: Clans cache: 0ms
+02.11 15:20:27 TIMER: Clans cache...
+02.11 15:20:27 TIMER: Clans cache: 0ms
+02.11 15:20:27 TIMER: Clans cache...
+02.11 15:20:27 TIMER: Clans cache: 0ms
+02.11 15:20:27 TIMER: Clans cache...
+02.11 15:20:27 TIMER: Clans cache: 0ms
+02.11 15:20:27 TIMER: Clans cache...
+02.11 15:20:27 TIMER: Clans cache: 0ms
+02.11 15:20:27 TIMER: Clans cache...
+02.11 15:20:27 TIMER: Clans cache: 0ms
+02.11 15:20:27 TIMER: Clans cache...
+02.11 15:20:27 TIMER: Clans cache: 0ms
+02.11 15:20:27 TIMER: Clans cache...
+02.11 15:20:27 TIMER: Clans cache: 0ms
+02.11 15:20:27 TIMER: Clans cache...
+02.11 15:20:27 TIMER: Clans cache: 0ms
+02.11 15:20:27 TIMER: Clans cache...
+02.11 15:20:27 TIMER: Clans cache: 0ms
+02.11 15:20:27 TIMER: Clans cache...
+02.11 15:20:27 TIMER: Clans cache: 0ms
+02.11 15:20:27 TIMER: Clans cache...
+02.11 15:20:27 TIMER: Clans cache: 0ms
+02.11 15:20:27 TIMER: Clans cache...
+02.11 15:20:27 TIMER: Clans cache: 0ms
+02.11 15:20:27 TIMER: Clans cache...
+02.11 15:20:27 TIMER: Clans cache: 0ms
+02.11 15:20:27 TIMER: Clans cache...
+02.11 15:20:27 TIMER: Clans cache: 0ms
+02.11 15:20:27 TIMER: Clans cache...
+02.11 15:20:27 TIMER: Clans cache: 0ms
+02.11 15:20:27 TIMER: Clans cache...
+02.11 15:20:27 TIMER: Clans cache: 0ms
+02.11 15:20:27 TIMER: Clans cache...
+02.11 15:20:27 TIMER: Clans cache: 0ms
+02.11 15:20:27 TIMER: Clans cache...
+02.11 15:20:27 TIMER: Clans cache: 0ms
+02.11 15:20:27 TIMER: Clans cache...
+02.11 15:20:27 TIMER: Clans cache: 0ms
+02.11 15:20:27 TIMER: Clans cache...
+02.11 15:20:27 TIMER: Clans cache: 0ms
+02.11 15:20:27 TIMER: Clans cache...
+02.11 15:20:27 TIMER: Clans cache: 0ms
+02.11 15:20:27 TIMER: Clans cache...
+02.11 15:20:27 TIMER: Clans cache: 0ms
+02.11 15:20:27 TIMER: Clans cache...
+02.11 15:20:27 TIMER: Clans cache: 0ms
+02.11 15:20:27 TIMER: Clans cache...
+02.11 15:20:27 TIMER: Clans cache: 0ms
+02.11 15:20:27 TIMER: Clans cache...
+02.11 15:20:27 TIMER: Clans cache: 0ms
+02.11 15:20:27 TIMER: Clans cache...
+02.11 15:20:27 TIMER: Clans cache: 0ms
+02.11 15:20:27 TIMER: Clans cache...
+02.11 15:20:27 TIMER: Clans cache: 0ms
+02.11 15:20:27 TIMER: Clans cache...
+02.11 15:20:27 TIMER: Clans cache: 0ms
+02.11 15:20:27 TIMER: Clans cache...
+02.11 15:20:27 TIMER: Clans cache: 0ms
+02.11 15:20:27 TIMER: Clans cache...
+02.11 15:20:27 TIMER: Clans cache: 0ms
+02.11 15:20:27 TIMER: Clans cache...
+02.11 15:20:27 TIMER: Clans cache: 0ms
+02.11 15:20:27 TIMER: Clans cache...
+02.11 15:20:27 TIMER: Clans cache: 0ms
+02.11 15:57:49 NET: ball.0 (thread) request core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'dood' AND Password = E'1', _type => core/server.query }
+02.11 15:57:49 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'dood' AND Password = E'1'
+02.11 15:57:49 QUEUE: ball.0 (thread) response core/server.query { list => {{ name => dood, networkid => , isbanned => false, id => 3 }}, errorCode => ok, _type => core/server.query }
+02.11 15:57:49 TIME: core/server.query : 0.94 ms
+02.11 15:57:49 NET: ball.0 (thread) request core/user.isOnlineID { id => 3, _type => core/user.isOnlineID }
+02.11 15:57:49 QUEUE: ball.0 (thread) response core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+02.11 15:57:49 TIME: core/user.isOnlineID : 0.14 ms
+02.11 15:57:49 NET: ball.0 (thread) request core/cache.get { type => user, v => -1, id => 3, _type => core/cache.get }
+02.11 15:57:49 STATS: cache [user], get [18 calls, 2 cache hits, 16 cache misses, 0 same version, 0 not found]
+02.11 15:57:49 STATS: cache [user], segments [76 calls, 45 hits, 30 misses]
+02.11 15:57:49 STATS: cache [user], database [11541 calls, 16 reads, 24 writes]
+02.11 15:57:49 STATS: cache [user], lock [17 calls, 17 attempts, 0 failures]
+02.11 15:57:49 READDB: SELECT * FROM Users WHERE ID = 3
+02.11 15:57:49 STATS: cache manager [1], get [31 calls, total 0.03 sec spent, avg 0.97 ms]
+02.11 15:57:49 STATS: cache manager [1], update [39 calls, total 0.01 sec spent, avg 0.14 ms]
+02.11 15:57:49 QUEUE: ball.0 (thread) response core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {name => dood, deleted => false, email => , networktype =>   , password => 1, isbanned => false, regdate => 2016-11-02 13:49:48.726683+03, language => en, networkid => , params => { inventory => { list => [] }, vars => {}, attrs => { _lastTime.24hr => 1478083796, lastLoginDate => 307, lastLoadDate => 1103 }, effects => { list => [] } }}, version => 0, id => 3 } }
+02.11 15:57:49 TIME: core/cache.get : 1.65 ms
+02.11 15:57:49 NET: ball.0 (thread) request core/cache.get { type => questdata, v => -1, id => 3, _type => core/cache.get }
+02.11 15:57:49 STATS: cache [questdata], get [14 calls, 1 cache hits, 13 cache misses, 0 same version, 0 not found]
+02.11 15:57:49 STATS: cache [questdata], segments [57 calls, 30 hits, 26 misses]
+02.11 15:57:49 STATS: cache [questdata], database [11541 calls, 13 reads, 14 writes]
+02.11 15:57:49 STATS: cache [questdata], lock [15 calls, 15 attempts, 0 failures]
+02.11 15:57:49 READDB: SELECT * FROM UserQuests WHERE ID = 3
+02.11 15:57:49 QUEUE: ball.0 (thread) response core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => { quests => { list => [] } }}, version => 0, id => 3 } }
+02.11 15:57:49 TIME: core/cache.get : 0.79 ms
+02.11 15:57:49 NET: ball.0 (thread) request core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 3, _type => core/user.loginPost, ipAddr => 172.16.20.227 }
+02.11 15:57:49 QUEUE: ball.0 (thread) response core/user.loginPost { _type => core/user.loginPost }
+02.11 15:57:49 TIME: core/user.loginPost : 0.05 ms
+02.11 15:57:57 NET: ball.0 (thread) request core/cache.update { diff => {language => en}, type => user, unlock => false, id => 3, _type => core/cache.update }
+02.11 15:57:57 QUEUE: ball.0 (thread) response core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+02.11 15:57:57 TIME: core/cache.update : 0.18 ms
+02.11 15:57:57 WRITEDB: UPDATE Users SET name = E'dood', deleted = E'false', email = E'', networktype = E'  ', password = E'1', isbanned = E'false', regdate = E'2016-11-02 13:49:48.726683+03', language = E'en', networkid = E'', params = E'{"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1478083796,"lastLoginDate":307,"lastLoadDate":1103},"effects":{"list":[]}}' WHERE ID = 3
+02.11 15:58:24 NET: ball.0 (thread) request core/server.query { q => SELECT id FROM battle WHERE firstid=3 OR secondid=3 AND finished <> true, _type => core/server.query }
+02.11 15:58:24 DB: SELECT id FROM battle WHERE firstid=3 OR secondid=3 AND finished <> true
+02.11 15:58:24 QUEUE: ball.0 (thread) response core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+02.11 15:58:24 TIME: core/server.query : 0.92 ms
+02.11 15:58:24 NET: ball.0 (thread) request ball/cache.battle.infoRoom { roomId => 0, _type => ball/cache.battle.infoRoom }
+02.11 15:58:24 STATS: cache [battle], get [15 calls, 0 cache hits, 14 cache misses, 0 same version, 14 not found]
+02.11 15:58:24 STATS: cache [battle], segments [15 calls, 0 hits, 14 misses]
+02.11 15:58:24 STATS: cache [battle], database [11576 calls, 14 reads, 0 writes]
+02.11 15:58:24 STATS: cache [battle], lock [0 calls, 0 attempts, 0 failures]
+02.11 15:58:24 READDB: SELECT * FROM Battle WHERE ID = 0
+02.11 15:58:24 TRACE: ball/cache.battle.infoRoom : Invalid field access : get
+02.11 15:58:24 TRACE: ball/cache.battle.infoRoom : 
+Called from modules/BallCache.hx line 70
+Called from modules/BallCache.hx line 63
+Called from modules/BallCache.hx line 47
+Called from snipe/cache/CacheServer.hx line 487
+02.11 15:58:24 QUEUE: ball.0 (thread) response ball/cache.battle.infoRoom { errorCode => _requestException, _type => ball/cache.battle.infoRoom }
+02.11 15:58:24 NET: ball.0 (thread) request core/cache.update { diff => {}, type => user, unlock => true, id => 3, _type => core/cache.update }
+02.11 15:58:24 QUEUE: ball.0 (thread) response core/cache.update { errorCode => ok, version => 2, _type => core/cache.update }
+02.11 15:58:24 TIME: core/cache.update : 0.15 ms
+02.11 15:58:24 NET: ball.0 (thread) request core/cache.update { diff => {}, type => questdata, unlock => true, id => 3, _type => core/cache.update }
+02.11 15:58:24 QUEUE: ball.0 (thread) response core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+02.11 15:58:24 TIME: core/cache.update : 0.14 ms
+02.11 15:58:24 NET: ball.0 (thread) request core/user.logoutPost { networkid => , networktype =>   , id => 3, _type => core/user.logoutPost }
+02.11 15:58:24 QUEUE: ball.0 (thread) response core/user.logoutPost { errorCode => ok, _type => core/user.logoutPost }
+02.11 15:58:24 TIME: core/user.logoutPost : 0.15 ms
+02.11 15:58:24 WRITEDB: UPDATE Users SET name = E'dood', deleted = E'false', email = E'', networktype = E'  ', password = E'1', isbanned = E'false', regdate = E'2016-11-02 13:49:48.726683+03', language = E'en', networkid = E'', params = E'{"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1478083796,"lastLoginDate":307,"lastLoadDate":1103},"effects":{"list":[]}}' WHERE ID = 3
+02.11 15:58:24 WRITEDB: UPDATE UserQuests SET params = E'oy6:questsoy4:listahgg' WHERE ID = 3
+02.11 15:58:27 TIMER: Clans cache...
+02.11 15:58:27 TIMER: Clans cache: 0ms
+02.11 15:58:34 BLOCKREMOVE: user 3 removed
+02.11 15:58:34 BLOCKREMOVE: questdata 3 removed
+02.11 15:58:43 NET: ball.0 (thread) request core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'dood' AND Password = E'1', _type => core/server.query }
+02.11 15:58:43 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'dood' AND Password = E'1'
+02.11 15:58:43 QUEUE: ball.0 (thread) response core/server.query { list => {{ name => dood, networkid => , isbanned => false, id => 3 }}, errorCode => ok, _type => core/server.query }
+02.11 15:58:43 TIME: core/server.query : 0.5 ms
+02.11 15:58:43 NET: ball.0 (thread) request core/user.isOnlineID { id => 3, _type => core/user.isOnlineID }
+02.11 15:58:43 QUEUE: ball.0 (thread) response core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+02.11 15:58:43 TIME: core/user.isOnlineID : 0.04 ms
+02.11 15:58:43 NET: ball.0 (thread) request core/cache.get { type => user, v => -1, id => 3, _type => core/cache.get }
+02.11 15:58:43 READDB: SELECT * FROM Users WHERE ID = 3
+02.11 15:58:43 QUEUE: ball.0 (thread) response core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {name => dood, deleted => false, email => , networktype =>   , password => 1, isbanned => false, regdate => 2016-11-02 13:49:48.726683+03, language => en, networkid => , params => { inventory => { list => [] }, vars => {}, attrs => { _lastTime.24hr => 1478083796, lastLoginDate => 307, lastLoadDate => 1103 }, effects => { list => [] } }}, version => 0, id => 3 } }
+02.11 15:58:43 TIME: core/cache.get : 0.75 ms
+02.11 15:58:43 NET: ball.0 (thread) request core/cache.get { type => questdata, v => -1, id => 3, _type => core/cache.get }
+02.11 15:58:43 READDB: SELECT * FROM UserQuests WHERE ID = 3
+02.11 15:58:43 QUEUE: ball.0 (thread) response core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => { quests => { list => [] } }}, version => 0, id => 3 } }
+02.11 15:58:43 TIME: core/cache.get : 0.38 ms
+02.11 15:58:43 NET: ball.0 (thread) request core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 3, _type => core/user.loginPost, ipAddr => 172.16.20.227 }
+02.11 15:58:43 QUEUE: ball.0 (thread) response core/user.loginPost { _type => core/user.loginPost }
+02.11 15:58:43 TIME: core/user.loginPost : 0.04 ms
+02.11 15:58:52 NET: ball.0 (thread) request core/cache.update { diff => {language => en}, type => user, unlock => false, id => 3, _type => core/cache.update }
+02.11 15:58:52 STATS: cache [user], get [20 calls, 2 cache hits, 18 cache misses, 0 same version, 0 not found]
+02.11 15:58:52 STATS: cache [user], segments [83 calls, 48 hits, 34 misses]
+02.11 15:58:52 STATS: cache [user], database [11604 calls, 18 reads, 26 writes]
+02.11 15:58:52 STATS: cache [user], lock [18 calls, 18 attempts, 0 failures]
+02.11 15:58:52 STATS: cache manager [1], get [34 calls, total 0.03 sec spent, avg 0.93 ms]
+02.11 15:58:52 STATS: cache manager [1], update [43 calls, total 0.01 sec spent, avg 0.14 ms]
+02.11 15:58:52 QUEUE: ball.0 (thread) response core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+02.11 15:58:52 TIME: core/cache.update : 0.42 ms
+02.11 15:58:52 WRITEDB: UPDATE Users SET name = E'dood', deleted = E'false', email = E'', networktype = E'  ', password = E'1', isbanned = E'false', regdate = E'2016-11-02 13:49:48.726683+03', language = E'en', networkid = E'', params = E'{"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1478083796,"lastLoginDate":307,"lastLoadDate":1103},"effects":{"list":[]}}' WHERE ID = 3
+02.11 15:59:27 TIMER: Clans cache...
+02.11 15:59:27 TIMER: Clans cache: 0ms
+02.11 15:59:27 TIMER: Clans cache...
+02.11 15:59:27 TIMER: Clans cache: 0ms
+02.11 15:59:27 PENDING: INSERT INTO LogUserOnlineCount (Date, Min, Max, Avg) VALUES (now(), 0, 1, 0)
+02.11 15:59:27 TIMER: Clans cache...
+02.11 15:59:27 TIMER: Clans cache: 0ms

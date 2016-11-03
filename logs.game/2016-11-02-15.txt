@@ -1,0 +1,675 @@
+02.11 15:00:26 TIMER: Check auto-disconnect...
+02.11 15:00:27 STATS: ball.0 cache, locks:0
+02.11 15:01:26 TIMER: Check auto-disconnect...
+02.11 15:01:27 STATS: ball.0 cache, locks:0
+02.11 15:02:26 TIMER: Check auto-disconnect...
+02.11 15:02:27 STATS: ball.0 cache, locks:0
+02.11 15:03:26 TIMER: Check auto-disconnect...
+02.11 15:03:27 STATS: ball.0 cache, locks:0
+02.11 15:04:26 TIMER: Check auto-disconnect...
+02.11 15:04:27 STATS: ball.0 cache, locks:0
+02.11 15:05:26 TIMER: Check auto-disconnect...
+02.11 15:05:27 STATS: ball.0 cache, locks:0
+02.11 15:06:26 TIMER: Check auto-disconnect...
+02.11 15:06:27 STATS: ball.0 cache, locks:0
+02.11 15:07:26 TIMER: Check auto-disconnect...
+02.11 15:07:27 STATS: ball.0 cache, locks:0
+02.11 15:08:26 TIMER: Check auto-disconnect...
+02.11 15:08:27 STATS: ball.0 cache, locks:0
+02.11 15:09:25 NET: Client (conid:33471886) connected to ball.0 (clients:1)
+02.11 15:09:26 NET: Client (name:null conid:33471886 TCP) disconnected from ball.0 (clients:0)
+02.11 15:09:26 TIMER: Check auto-disconnect...
+02.11 15:09:27 STATS: ball.0 cache, locks:0
+02.11 15:10:10 NET: Client (conid:18536399) connected to ball.0 (clients:1)
+02.11 15:10:22 ++ NET: null req: user.login { password => 123, name => dood, messageType => user.login }
+02.11 15:10:22 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'dood' AND Password = E'123'
+02.11 15:10:22 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'dood' AND Password = E'123', _type => core/server.query }
+02.11 15:10:22 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+02.11 15:10:22 STATS: ball.0 cache connection, 153 calls, total 0.440250396728516 sec spent, avg 2.88 ms
+02.11 15:10:22 == NET: null ret: user.login { type => user.login, errorCode => userNotFound }
+02.11 15:10:26 TIMER: Check auto-disconnect...
+02.11 15:10:27 STATS: ball.0 cache, locks:0
+02.11 15:10:32 ++ NET: null req: user.login { password => 123, name => dood32, messageType => user.login }
+02.11 15:10:32 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'dood32' AND Password = E'123'
+02.11 15:10:32 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'dood32' AND Password = E'123', _type => core/server.query }
+02.11 15:10:32 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+02.11 15:10:32 == NET: null ret: user.login { type => user.login, errorCode => userNotFound }
+02.11 15:10:54 NET: Client (name:null conid:18536399 TCP) disconnected from ball.0 (clients:0)
+02.11 15:11:26 TIMER: Check auto-disconnect...
+02.11 15:11:27 STATS: ball.0 cache, locks:0
+02.11 15:12:26 TIMER: Check auto-disconnect...
+02.11 15:12:27 STATS: ball.0 cache, locks:0
+02.11 15:13:15 NET: Client (conid:82960119) connected to ball.0 (clients:1)
+02.11 15:13:24 ++ NET: null req: user.login { password => dooderson, name => dood, messageType => user.login }
+02.11 15:13:24 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'dood' AND Password = E'dooderson'
+02.11 15:13:24 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'dood' AND Password = E'dooderson', _type => core/server.query }
+02.11 15:13:24 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+02.11 15:13:24 STATS: ball.0 cache connection, 155 calls, total 0.442691326141357 sec spent, avg 2.86 ms
+02.11 15:13:24 == NET: null ret: user.login { type => user.login, errorCode => userNotFound }
+02.11 15:13:26 TIMER: Check auto-disconnect...
+02.11 15:13:27 STATS: ball.0 cache, locks:0
+02.11 15:13:32 ++ NET: null req: user.login { password => 1, name => dood, messageType => user.login }
+02.11 15:13:32 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'dood' AND Password = E'1'
+02.11 15:13:32 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'dood' AND Password = E'1', _type => core/server.query }
+02.11 15:13:32 -<<-: core/server.query { list => {{ name => dood, networkid => , isbanned => false, id => 3 }}, errorCode => ok, _type => core/server.query }
+02.11 15:13:32 ->>-: core/user.isOnlineID { id => 3, _type => core/user.isOnlineID }
+02.11 15:13:32 -<<-: core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+02.11 15:13:32 ->>-: core/cache.get { type => user, v => -1, id => 3, _type => core/cache.get }
+02.11 15:13:32 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {name => dood, deleted => false, email => , networktype =>   , password => 1, isbanned => false, regdate => 2016-11-02 13:49:48.726683+03, language => en, networkid => , params => { inventory => { list => [] }, vars => {}, attrs => { _lastTime.24hr => 1478083796, lastLoginDate => 307, lastLoadDate => 1103 }, effects => { list => [] } }}, version => 0, id => 3 } }
+02.11 15:13:32 ->>-: core/cache.get { type => questdata, v => -1, id => 3, _type => core/cache.get }
+02.11 15:13:32 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => { quests => { list => [] } }}, version => 0, id => 3 } }
+02.11 15:13:32 NET: Client login (conid:82960119, id:3, name:dood)
+02.11 15:13:32 ->>-: core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 3, _type => core/user.loginPost, ipAddr => 172.16.20.227 }
+02.11 15:13:32 -<<-: core/user.loginPost { _type => core/user.loginPost }
+02.11 15:13:32 == NET: dood ret: user.login { name => dood, type => user.login, errorCode => ok, id => 3 }
+02.11 15:13:32 == NET: dood ret: user.join { name => dood, type => user.join }
+02.11 15:13:39 NET: Client (name:dood conid:82960119 TCP) disconnected from ball.0 (clients:0)
+02.11 15:13:39 DB: SELECT id FROM battle WHERE firstid=3 OR secondid=3 AND finished <> true
+02.11 15:13:39 ->>-: core/server.query { q => SELECT id FROM battle WHERE firstid=3 OR secondid=3 AND finished <> true, _type => core/server.query }
+02.11 15:13:39 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+02.11 15:13:39 ->>-: ball/cache.battle.infoRoom { roomId => 0, _type => ball/cache.battle.infoRoom }
+02.11 15:13:39 -<<-: ball/cache.battle.infoRoom { errorCode => _requestException, _type => ball/cache.battle.infoRoom }
+02.11 15:13:39 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => ball/cache.battle.infoRoom }
+02.11 15:13:39 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/BallBattleModule.hx line 169
+Called from modules/BallBattleModule.hx line 186
+Called from snipe/slave/Server.hx line 994
+02.11 15:13:39 ->>-: core/cache.update { diff => {language => en}, type => user, unlock => true, id => 3, _type => core/cache.update }
+02.11 15:13:39 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+02.11 15:13:39 ->>-: core/cache.update { diff => {}, type => questdata, unlock => true, id => 3, _type => core/cache.update }
+02.11 15:13:39 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+02.11 15:13:39 ->>-: core/user.logoutPost { networkid => , networktype =>   , id => 3, _type => core/user.logoutPost }
+02.11 15:13:39 -<<-: core/user.logoutPost { errorCode => ok, _type => core/user.logoutPost }
+02.11 15:13:46 NET: Client (conid:46389408) connected to ball.0 (clients:1)
+02.11 15:13:54 ++ NET: null req: user.login { password => 2, name => dooderson, messageType => user.login }
+02.11 15:13:54 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'dooderson' AND Password = E'2'
+02.11 15:13:54 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'dooderson' AND Password = E'2', _type => core/server.query }
+02.11 15:13:54 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+02.11 15:13:54 == NET: null ret: user.login { type => user.login, errorCode => userNotFound }
+02.11 15:14:01 ++ NET: null req: user.register { password => 2, name => dooderson, messageType => user.register }
+02.11 15:14:01 DB: SELECT ID FROM Users WHERE Name = E'dooderson'
+02.11 15:14:01 ->>-: core/server.query { q => SELECT ID FROM Users WHERE Name = E'dooderson', _type => core/server.query }
+02.11 15:14:01 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+02.11 15:14:01 DB: SELECT nextval('Users_id_seq') AS id
+02.11 15:14:01 ->>-: core/server.query { q => SELECT nextval('Users_id_seq') AS id, _type => core/server.query }
+02.11 15:14:01 -<<-: core/server.query { list => {{ id => 4 }}, errorCode => ok, _type => core/server.query }
+02.11 15:14:01 ->>-: core/user.register { password => 2, name => dooderson, fullParams => { password => 2, name => dooderson, networkid => , networktype => , messageType => user.register, id => 4 }, networkid => , connectionID => 46389408, networktype => , email => , id => 4, _type => core/user.register }
+02.11 15:14:01 -<<-: core/user.register { errorCode => ok, _type => core/user.register }
+02.11 15:14:01 -<<-: core/user.registerResponse { password => 2, name => dooderson, _isNotify => true, fullParams => { password => 2, name => dooderson, networkid => , networktype => , messageType => user.register, id => 4 }, networkid => , connectionID => 46389408, networktype => , email => , id => 4, _type => core/user.registerResponse }
+02.11 15:14:01 == NET: null ret: user.register { type => user.register, errorCode => ok }
+02.11 15:14:13 NET: Client (name:null conid:46389408 TCP) disconnected from ball.0 (clients:0)
+02.11 15:14:26 TIMER: Check auto-disconnect...
+02.11 15:14:27 STATS: ball.0 cache, locks:0
+02.11 15:15:02 NET: Client (conid:70959240) connected to ball.0 (clients:1)
+02.11 15:15:02 ++ NET: null req: user.login { messageType => user.login, token => dWlkMTA3 }
+02.11 15:15:02 TRACE: Invalid field access : length
+02.11 15:15:02 TRACE: 
+Called from /usr/share/haxe/std/StringTools.hx line 229
+Called from /usr/share/haxe/std/StringTools.hx line 253
+Called from snipe/slave/modules/UserModuleCore.hx line 334
+Called from snipe/slave/Server.hx line 887
+Called from snipe/slave/Server.hx line 1124
+02.11 15:15:02 TRACE: Could not login.
+02.11 15:15:02 TRACE: 
+Called from snipe/slave/Server.hx line 1151
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+02.11 15:15:06 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:15:06 TRACE: User not logon yet.
+02.11 15:15:20 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:15:20 TRACE: User not logon yet.
+02.11 15:15:26 TIMER: Check auto-disconnect...
+02.11 15:15:27 STATS: ball.0 cache, locks:0
+02.11 15:15:33 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:15:33 TRACE: User not logon yet.
+02.11 15:15:45 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:15:45 TRACE: User not logon yet.
+02.11 15:16:26 TIMER: Check auto-disconnect...
+02.11 15:16:27 STATS: ball.0 cache, locks:0
+02.11 15:17:26 TIMER: Check auto-disconnect...
+02.11 15:17:27 STATS: ball.0 cache, locks:0
+02.11 15:18:26 TIMER: Check auto-disconnect...
+02.11 15:18:27 STATS: ball.0 cache, locks:0
+02.11 15:18:55 NET: Client (conid:42573008) connected to ball.0 (clients:2)
+02.11 15:19:03 ++ NET: null req: user.register { password => 2, name => dooderson, messageType => user.register }
+02.11 15:19:03 DB: SELECT ID FROM Users WHERE Name = E'dooderson'
+02.11 15:19:03 ->>-: core/server.query { q => SELECT ID FROM Users WHERE Name = E'dooderson', _type => core/server.query }
+02.11 15:19:03 -<<-: core/server.query { list => {{ id => 4 }}, errorCode => ok, _type => core/server.query }
+02.11 15:19:03 STATS: ball.0 cache connection, 170 calls, total 0.473217487335205 sec spent, avg 2.78 ms
+02.11 15:19:03 == NET: null ret: user.register { type => user.register, errorCode => nameExists }
+02.11 15:19:06 ++ NET: null req: user.login { password => 2, name => dooderson, messageType => user.login }
+02.11 15:19:06 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'dooderson' AND Password = E'2'
+02.11 15:19:06 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'dooderson' AND Password = E'2', _type => core/server.query }
+02.11 15:19:06 -<<-: core/server.query { list => {{ name => dooderson, networkid => , isbanned => false, id => 4 }}, errorCode => ok, _type => core/server.query }
+02.11 15:19:06 ->>-: core/user.isOnlineID { id => 4, _type => core/user.isOnlineID }
+02.11 15:19:06 -<<-: core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+02.11 15:19:06 ->>-: core/cache.get { type => user, v => -1, id => 4, _type => core/cache.get }
+02.11 15:19:06 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {name => dooderson, deleted => false, email => , networktype =>   , password => 2, isbanned => false, regdate => 2016-11-02 15:14:01.214274+03, language =>   , networkid => , params => { inventory => { list => [] }, vars => {}, attrs => {}, effects => { list => [] } }}, version => 0, id => 4 } }
+02.11 15:19:06 ->>-: core/cache.get { type => questdata, v => -1, id => 4, _type => core/cache.get }
+02.11 15:19:06 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => {}}, version => 0, id => 4 } }
+02.11 15:19:06 NET: Client login (conid:42573008, id:4, name:dooderson)
+02.11 15:19:06 ->>-: core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 4, _type => core/user.loginPost, ipAddr => 172.16.20.227 }
+02.11 15:19:06 -<<-: core/user.loginPost { _type => core/user.loginPost }
+02.11 15:19:06 DB: SELECT ID FROM TempUserLogins WHERE UserID = 4 AND Date = 'today'::timestamp
+02.11 15:19:06 ->>-: core/server.query { q => SELECT ID FROM TempUserLogins WHERE UserID = 4 AND Date = 'today'::timestamp, _type => core/server.query }
+02.11 15:19:06 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+02.11 15:19:06 PENDING: INSERT INTO TempUserLogins (UserID, Date) VALUES (4, 'today'::timestamp)
+02.11 15:19:06 == NET: null ret: user.join { name => dooderson, type => user.join }
+02.11 15:19:06 == NET: dooderson ret: user.login { name => dooderson, type => user.login, errorCode => ok, id => 4 }
+02.11 15:19:06 == NET: dooderson ret: user.join { name => null, type => user.join }
+02.11 15:19:06 == NET: dooderson ret: user.join { name => dooderson, type => user.join }
+02.11 15:19:07 ->>-: core/server.ping { _type => core/server.ping, _notify => {{ q => INSERT INTO TempUserLogins (UserID, Date) VALUES (4, 'today'::timestamp), _type => core/server.pending }} }
+02.11 15:19:07 -<<-: core/server.ping { errorCode => ok, _type => core/server.ping }
+02.11 15:19:11 NET: Client (name:dooderson conid:42573008 TCP) disconnected from ball.0 (clients:1)
+02.11 15:19:11 DB: SELECT id FROM battle WHERE firstid=4 OR secondid=4 AND finished <> true
+02.11 15:19:11 ->>-: core/server.query { q => SELECT id FROM battle WHERE firstid=4 OR secondid=4 AND finished <> true, _type => core/server.query }
+02.11 15:19:11 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+02.11 15:19:11 ->>-: ball/cache.battle.infoRoom { roomId => 0, _type => ball/cache.battle.infoRoom }
+02.11 15:19:11 -<<-: ball/cache.battle.infoRoom { errorCode => _requestException, _type => ball/cache.battle.infoRoom }
+02.11 15:19:11 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => ball/cache.battle.infoRoom }
+02.11 15:19:11 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/BallBattleModule.hx line 169
+Called from modules/BallBattleModule.hx line 186
+Called from snipe/slave/Server.hx line 994
+02.11 15:19:11 ->>-: core/cache.update { diff => {language => en, params => { attrs => { _lastTime.24hr => 1478089146, lastLoginDate => 307, lastLoadDate => 1103 } }}, type => user, unlock => true, id => 4, _type => core/cache.update }
+02.11 15:19:11 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+02.11 15:19:11 ->>-: core/cache.update { diff => {}, type => questdata, unlock => true, id => 4, _type => core/cache.update }
+02.11 15:19:11 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+02.11 15:19:11 ->>-: core/user.logoutPost { networkid => , networktype =>   , id => 4, _type => core/user.logoutPost }
+02.11 15:19:11 -<<-: core/user.logoutPost { errorCode => ok, _type => core/user.logoutPost }
+02.11 15:19:16 NET: Client (conid:63565722) connected to ball.0 (clients:2)
+02.11 15:19:26 TIMER: Check auto-disconnect...
+02.11 15:19:26 NET: Client (name:null conid:70959240 TCP) disconnected from ball.0 (clients:1)
+02.11 15:19:27 STATS: ball.0 cache, locks:0
+02.11 15:19:31 ++ NET: null req: user.register { password => 1, name => dood, messageType => user.register }
+02.11 15:19:31 DB: SELECT ID FROM Users WHERE Name = E'dood'
+02.11 15:19:31 ->>-: core/server.query { q => SELECT ID FROM Users WHERE Name = E'dood', _type => core/server.query }
+02.11 15:19:31 -<<-: core/server.query { list => {{ id => 3 }}, errorCode => ok, _type => core/server.query }
+02.11 15:19:31 == NET: null ret: user.register { type => user.register, errorCode => nameExists }
+02.11 15:19:37 ++ NET: null req: user.register { password => 12, name => dood, messageType => user.register }
+02.11 15:19:37 DB: SELECT ID FROM Users WHERE Name = E'dood'
+02.11 15:19:37 ->>-: core/server.query { q => SELECT ID FROM Users WHERE Name = E'dood', _type => core/server.query }
+02.11 15:19:37 -<<-: core/server.query { list => {{ id => 3 }}, errorCode => ok, _type => core/server.query }
+02.11 15:19:37 == NET: null ret: user.register { type => user.register, errorCode => nameExists }
+02.11 15:19:38 ++ NET: null req: user.login { password => 12, name => dood, messageType => user.login }
+02.11 15:19:38 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'dood' AND Password = E'12'
+02.11 15:19:38 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'dood' AND Password = E'12', _type => core/server.query }
+02.11 15:19:38 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+02.11 15:19:38 == NET: null ret: user.login { type => user.login, errorCode => userNotFound }
+02.11 15:19:51 ++ NET: null req: user.login { password => 12, name => dooderson, messageType => user.login }
+02.11 15:19:51 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'dooderson' AND Password = E'12'
+02.11 15:19:51 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'dooderson' AND Password = E'12', _type => core/server.query }
+02.11 15:19:51 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+02.11 15:19:51 == NET: null ret: user.login { type => user.login, errorCode => userNotFound }
+02.11 15:19:58 NET: Client (conid:69740210) connected to ball.0 (clients:2)
+02.11 15:19:59 ++ NET: null req: user.login { password => 1, name => dood, messageType => user.login }
+02.11 15:19:59 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'dood' AND Password = E'1'
+02.11 15:19:59 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'dood' AND Password = E'1', _type => core/server.query }
+02.11 15:19:59 -<<-: core/server.query { list => {{ name => dood, networkid => , isbanned => false, id => 3 }}, errorCode => ok, _type => core/server.query }
+02.11 15:19:59 ->>-: core/user.isOnlineID { id => 3, _type => core/user.isOnlineID }
+02.11 15:19:59 -<<-: core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+02.11 15:19:59 ->>-: core/cache.get { type => user, v => -1, id => 3, _type => core/cache.get }
+02.11 15:19:59 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {name => dood, deleted => false, email => , networktype =>   , password => 1, isbanned => false, regdate => 2016-11-02 13:49:48.726683+03, language => en, networkid => , params => { inventory => { list => [] }, vars => {}, attrs => { _lastTime.24hr => 1478083796, lastLoginDate => 307, lastLoadDate => 1103 }, effects => { list => [] } }}, version => 0, id => 3 } }
+02.11 15:19:59 ->>-: core/cache.get { type => questdata, v => -1, id => 3, _type => core/cache.get }
+02.11 15:19:59 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => { quests => { list => [] } }}, version => 0, id => 3 } }
+02.11 15:19:59 NET: Client login (conid:63565722, id:3, name:dood)
+02.11 15:19:59 ->>-: core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 3, _type => core/user.loginPost, ipAddr => 172.16.20.227 }
+02.11 15:19:59 -<<-: core/user.loginPost { _type => core/user.loginPost }
+02.11 15:19:59 == NET: dood ret: user.login { name => dood, type => user.login, errorCode => ok, id => 3 }
+02.11 15:19:59 == NET: dood ret: user.join { name => dood, type => user.join }
+02.11 15:19:59 == NET: null ret: user.join { name => dood, type => user.join }
+02.11 15:19:59 == NET: dood ret: user.join { name => null, type => user.join }
+02.11 15:19:59 ++ NET: null req: user.login { password => kO2YJdf, name => Aimer, messageType => user.login }
+02.11 15:19:59 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'Aimer' AND Password = E'kO2YJdf'
+02.11 15:19:59 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'Aimer' AND Password = E'kO2YJdf', _type => core/server.query }
+02.11 15:19:59 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+02.11 15:19:59 == NET: null ret: user.login { type => user.login, errorCode => userNotFound }
+02.11 15:19:59 NET: Client (name:null conid:69740210 TCP) disconnected from ball.0 (clients:1)
+02.11 15:19:59 NET: Client (conid:78171664) connected to ball.0 (clients:2)
+02.11 15:20:07 NET: Client (name:dood conid:63565722 TCP) disconnected from ball.0 (clients:1)
+02.11 15:20:07 DB: SELECT id FROM battle WHERE firstid=3 OR secondid=3 AND finished <> true
+02.11 15:20:07 ->>-: core/server.query { q => SELECT id FROM battle WHERE firstid=3 OR secondid=3 AND finished <> true, _type => core/server.query }
+02.11 15:20:07 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+02.11 15:20:07 STATS: ball.0 cache connection, 193 calls, total 0.49767279624939 sec spent, avg 2.58 ms
+02.11 15:20:07 ->>-: ball/cache.battle.infoRoom { roomId => 0, _type => ball/cache.battle.infoRoom }
+02.11 15:20:07 -<<-: ball/cache.battle.infoRoom { errorCode => _requestException, _type => ball/cache.battle.infoRoom }
+02.11 15:20:07 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => ball/cache.battle.infoRoom }
+02.11 15:20:07 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/BallBattleModule.hx line 169
+Called from modules/BallBattleModule.hx line 186
+Called from snipe/slave/Server.hx line 994
+02.11 15:20:07 ->>-: core/cache.update { diff => {language => en}, type => user, unlock => true, id => 3, _type => core/cache.update }
+02.11 15:20:07 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+02.11 15:20:07 ->>-: core/cache.update { diff => {}, type => questdata, unlock => true, id => 3, _type => core/cache.update }
+02.11 15:20:07 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+02.11 15:20:07 ->>-: core/user.logoutPost { networkid => , networktype =>   , id => 3, _type => core/user.logoutPost }
+02.11 15:20:07 -<<-: core/user.logoutPost { errorCode => ok, _type => core/user.logoutPost }
+02.11 15:20:07 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:20:07 TRACE: User not logon yet.
+02.11 15:20:15 NET: Client (name:null conid:78171664 TCP) disconnected from ball.0 (clients:0)
+02.11 15:20:17 NET: Client (conid:7469448) connected to ball.0 (clients:1)
+02.11 15:20:17 NET: Client (name:null conid:7469448 TCP) disconnected from ball.0 (clients:0)
+02.11 15:20:21 NET: Client (conid:94929359) connected to ball.0 (clients:1)
+02.11 15:20:24 NET: Client (name:null conid:94929359 TCP) disconnected from ball.0 (clients:0)
+02.11 15:20:26 TIMER: Check auto-disconnect...
+02.11 15:20:27 STATS: ball.0 cache, locks:0
+02.11 15:20:47 NET: Client (conid:71916818) connected to ball.0 (clients:1)
+02.11 15:20:48 ++ NET: null req: user.register { messageType => user.register }
+02.11 15:20:51 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:20:51 TRACE: User not logon yet.
+02.11 15:20:58 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:20:58 TRACE: User not logon yet.
+02.11 15:21:04 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:21:04 TRACE: User not logon yet.
+02.11 15:21:11 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:21:11 TRACE: User not logon yet.
+02.11 15:21:17 NET: Client (conid:19152807) connected to ball.0 (clients:2)
+02.11 15:21:18 ++ NET: null req: user.login { messageType => user.login, token => dWlkMTA3 }
+02.11 15:21:18 TRACE: Invalid field access : length
+02.11 15:21:18 TRACE: 
+Called from /usr/share/haxe/std/StringTools.hx line 229
+Called from /usr/share/haxe/std/StringTools.hx line 253
+Called from snipe/slave/modules/UserModuleCore.hx line 334
+Called from snipe/slave/Server.hx line 887
+Called from snipe/slave/Server.hx line 1124
+02.11 15:21:18 TRACE: Could not login.
+02.11 15:21:18 TRACE: 
+Called from snipe/slave/Server.hx line 1151
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+02.11 15:21:19 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:21:19 TRACE: User not logon yet.
+02.11 15:21:22 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:21:22 TRACE: User not logon yet.
+02.11 15:21:26 TIMER: Check auto-disconnect...
+02.11 15:21:26 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:21:26 TRACE: User not logon yet.
+02.11 15:21:27 STATS: ball.0 cache, locks:0
+02.11 15:21:32 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:21:32 TRACE: User not logon yet.
+02.11 15:21:34 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:21:34 TRACE: User not logon yet.
+02.11 15:21:41 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:21:41 TRACE: User not logon yet.
+02.11 15:21:45 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:21:45 TRACE: User not logon yet.
+02.11 15:21:48 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:21:48 TRACE: User not logon yet.
+02.11 15:21:55 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:21:55 TRACE: User not logon yet.
+02.11 15:21:57 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:21:57 TRACE: User not logon yet.
+02.11 15:22:03 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:22:03 TRACE: User not logon yet.
+02.11 15:22:09 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:22:09 TRACE: User not logon yet.
+02.11 15:22:10 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:22:10 TRACE: User not logon yet.
+02.11 15:22:13 NET: Client (name:null conid:71916818 TCP) disconnected from ball.0 (clients:1)
+02.11 15:22:21 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:22:21 TRACE: User not logon yet.
+02.11 15:22:26 TIMER: Check auto-disconnect...
+02.11 15:22:27 STATS: ball.0 cache, locks:0
+02.11 15:22:28 NET: Client (conid:22429238) connected to ball.0 (clients:2)
+02.11 15:22:29 ++ NET: null req: user.register { messageType => user.register }
+02.11 15:22:31 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:22:31 TRACE: User not logon yet.
+02.11 15:22:33 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:22:33 TRACE: User not logon yet.
+02.11 15:22:38 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:22:38 TRACE: User not logon yet.
+02.11 15:22:45 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:22:45 TRACE: User not logon yet.
+02.11 15:22:49 NET: Client (name:null conid:22429238 TCP) disconnected from ball.0 (clients:1)
+02.11 15:22:57 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:22:57 TRACE: User not logon yet.
+02.11 15:23:09 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:23:09 TRACE: User not logon yet.
+02.11 15:23:21 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:23:21 TRACE: User not logon yet.
+02.11 15:23:26 TIMER: Check auto-disconnect...
+02.11 15:23:27 STATS: ball.0 cache, locks:0
+02.11 15:23:33 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:23:33 TRACE: User not logon yet.
+02.11 15:23:46 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:23:46 TRACE: User not logon yet.
+02.11 15:23:58 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:23:58 TRACE: User not logon yet.
+02.11 15:24:10 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:24:10 TRACE: User not logon yet.
+02.11 15:24:22 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:24:22 TRACE: User not logon yet.
+02.11 15:24:26 TIMER: Check auto-disconnect...
+02.11 15:24:27 STATS: ball.0 cache, locks:0
+02.11 15:24:34 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:24:34 TRACE: User not logon yet.
+02.11 15:24:46 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:24:46 TRACE: User not logon yet.
+02.11 15:24:58 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:24:58 TRACE: User not logon yet.
+02.11 15:25:11 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:25:11 TRACE: User not logon yet.
+02.11 15:25:22 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:25:22 TRACE: User not logon yet.
+02.11 15:25:26 TIMER: Check auto-disconnect...
+02.11 15:25:27 STATS: ball.0 cache, locks:0
+02.11 15:25:34 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:25:34 TRACE: User not logon yet.
+02.11 15:25:46 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:25:46 TRACE: User not logon yet.
+02.11 15:25:58 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:25:58 TRACE: User not logon yet.
+02.11 15:26:10 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:26:10 TRACE: User not logon yet.
+02.11 15:26:21 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:26:21 TRACE: User not logon yet.
+02.11 15:26:26 TIMER: Check auto-disconnect...
+02.11 15:26:27 STATS: ball.0 cache, locks:0
+02.11 15:26:33 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:26:33 TRACE: User not logon yet.
+02.11 15:26:45 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:26:45 TRACE: User not logon yet.
+02.11 15:26:56 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:26:56 TRACE: User not logon yet.
+02.11 15:27:10 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:27:10 TRACE: User not logon yet.
+02.11 15:27:23 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:27:23 TRACE: User not logon yet.
+02.11 15:27:26 TIMER: Check auto-disconnect...
+02.11 15:27:27 STATS: ball.0 cache, locks:0
+02.11 15:27:36 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:27:36 TRACE: User not logon yet.
+02.11 15:27:48 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:27:48 TRACE: User not logon yet.
+02.11 15:28:00 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:28:00 TRACE: User not logon yet.
+02.11 15:28:12 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:28:12 TRACE: User not logon yet.
+02.11 15:28:26 TIMER: Check auto-disconnect...
+02.11 15:28:26 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:28:26 TRACE: User not logon yet.
+02.11 15:28:27 STATS: ball.0 cache, locks:0
+02.11 15:29:26 TIMER: Check auto-disconnect...
+02.11 15:29:27 STATS: ball.0 cache, locks:0
+02.11 15:30:26 TIMER: Check auto-disconnect...
+02.11 15:30:27 STATS: ball.0 cache, locks:0
+02.11 15:31:26 TIMER: Check auto-disconnect...
+02.11 15:31:27 STATS: ball.0 cache, locks:0
+02.11 15:32:26 TIMER: Check auto-disconnect...
+02.11 15:32:26 NET: Client (name:null conid:19152807 TCP) disconnected from ball.0 (clients:0)
+02.11 15:32:27 STATS: ball.0 cache, locks:0
+02.11 15:33:26 TIMER: Check auto-disconnect...
+02.11 15:33:27 STATS: ball.0 cache, locks:0
+02.11 15:34:26 TIMER: Check auto-disconnect...
+02.11 15:34:27 STATS: ball.0 cache, locks:0
+02.11 15:35:26 TIMER: Check auto-disconnect...
+02.11 15:35:27 STATS: ball.0 cache, locks:0
+02.11 15:36:26 TIMER: Check auto-disconnect...
+02.11 15:36:27 STATS: ball.0 cache, locks:0
+02.11 15:37:26 TIMER: Check auto-disconnect...
+02.11 15:37:27 STATS: ball.0 cache, locks:0
+02.11 15:38:26 TIMER: Check auto-disconnect...
+02.11 15:38:27 STATS: ball.0 cache, locks:0
+02.11 15:39:26 TIMER: Check auto-disconnect...
+02.11 15:39:27 STATS: ball.0 cache, locks:0
+02.11 15:39:36 NET: Client (conid:94986985) connected to ball.0 (clients:1)
+02.11 15:39:37 ++ NET: null req: user.register { messageType => user.register }
+02.11 15:39:40 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:39:40 TRACE: User not logon yet.
+02.11 15:40:26 TIMER: Check auto-disconnect...
+02.11 15:40:27 STATS: ball.0 cache, locks:0
+02.11 15:41:26 TIMER: Check auto-disconnect...
+02.11 15:41:27 STATS: ball.0 cache, locks:0
+02.11 15:42:26 TIMER: Check auto-disconnect...
+02.11 15:42:27 STATS: ball.0 cache, locks:0
+02.11 15:43:26 TIMER: Check auto-disconnect...
+02.11 15:43:26 NET: Client (name:null conid:94986985 TCP) disconnected from ball.0 (clients:0)
+02.11 15:43:27 STATS: ball.0 cache, locks:0
+02.11 15:43:52 NET: Client (conid:3234016) connected to ball.0 (clients:1)
+02.11 15:43:54 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:43:54 TRACE: User not logon yet.
+02.11 15:44:00 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:44:00 TRACE: User not logon yet.
+02.11 15:44:07 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:44:07 TRACE: User not logon yet.
+02.11 15:44:13 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:44:13 TRACE: User not logon yet.
+02.11 15:44:19 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:44:19 TRACE: User not logon yet.
+02.11 15:44:26 TIMER: Check auto-disconnect...
+02.11 15:44:26 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:44:26 TRACE: User not logon yet.
+02.11 15:44:27 STATS: ball.0 cache, locks:0
+02.11 15:44:32 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:44:32 TRACE: User not logon yet.
+02.11 15:44:39 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:44:39 TRACE: User not logon yet.
+02.11 15:44:45 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:44:45 TRACE: User not logon yet.
+02.11 15:44:51 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:44:51 TRACE: User not logon yet.
+02.11 15:44:58 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:44:58 TRACE: User not logon yet.
+02.11 15:45:04 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:45:04 TRACE: User not logon yet.
+02.11 15:45:11 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:45:11 TRACE: User not logon yet.
+02.11 15:45:18 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:45:18 TRACE: User not logon yet.
+02.11 15:45:24 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:45:24 TRACE: User not logon yet.
+02.11 15:45:26 TIMER: Check auto-disconnect...
+02.11 15:45:27 STATS: ball.0 cache, locks:0
+02.11 15:45:32 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:45:32 TRACE: User not logon yet.
+02.11 15:45:38 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:45:38 TRACE: User not logon yet.
+02.11 15:45:44 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:45:44 TRACE: User not logon yet.
+02.11 15:45:51 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:45:51 TRACE: User not logon yet.
+02.11 15:45:58 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:45:58 TRACE: User not logon yet.
+02.11 15:46:04 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:46:04 TRACE: User not logon yet.
+02.11 15:46:11 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:46:11 TRACE: User not logon yet.
+02.11 15:46:17 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:46:17 TRACE: User not logon yet.
+02.11 15:46:24 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:46:24 TRACE: User not logon yet.
+02.11 15:46:26 TIMER: Check auto-disconnect...
+02.11 15:46:27 STATS: ball.0 cache, locks:0
+02.11 15:46:30 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:46:30 TRACE: User not logon yet.
+02.11 15:46:36 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:46:36 TRACE: User not logon yet.
+02.11 15:46:43 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:46:43 TRACE: User not logon yet.
+02.11 15:46:49 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:46:49 TRACE: User not logon yet.
+02.11 15:46:52 NET: Client (name:null conid:3234016 TCP) disconnected from ball.0 (clients:0)
+02.11 15:47:26 TIMER: Check auto-disconnect...
+02.11 15:47:27 STATS: ball.0 cache, locks:0
+02.11 15:48:26 TIMER: Check auto-disconnect...
+02.11 15:48:27 STATS: ball.0 cache, locks:0
+02.11 15:48:43 NET: Client (conid:25117200) connected to ball.0 (clients:1)
+02.11 15:48:44 ++ NET: null req: user.register { messageType => user.register }
+02.11 15:48:47 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:48:47 TRACE: User not logon yet.
+02.11 15:48:53 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:48:53 TRACE: User not logon yet.
+02.11 15:48:59 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:48:59 TRACE: User not logon yet.
+02.11 15:49:06 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:49:06 TRACE: User not logon yet.
+02.11 15:49:13 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:49:13 TRACE: User not logon yet.
+02.11 15:49:22 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:49:22 TRACE: User not logon yet.
+02.11 15:49:26 TIMER: Check auto-disconnect...
+02.11 15:49:27 STATS: ball.0 cache, locks:0
+02.11 15:49:29 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:49:29 TRACE: User not logon yet.
+02.11 15:49:31 NET: Client (name:null conid:25117200 TCP) disconnected from ball.0 (clients:0)
+02.11 15:50:00 NET: Client (conid:5979614) connected to ball.0 (clients:1)
+02.11 15:50:00 ++ NET: null req: user.register { messageType => user.register }
+02.11 15:50:03 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:50:03 TRACE: User not logon yet.
+02.11 15:50:10 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:50:10 TRACE: User not logon yet.
+02.11 15:50:18 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:50:18 TRACE: User not logon yet.
+02.11 15:50:19 NET: Client (name:null conid:5979614 TCP) disconnected from ball.0 (clients:0)
+02.11 15:50:26 TIMER: Check auto-disconnect...
+02.11 15:50:27 STATS: ball.0 cache, locks:0
+02.11 15:51:26 TIMER: Check auto-disconnect...
+02.11 15:51:27 STATS: ball.0 cache, locks:0
+02.11 15:52:26 TIMER: Check auto-disconnect...
+02.11 15:52:27 STATS: ball.0 cache, locks:0
+02.11 15:52:49 NET: Client (conid:39136969) connected to ball.0 (clients:1)
+02.11 15:52:49 ++ NET: null req: user.register { messageType => user.register }
+02.11 15:52:52 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:52:52 TRACE: User not logon yet.
+02.11 15:52:59 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:52:59 TRACE: User not logon yet.
+02.11 15:53:05 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:53:05 TRACE: User not logon yet.
+02.11 15:53:13 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:53:13 TRACE: User not logon yet.
+02.11 15:53:21 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:53:21 TRACE: User not logon yet.
+02.11 15:53:26 TIMER: Check auto-disconnect...
+02.11 15:53:27 STATS: ball.0 cache, locks:0
+02.11 15:53:29 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:53:29 TRACE: User not logon yet.
+02.11 15:53:36 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:53:36 TRACE: User not logon yet.
+02.11 15:53:44 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:53:44 TRACE: User not logon yet.
+02.11 15:53:52 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:53:52 TRACE: User not logon yet.
+02.11 15:53:59 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:53:59 TRACE: User not logon yet.
+02.11 15:54:06 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:54:06 TRACE: User not logon yet.
+02.11 15:54:15 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:54:15 TRACE: User not logon yet.
+02.11 15:54:22 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:54:22 TRACE: User not logon yet.
+02.11 15:54:26 TIMER: Check auto-disconnect...
+02.11 15:54:27 STATS: ball.0 cache, locks:0
+02.11 15:54:31 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:54:31 TRACE: User not logon yet.
+02.11 15:54:40 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:54:40 TRACE: User not logon yet.
+02.11 15:54:49 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:54:49 TRACE: User not logon yet.
+02.11 15:54:57 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:54:57 TRACE: User not logon yet.
+02.11 15:55:06 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:55:06 TRACE: User not logon yet.
+02.11 15:55:14 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:55:14 TRACE: User not logon yet.
+02.11 15:55:22 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:55:22 TRACE: User not logon yet.
+02.11 15:55:26 TIMER: Check auto-disconnect...
+02.11 15:55:27 STATS: ball.0 cache, locks:0
+02.11 15:55:30 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:55:30 TRACE: User not logon yet.
+02.11 15:55:38 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:55:38 TRACE: User not logon yet.
+02.11 15:55:45 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:55:45 TRACE: User not logon yet.
+02.11 15:55:53 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:55:53 TRACE: User not logon yet.
+02.11 15:56:01 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:56:01 TRACE: User not logon yet.
+02.11 15:56:09 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:56:09 TRACE: User not logon yet.
+02.11 15:56:17 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:56:17 TRACE: User not logon yet.
+02.11 15:56:25 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:56:25 TRACE: User not logon yet.
+02.11 15:56:26 TIMER: Check auto-disconnect...
+02.11 15:56:27 STATS: ball.0 cache, locks:0
+02.11 15:56:32 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:56:32 TRACE: User not logon yet.
+02.11 15:56:40 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:56:40 TRACE: User not logon yet.
+02.11 15:56:48 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:56:48 TRACE: User not logon yet.
+02.11 15:56:55 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:56:55 TRACE: User not logon yet.
+02.11 15:57:03 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:57:03 TRACE: User not logon yet.
+02.11 15:57:11 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:57:11 TRACE: User not logon yet.
+02.11 15:57:18 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+02.11 15:57:18 TRACE: User not logon yet.
+02.11 15:57:21 NET: Client (name:null conid:39136969 TCP) disconnected from ball.0 (clients:0)
+02.11 15:57:26 TIMER: Check auto-disconnect...
+02.11 15:57:27 STATS: ball.0 cache, locks:0
+02.11 15:57:41 NET: Client (conid:41288840) connected to ball.0 (clients:1)
+02.11 15:57:49 ++ NET: null req: user.login { password => 1, name => dood, messageType => user.login }
+02.11 15:57:49 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'dood' AND Password = E'1'
+02.11 15:57:49 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'dood' AND Password = E'1', _type => core/server.query }
+02.11 15:57:49 -<<-: core/server.query { list => {{ name => dood, networkid => , isbanned => false, id => 3 }}, errorCode => ok, _type => core/server.query }
+02.11 15:57:49 STATS: ball.0 cache connection, 198 calls, total 0.503032445907593 sec spent, avg 2.54 ms
+02.11 15:57:49 ->>-: core/user.isOnlineID { id => 3, _type => core/user.isOnlineID }
+02.11 15:57:49 -<<-: core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+02.11 15:57:49 ->>-: core/cache.get { type => user, v => -1, id => 3, _type => core/cache.get }
+02.11 15:57:49 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {name => dood, deleted => false, email => , networktype =>   , password => 1, isbanned => false, regdate => 2016-11-02 13:49:48.726683+03, language => en, networkid => , params => { inventory => { list => [] }, vars => {}, attrs => { _lastTime.24hr => 1478083796, lastLoginDate => 307, lastLoadDate => 1103 }, effects => { list => [] } }}, version => 0, id => 3 } }
+02.11 15:57:49 ->>-: core/cache.get { type => questdata, v => -1, id => 3, _type => core/cache.get }
+02.11 15:57:49 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => { quests => { list => [] } }}, version => 0, id => 3 } }
+02.11 15:57:49 NET: Client login (conid:41288840, id:3, name:dood)
+02.11 15:57:49 ->>-: core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 3, _type => core/user.loginPost, ipAddr => 172.16.20.227 }
+02.11 15:57:49 -<<-: core/user.loginPost { _type => core/user.loginPost }
+02.11 15:57:49 == NET: dood ret: user.login { name => dood, type => user.login, errorCode => ok, id => 3 }
+02.11 15:57:49 == NET: dood ret: user.join { name => dood, type => user.join }
+02.11 15:57:57 ->>-: core/cache.update { diff => {language => en}, type => user, unlock => false, id => 3, _type => core/cache.update }
+02.11 15:57:57 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+02.11 15:58:24 NET: Client (name:dood conid:41288840 TCP) disconnected from ball.0 (clients:0)
+02.11 15:58:24 DB: SELECT id FROM battle WHERE firstid=3 OR secondid=3 AND finished <> true
+02.11 15:58:24 ->>-: core/server.query { q => SELECT id FROM battle WHERE firstid=3 OR secondid=3 AND finished <> true, _type => core/server.query }
+02.11 15:58:24 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+02.11 15:58:24 ->>-: ball/cache.battle.infoRoom { roomId => 0, _type => ball/cache.battle.infoRoom }
+02.11 15:58:24 -<<-: ball/cache.battle.infoRoom { errorCode => _requestException, _type => ball/cache.battle.infoRoom }
+02.11 15:58:24 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => ball/cache.battle.infoRoom }
+02.11 15:58:24 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/BallBattleModule.hx line 169
+Called from modules/BallBattleModule.hx line 186
+Called from snipe/slave/Server.hx line 994
+02.11 15:58:24 ->>-: core/cache.update { diff => {}, type => user, unlock => true, id => 3, _type => core/cache.update }
+02.11 15:58:24 -<<-: core/cache.update { errorCode => ok, version => 2, _type => core/cache.update }
+02.11 15:58:24 ->>-: core/cache.update { diff => {}, type => questdata, unlock => true, id => 3, _type => core/cache.update }
+02.11 15:58:24 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+02.11 15:58:24 ->>-: core/user.logoutPost { networkid => , networktype =>   , id => 3, _type => core/user.logoutPost }
+02.11 15:58:24 -<<-: core/user.logoutPost { errorCode => ok, _type => core/user.logoutPost }
+02.11 15:58:26 TIMER: Check auto-disconnect...
+02.11 15:58:26 NET: Client (conid:51885130) connected to ball.0 (clients:1)
+02.11 15:58:27 STATS: ball.0 cache, locks:0
+02.11 15:58:43 ++ NET: null req: user.login { password => 1, name => dood, messageType => user.login }
+02.11 15:58:43 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'dood' AND Password = E'1'
+02.11 15:58:43 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'dood' AND Password = E'1', _type => core/server.query }
+02.11 15:58:43 -<<-: core/server.query { list => {{ name => dood, networkid => , isbanned => false, id => 3 }}, errorCode => ok, _type => core/server.query }
+02.11 15:58:43 ->>-: core/user.isOnlineID { id => 3, _type => core/user.isOnlineID }
+02.11 15:58:43 -<<-: core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+02.11 15:58:43 ->>-: core/cache.get { type => user, v => -1, id => 3, _type => core/cache.get }
+02.11 15:58:43 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {name => dood, deleted => false, email => , networktype =>   , password => 1, isbanned => false, regdate => 2016-11-02 13:49:48.726683+03, language => en, networkid => , params => { inventory => { list => [] }, vars => {}, attrs => { _lastTime.24hr => 1478083796, lastLoginDate => 307, lastLoadDate => 1103 }, effects => { list => [] } }}, version => 0, id => 3 } }
+02.11 15:58:43 ->>-: core/cache.get { type => questdata, v => -1, id => 3, _type => core/cache.get }
+02.11 15:58:43 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => { quests => { list => [] } }}, version => 0, id => 3 } }
+02.11 15:58:43 NET: Client login (conid:51885130, id:3, name:dood)
+02.11 15:58:43 ->>-: core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 3, _type => core/user.loginPost, ipAddr => 172.16.20.227 }
+02.11 15:58:43 -<<-: core/user.loginPost { _type => core/user.loginPost }
+02.11 15:58:43 == NET: dood ret: user.login { name => dood, type => user.login, errorCode => ok, id => 3 }
+02.11 15:58:43 == NET: dood ret: user.join { name => dood, type => user.join }
+02.11 15:58:52 ->>-: core/cache.update { diff => {language => en}, type => user, unlock => false, id => 3, _type => core/cache.update }
+02.11 15:58:52 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+02.11 15:58:52 STATS: ball.0 cache connection, 214 calls, total 0.514939546585083 sec spent, avg 2.41 ms
+02.11 15:59:26 TIMER: Check auto-disconnect...
+02.11 15:59:27 STATS: ball.0 cache, locks:2

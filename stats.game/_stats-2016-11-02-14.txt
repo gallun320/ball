@@ -1,0 +1,58 @@
+02.11 14:13:26 STATS: ball.0 cache, locks:0
+02.11 14:14:26 STATS: ball.0 cache, locks:0
+02.11 14:14:26 STATS: ball.0 cache, locks:0
+02.11 14:14:26 STATS: ball.0 cache, locks:0
+02.11 14:14:26 STATS: ball.0 cache, locks:0
+02.11 14:18:26 STATS: ball.0 cache, locks:0
+02.11 14:19:26 STATS: ball.0 cache, locks:0
+02.11 14:20:26 STATS: ball.0 cache, locks:0
+02.11 14:21:26 STATS: ball.0 cache, locks:0
+02.11 14:21:31 STATS: ball.0 cache connection, 55 calls, total 0.351758480072021 sec spent, avg 6.4 ms
+02.11 14:22:27 STATS: ball.0 cache, locks:0
+02.11 14:23:27 STATS: ball.0 cache, locks:0
+02.11 14:24:27 STATS: ball.0 cache, locks:0
+02.11 14:25:27 STATS: ball.0 cache, locks:0
+02.11 14:26:27 STATS: ball.0 cache, locks:0
+02.11 14:27:27 STATS: ball.0 cache, locks:0
+02.11 14:28:27 STATS: ball.0 cache, locks:0
+02.11 14:29:27 STATS: ball.0 cache, locks:0
+02.11 14:29:36 STATS: ball.0 cache connection, 66 calls, total 0.36020827293396 sec spent, avg 5.46 ms
+02.11 14:30:27 STATS: ball.0 cache, locks:0
+02.11 14:30:59 STATS: ball.0 cache connection, 77 calls, total 0.366401672363281 sec spent, avg 4.76 ms
+02.11 14:31:27 STATS: ball.0 cache, locks:0
+02.11 14:32:27 STATS: ball.0 cache, locks:0
+02.11 14:33:27 STATS: ball.0 cache, locks:0
+02.11 14:34:27 STATS: ball.0 cache, locks:0
+02.11 14:35:27 STATS: ball.0 cache, locks:0
+02.11 14:36:27 STATS: ball.0 cache, locks:0
+02.11 14:37:19 STATS: ball.0 cache connection, 87 calls, total 0.376068115234375 sec spent, avg 4.32 ms
+02.11 14:37:27 STATS: ball.0 cache, locks:2
+02.11 14:38:27 STATS: ball.0 cache, locks:2
+02.11 14:39:27 STATS: ball.0 cache, locks:2
+02.11 14:40:14 STATS: ball.0 cache connection, 93 calls, total 0.380712985992432 sec spent, avg 4.09 ms
+02.11 14:40:27 STATS: ball.0 cache, locks:2
+02.11 14:41:27 STATS: ball.0 cache, locks:2
+02.11 14:42:27 STATS: ball.0 cache, locks:2
+02.11 14:43:26 STATS: ball.0 cache connection, 104 calls, total 0.394124507904053 sec spent, avg 3.79 ms
+02.11 14:43:27 STATS: ball.0 cache, locks:0
+02.11 14:44:27 STATS: ball.0 cache, locks:0
+02.11 14:45:25 STATS: ball.0 cache connection, 109 calls, total 0.402305603027344 sec spent, avg 3.69 ms
+02.11 14:45:27 STATS: ball.0 cache, locks:2
+02.11 14:46:27 STATS: ball.0 cache, locks:2
+02.11 14:46:53 STATS: ball.0 cache connection, 115 calls, total 0.406285762786865 sec spent, avg 3.53 ms
+02.11 14:47:27 STATS: ball.0 cache, locks:2
+02.11 14:48:27 STATS: ball.0 cache, locks:2
+02.11 14:49:27 STATS: ball.0 cache, locks:2
+02.11 14:50:26 STATS: ball.0 cache connection, 126 calls, total 0.41602897644043 sec spent, avg 3.3 ms
+02.11 14:50:27 STATS: ball.0 cache, locks:0
+02.11 14:51:27 STATS: ball.0 cache, locks:0
+02.11 14:51:33 STATS: ball.0 cache connection, 142 calls, total 0.42906928062439 sec spent, avg 3.02 ms
+02.11 14:52:27 STATS: ball.0 cache, locks:2
+02.11 14:53:09 STATS: ball.0 cache connection, 148 calls, total 0.435712337493896 sec spent, avg 2.94 ms
+02.11 14:53:27 STATS: ball.0 cache, locks:0
+02.11 14:54:27 STATS: ball.0 cache, locks:0
+02.11 14:55:27 STATS: ball.0 cache, locks:0
+02.11 14:56:27 STATS: ball.0 cache, locks:0
+02.11 14:57:27 STATS: ball.0 cache, locks:0
+02.11 14:58:27 STATS: ball.0 cache, locks:0
+02.11 14:59:27 STATS: ball.0 cache, locks:0

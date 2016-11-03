@@ -1,0 +1,54 @@
+02.11 14:21:52 TRACE: ball/cache.battle.infoRoom : Invalid field access : get
+02.11 14:21:52 TRACE: ball/cache.battle.infoRoom : 
+Called from modules/BallCache.hx line 70
+Called from modules/BallCache.hx line 63
+Called from modules/BallCache.hx line 47
+Called from snipe/cache/CacheServer.hx line 487
+02.11 14:29:42 TRACE: ball/cache.battle.infoRoom : Invalid field access : get
+02.11 14:29:42 TRACE: ball/cache.battle.infoRoom : 
+Called from modules/BallCache.hx line 70
+Called from modules/BallCache.hx line 63
+Called from modules/BallCache.hx line 47
+Called from snipe/cache/CacheServer.hx line 487
+02.11 14:31:05 TRACE: ball/cache.battle.infoRoom : Invalid field access : get
+02.11 14:31:05 TRACE: ball/cache.battle.infoRoom : 
+Called from modules/BallCache.hx line 70
+Called from modules/BallCache.hx line 63
+Called from modules/BallCache.hx line 47
+Called from snipe/cache/CacheServer.hx line 487
+02.11 14:40:14 TRACE: ball/cache.battle.infoRoom : Invalid field access : get
+02.11 14:40:14 TRACE: ball/cache.battle.infoRoom : 
+Called from modules/BallCache.hx line 70
+Called from modules/BallCache.hx line 63
+Called from modules/BallCache.hx line 47
+Called from snipe/cache/CacheServer.hx line 487
+02.11 14:43:26 TRACE: ball/cache.battle.infoRoom : Invalid field access : get
+02.11 14:43:26 TRACE: ball/cache.battle.infoRoom : 
+Called from modules/BallCache.hx line 70
+Called from modules/BallCache.hx line 63
+Called from modules/BallCache.hx line 47
+Called from snipe/cache/CacheServer.hx line 487
+02.11 14:46:53 TRACE: ball/cache.battle.infoRoom : Invalid field access : get
+02.11 14:46:53 TRACE: ball/cache.battle.infoRoom : 
+Called from modules/BallCache.hx line 70
+Called from modules/BallCache.hx line 63
+Called from modules/BallCache.hx line 47
+Called from snipe/cache/CacheServer.hx line 487
+02.11 14:50:26 TRACE: ball/cache.battle.infoRoom : Invalid field access : get
+02.11 14:50:26 TRACE: ball/cache.battle.infoRoom : 
+Called from modules/BallCache.hx line 70
+Called from modules/BallCache.hx line 63
+Called from modules/BallCache.hx line 47
+Called from snipe/cache/CacheServer.hx line 487
+02.11 14:51:20 TRACE: ball/cache.battle.infoRoom : Invalid field access : get
+02.11 14:51:20 TRACE: ball/cache.battle.infoRoom : 
+Called from modules/BallCache.hx line 70
+Called from modules/BallCache.hx line 63
+Called from modules/BallCache.hx line 47
+Called from snipe/cache/CacheServer.hx line 487
+02.11 14:53:09 TRACE: ball/cache.battle.infoRoom : Invalid field access : get
+02.11 14:53:09 TRACE: ball/cache.battle.infoRoom : 
+Called from modules/BallCache.hx line 70
+Called from modules/BallCache.hx line 63
+Called from modules/BallCache.hx line 47
+Called from snipe/cache/CacheServer.hx line 487

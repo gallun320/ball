@@ -1,0 +1,6 @@
+-main CacheServerMine
+-neko cacheserver.n
+
+-cp ../../../
+-cp ../../../tools/threadname/
+-cp ../../../external-libs/npostgres/

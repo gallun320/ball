@@ -1,0 +1,8 @@
+14.10 16:23:39 STATS: ball.0 cache, locks:0
+14.10 16:23:39 STATS: ball.0 cache, locks:0
+14.10 16:23:39 STATS: ball.0 cache, locks:0
+14.10 16:23:39 STATS: ball.0 cache, locks:0
+14.10 16:23:39 STATS: ball.0 cache, locks:0
+14.10 16:29:12 STATS: ball.0 cache connection, 21 calls, total 0.399046659469604 sec spent, avg 19 ms
+14.10 16:29:39 STATS: ball.0 cache, locks:0
+14.10 16:33:56 STATS: ball.0 cache, locks:0

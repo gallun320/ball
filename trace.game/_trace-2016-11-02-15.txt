@@ -1,0 +1,177 @@
+02.11 15:13:39 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => ball/cache.battle.infoRoom }
+02.11 15:13:39 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/BallBattleModule.hx line 169
+Called from modules/BallBattleModule.hx line 186
+Called from snipe/slave/Server.hx line 994
+02.11 15:15:02 TRACE: Invalid field access : length
+02.11 15:15:02 TRACE: 
+Called from /usr/share/haxe/std/StringTools.hx line 229
+Called from /usr/share/haxe/std/StringTools.hx line 253
+Called from snipe/slave/modules/UserModuleCore.hx line 334
+Called from snipe/slave/Server.hx line 887
+Called from snipe/slave/Server.hx line 1124
+02.11 15:15:02 TRACE: Could not login.
+02.11 15:15:02 TRACE: 
+Called from snipe/slave/Server.hx line 1151
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+02.11 15:15:06 TRACE: User not logon yet.
+02.11 15:15:20 TRACE: User not logon yet.
+02.11 15:15:33 TRACE: User not logon yet.
+02.11 15:15:45 TRACE: User not logon yet.
+02.11 15:19:11 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => ball/cache.battle.infoRoom }
+02.11 15:19:11 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/BallBattleModule.hx line 169
+Called from modules/BallBattleModule.hx line 186
+Called from snipe/slave/Server.hx line 994
+02.11 15:20:07 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => ball/cache.battle.infoRoom }
+02.11 15:20:07 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/BallBattleModule.hx line 169
+Called from modules/BallBattleModule.hx line 186
+Called from snipe/slave/Server.hx line 994
+02.11 15:20:07 TRACE: User not logon yet.
+02.11 15:20:51 TRACE: User not logon yet.
+02.11 15:20:58 TRACE: User not logon yet.
+02.11 15:21:04 TRACE: User not logon yet.
+02.11 15:21:11 TRACE: User not logon yet.
+02.11 15:21:18 TRACE: Invalid field access : length
+02.11 15:21:18 TRACE: 
+Called from /usr/share/haxe/std/StringTools.hx line 229
+Called from /usr/share/haxe/std/StringTools.hx line 253
+Called from snipe/slave/modules/UserModuleCore.hx line 334
+Called from snipe/slave/Server.hx line 887
+Called from snipe/slave/Server.hx line 1124
+02.11 15:21:18 TRACE: Could not login.
+02.11 15:21:18 TRACE: 
+Called from snipe/slave/Server.hx line 1151
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+02.11 15:21:19 TRACE: User not logon yet.
+02.11 15:21:22 TRACE: User not logon yet.
+02.11 15:21:26 TRACE: User not logon yet.
+02.11 15:21:32 TRACE: User not logon yet.
+02.11 15:21:34 TRACE: User not logon yet.
+02.11 15:21:41 TRACE: User not logon yet.
+02.11 15:21:45 TRACE: User not logon yet.
+02.11 15:21:48 TRACE: User not logon yet.
+02.11 15:21:55 TRACE: User not logon yet.
+02.11 15:21:57 TRACE: User not logon yet.
+02.11 15:22:03 TRACE: User not logon yet.
+02.11 15:22:09 TRACE: User not logon yet.
+02.11 15:22:10 TRACE: User not logon yet.
+02.11 15:22:21 TRACE: User not logon yet.
+02.11 15:22:31 TRACE: User not logon yet.
+02.11 15:22:33 TRACE: User not logon yet.
+02.11 15:22:38 TRACE: User not logon yet.
+02.11 15:22:45 TRACE: User not logon yet.
+02.11 15:22:57 TRACE: User not logon yet.
+02.11 15:23:09 TRACE: User not logon yet.
+02.11 15:23:21 TRACE: User not logon yet.
+02.11 15:23:33 TRACE: User not logon yet.
+02.11 15:23:46 TRACE: User not logon yet.
+02.11 15:23:58 TRACE: User not logon yet.
+02.11 15:24:10 TRACE: User not logon yet.
+02.11 15:24:22 TRACE: User not logon yet.
+02.11 15:24:34 TRACE: User not logon yet.
+02.11 15:24:46 TRACE: User not logon yet.
+02.11 15:24:58 TRACE: User not logon yet.
+02.11 15:25:11 TRACE: User not logon yet.
+02.11 15:25:22 TRACE: User not logon yet.
+02.11 15:25:34 TRACE: User not logon yet.
+02.11 15:25:46 TRACE: User not logon yet.
+02.11 15:25:58 TRACE: User not logon yet.
+02.11 15:26:10 TRACE: User not logon yet.
+02.11 15:26:21 TRACE: User not logon yet.
+02.11 15:26:33 TRACE: User not logon yet.
+02.11 15:26:45 TRACE: User not logon yet.
+02.11 15:26:56 TRACE: User not logon yet.
+02.11 15:27:10 TRACE: User not logon yet.
+02.11 15:27:23 TRACE: User not logon yet.
+02.11 15:27:36 TRACE: User not logon yet.
+02.11 15:27:48 TRACE: User not logon yet.
+02.11 15:28:00 TRACE: User not logon yet.
+02.11 15:28:12 TRACE: User not logon yet.
+02.11 15:28:26 TRACE: User not logon yet.
+02.11 15:39:40 TRACE: User not logon yet.
+02.11 15:43:54 TRACE: User not logon yet.
+02.11 15:44:00 TRACE: User not logon yet.
+02.11 15:44:07 TRACE: User not logon yet.
+02.11 15:44:13 TRACE: User not logon yet.
+02.11 15:44:19 TRACE: User not logon yet.
+02.11 15:44:26 TRACE: User not logon yet.
+02.11 15:44:32 TRACE: User not logon yet.
+02.11 15:44:39 TRACE: User not logon yet.
+02.11 15:44:45 TRACE: User not logon yet.
+02.11 15:44:51 TRACE: User not logon yet.
+02.11 15:44:58 TRACE: User not logon yet.
+02.11 15:45:04 TRACE: User not logon yet.
+02.11 15:45:11 TRACE: User not logon yet.
+02.11 15:45:18 TRACE: User not logon yet.
+02.11 15:45:24 TRACE: User not logon yet.
+02.11 15:45:32 TRACE: User not logon yet.
+02.11 15:45:38 TRACE: User not logon yet.
+02.11 15:45:44 TRACE: User not logon yet.
+02.11 15:45:51 TRACE: User not logon yet.
+02.11 15:45:58 TRACE: User not logon yet.
+02.11 15:46:04 TRACE: User not logon yet.
+02.11 15:46:11 TRACE: User not logon yet.
+02.11 15:46:17 TRACE: User not logon yet.
+02.11 15:46:24 TRACE: User not logon yet.
+02.11 15:46:30 TRACE: User not logon yet.
+02.11 15:46:36 TRACE: User not logon yet.
+02.11 15:46:43 TRACE: User not logon yet.
+02.11 15:46:49 TRACE: User not logon yet.
+02.11 15:48:47 TRACE: User not logon yet.
+02.11 15:48:53 TRACE: User not logon yet.
+02.11 15:48:59 TRACE: User not logon yet.
+02.11 15:49:06 TRACE: User not logon yet.
+02.11 15:49:13 TRACE: User not logon yet.
+02.11 15:49:22 TRACE: User not logon yet.
+02.11 15:49:29 TRACE: User not logon yet.
+02.11 15:50:03 TRACE: User not logon yet.
+02.11 15:50:10 TRACE: User not logon yet.
+02.11 15:50:18 TRACE: User not logon yet.
+02.11 15:52:52 TRACE: User not logon yet.
+02.11 15:52:59 TRACE: User not logon yet.
+02.11 15:53:05 TRACE: User not logon yet.
+02.11 15:53:13 TRACE: User not logon yet.
+02.11 15:53:21 TRACE: User not logon yet.
+02.11 15:53:29 TRACE: User not logon yet.
+02.11 15:53:36 TRACE: User not logon yet.
+02.11 15:53:44 TRACE: User not logon yet.
+02.11 15:53:52 TRACE: User not logon yet.
+02.11 15:53:59 TRACE: User not logon yet.
+02.11 15:54:06 TRACE: User not logon yet.
+02.11 15:54:15 TRACE: User not logon yet.
+02.11 15:54:22 TRACE: User not logon yet.
+02.11 15:54:31 TRACE: User not logon yet.
+02.11 15:54:40 TRACE: User not logon yet.
+02.11 15:54:49 TRACE: User not logon yet.
+02.11 15:54:57 TRACE: User not logon yet.
+02.11 15:55:06 TRACE: User not logon yet.
+02.11 15:55:14 TRACE: User not logon yet.
+02.11 15:55:22 TRACE: User not logon yet.
+02.11 15:55:30 TRACE: User not logon yet.
+02.11 15:55:38 TRACE: User not logon yet.
+02.11 15:55:45 TRACE: User not logon yet.
+02.11 15:55:53 TRACE: User not logon yet.
+02.11 15:56:01 TRACE: User not logon yet.
+02.11 15:56:09 TRACE: User not logon yet.
+02.11 15:56:17 TRACE: User not logon yet.
+02.11 15:56:25 TRACE: User not logon yet.
+02.11 15:56:32 TRACE: User not logon yet.
+02.11 15:56:40 TRACE: User not logon yet.
+02.11 15:56:48 TRACE: User not logon yet.
+02.11 15:56:55 TRACE: User not logon yet.
+02.11 15:57:03 TRACE: User not logon yet.
+02.11 15:57:11 TRACE: User not logon yet.
+02.11 15:57:18 TRACE: User not logon yet.
+02.11 15:58:24 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => ball/cache.battle.infoRoom }
+02.11 15:58:24 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/BallBattleModule.hx line 169
+Called from modules/BallBattleModule.hx line 186
+Called from snipe/slave/Server.hx line 994

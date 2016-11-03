@@ -1,0 +1,211 @@
+02.11 14:12:56 TRACE: Invalid field access : length
+02.11 14:12:56 TRACE: 
+Called from /usr/share/haxe/std/StringTools.hx line 229
+Called from /usr/share/haxe/std/StringTools.hx line 253
+Called from snipe/slave/modules/UserModuleCore.hx line 334
+Called from snipe/slave/Server.hx line 887
+Called from snipe/slave/Server.hx line 1124
+02.11 14:12:56 TRACE: Could not login.
+02.11 14:12:56 TRACE: 
+Called from snipe/slave/Server.hx line 1151
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+02.11 14:13:05 TRACE: User not logon yet.
+02.11 14:13:12 TRACE: User not logon yet.
+02.11 14:13:22 TRACE: User not logon yet.
+02.11 14:13:32 TRACE: User not logon yet.
+02.11 14:13:43 TRACE: User not logon yet.
+02.11 14:13:54 TRACE: User not logon yet.
+02.11 14:14:07 TRACE: User not logon yet.
+02.11 14:18:20 TRACE: Invalid field access : length
+02.11 14:18:20 TRACE: 
+Called from /usr/share/haxe/std/StringTools.hx line 229
+Called from /usr/share/haxe/std/StringTools.hx line 253
+Called from snipe/slave/modules/UserModuleCore.hx line 334
+Called from snipe/slave/Server.hx line 887
+Called from snipe/slave/Server.hx line 1124
+02.11 14:18:20 TRACE: Could not login.
+02.11 14:18:20 TRACE: 
+Called from snipe/slave/Server.hx line 1151
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+02.11 14:18:25 TRACE: User not logon yet.
+02.11 14:18:38 TRACE: User not logon yet.
+02.11 14:18:51 TRACE: User not logon yet.
+02.11 14:19:03 TRACE: User not logon yet.
+02.11 14:19:23 TRACE: User not logon yet.
+02.11 14:19:35 TRACE: User not logon yet.
+02.11 14:21:19 TRACE: Invalid field access : length
+02.11 14:21:19 TRACE: 
+Called from /usr/share/haxe/std/StringTools.hx line 229
+Called from /usr/share/haxe/std/StringTools.hx line 253
+Called from snipe/slave/modules/UserModuleCore.hx line 334
+Called from snipe/slave/Server.hx line 887
+Called from snipe/slave/Server.hx line 1124
+02.11 14:21:19 TRACE: Could not login.
+02.11 14:21:19 TRACE: 
+Called from snipe/slave/Server.hx line 1151
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+02.11 14:21:23 TRACE: User not logon yet.
+02.11 14:21:34 TRACE: User not logon yet.
+02.11 14:21:46 TRACE: User not logon yet.
+02.11 14:21:52 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => ball/cache.battle.infoRoom }
+02.11 14:21:52 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/BallBattleModule.hx line 169
+Called from modules/BallBattleModule.hx line 186
+Called from snipe/slave/Server.hx line 994
+02.11 14:21:58 TRACE: User not logon yet.
+02.11 14:22:12 TRACE: User not logon yet.
+02.11 14:22:25 TRACE: User not logon yet.
+02.11 14:22:35 TRACE: User not logon yet.
+02.11 14:22:49 TRACE: User not logon yet.
+02.11 14:23:03 TRACE: User not logon yet.
+02.11 14:23:16 TRACE: User not logon yet.
+02.11 14:23:29 TRACE: User not logon yet.
+02.11 14:23:43 TRACE: User not logon yet.
+02.11 14:23:57 TRACE: User not logon yet.
+02.11 14:29:42 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => ball/cache.battle.infoRoom }
+02.11 14:29:42 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/BallBattleModule.hx line 169
+Called from modules/BallBattleModule.hx line 186
+Called from snipe/slave/Server.hx line 994
+02.11 14:30:05 TRACE: Invalid field access : length
+02.11 14:30:05 TRACE: 
+Called from /usr/share/haxe/std/StringTools.hx line 229
+Called from /usr/share/haxe/std/StringTools.hx line 253
+Called from snipe/slave/modules/UserModuleCore.hx line 334
+Called from snipe/slave/Server.hx line 887
+Called from snipe/slave/Server.hx line 1124
+02.11 14:30:05 TRACE: Could not login.
+02.11 14:30:05 TRACE: 
+Called from snipe/slave/Server.hx line 1151
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+02.11 14:30:09 TRACE: User not logon yet.
+02.11 14:30:20 TRACE: User not logon yet.
+02.11 14:30:32 TRACE: User not logon yet.
+02.11 14:30:52 TRACE: Invalid field access : length
+02.11 14:30:52 TRACE: 
+Called from /usr/share/haxe/std/StringTools.hx line 229
+Called from /usr/share/haxe/std/StringTools.hx line 253
+Called from snipe/slave/modules/UserModuleCore.hx line 334
+Called from snipe/slave/Server.hx line 887
+Called from snipe/slave/Server.hx line 1124
+02.11 14:30:52 TRACE: Could not login.
+02.11 14:30:52 TRACE: 
+Called from snipe/slave/Server.hx line 1151
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+02.11 14:30:56 TRACE: User not logon yet.
+02.11 14:31:05 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => ball/cache.battle.infoRoom }
+02.11 14:31:05 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/BallBattleModule.hx line 169
+Called from modules/BallBattleModule.hx line 186
+Called from snipe/slave/Server.hx line 994
+02.11 14:31:08 TRACE: User not logon yet.
+02.11 14:31:20 TRACE: User not logon yet.
+02.11 14:31:31 TRACE: User not logon yet.
+02.11 14:31:44 TRACE: User not logon yet.
+02.11 14:31:57 TRACE: User not logon yet.
+02.11 14:32:09 TRACE: User not logon yet.
+02.11 14:32:22 TRACE: User not logon yet.
+02.11 14:33:15 TRACE: Invalid field access : length
+02.11 14:33:15 TRACE: 
+Called from /usr/share/haxe/std/StringTools.hx line 229
+Called from /usr/share/haxe/std/StringTools.hx line 253
+Called from snipe/slave/modules/UserModuleCore.hx line 334
+Called from snipe/slave/Server.hx line 887
+Called from snipe/slave/Server.hx line 1124
+02.11 14:33:15 TRACE: Could not login.
+02.11 14:33:15 TRACE: 
+Called from snipe/slave/Server.hx line 1151
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+02.11 14:33:19 TRACE: User not logon yet.
+02.11 14:33:30 TRACE: User not logon yet.
+02.11 14:33:43 TRACE: User not logon yet.
+02.11 14:33:56 TRACE: User not logon yet.
+02.11 14:37:23 TRACE: Invalid field access : length
+02.11 14:37:23 TRACE: 
+Called from /usr/share/haxe/std/StringTools.hx line 229
+Called from /usr/share/haxe/std/StringTools.hx line 253
+Called from snipe/slave/modules/UserModuleCore.hx line 334
+Called from snipe/slave/Server.hx line 887
+Called from snipe/slave/Server.hx line 1124
+02.11 14:37:23 TRACE: Could not login.
+02.11 14:37:23 TRACE: 
+Called from snipe/slave/Server.hx line 1151
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+02.11 14:37:27 TRACE: User not logon yet.
+02.11 14:37:35 TRACE: User not logon yet.
+02.11 14:37:43 TRACE: User not logon yet.
+02.11 14:37:50 TRACE: User not logon yet.
+02.11 14:37:58 TRACE: User not logon yet.
+02.11 14:38:06 TRACE: User not logon yet.
+02.11 14:38:14 TRACE: User not logon yet.
+02.11 14:38:22 TRACE: User not logon yet.
+02.11 14:38:29 TRACE: User not logon yet.
+02.11 14:38:37 TRACE: User not logon yet.
+02.11 14:38:45 TRACE: User not logon yet.
+02.11 14:38:55 TRACE: User not logon yet.
+02.11 14:39:07 TRACE: User not logon yet.
+02.11 14:39:19 TRACE: User not logon yet.
+02.11 14:39:32 TRACE: User not logon yet.
+02.11 14:39:45 TRACE: User not logon yet.
+02.11 14:39:57 TRACE: User not logon yet.
+02.11 14:40:14 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => ball/cache.battle.infoRoom }
+02.11 14:40:14 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/BallBattleModule.hx line 169
+Called from modules/BallBattleModule.hx line 186
+Called from snipe/slave/Server.hx line 994
+02.11 14:40:23 TRACE: User not logon yet.
+02.11 14:40:36 TRACE: User not logon yet.
+02.11 14:40:48 TRACE: User not logon yet.
+02.11 14:41:02 TRACE: User not logon yet.
+02.11 14:41:15 TRACE: User not logon yet.
+02.11 14:41:27 TRACE: User not logon yet.
+02.11 14:41:40 TRACE: User not logon yet.
+02.11 14:41:52 TRACE: User not logon yet.
+02.11 14:42:04 TRACE: User not logon yet.
+02.11 14:42:16 TRACE: User not logon yet.
+02.11 14:42:28 TRACE: User not logon yet.
+02.11 14:42:40 TRACE: User not logon yet.
+02.11 14:42:52 TRACE: User not logon yet.
+02.11 14:43:05 TRACE: User not logon yet.
+02.11 14:43:17 TRACE: User not logon yet.
+02.11 14:43:26 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => ball/cache.battle.infoRoom }
+02.11 14:43:26 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/BallBattleModule.hx line 169
+Called from modules/BallBattleModule.hx line 186
+Called from snipe/slave/Server.hx line 994
+02.11 14:46:53 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => ball/cache.battle.infoRoom }
+02.11 14:46:53 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/BallBattleModule.hx line 169
+Called from modules/BallBattleModule.hx line 186
+Called from snipe/slave/Server.hx line 994
+02.11 14:50:26 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => ball/cache.battle.infoRoom }
+02.11 14:50:26 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/BallBattleModule.hx line 169
+Called from modules/BallBattleModule.hx line 186
+Called from snipe/slave/Server.hx line 994
+02.11 14:51:20 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => ball/cache.battle.infoRoom }
+02.11 14:51:20 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/BallBattleModule.hx line 169
+Called from modules/BallBattleModule.hx line 186
+Called from snipe/slave/Server.hx line 994
+02.11 14:53:09 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => ball/cache.battle.infoRoom }
+02.11 14:53:09 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/BallBattleModule.hx line 169
+Called from modules/BallBattleModule.hx line 186
+Called from snipe/slave/Server.hx line 994

@@ -1,0 +1,12 @@
+02.11 16:02:26 TRACE: ball/cache.battle.infoRoom : Invalid field access : get
+02.11 16:02:26 TRACE: ball/cache.battle.infoRoom : 
+Called from modules/BallCache.hx line 70
+Called from modules/BallCache.hx line 63
+Called from modules/BallCache.hx line 47
+Called from snipe/cache/CacheServer.hx line 487
+02.11 16:39:30 TRACE: ball/cache.battle.infoRoom : Invalid field access : get
+02.11 16:39:30 TRACE: ball/cache.battle.infoRoom : 
+Called from modules/BallCache.hx line 70
+Called from modules/BallCache.hx line 63
+Called from modules/BallCache.hx line 47
+Called from snipe/cache/CacheServer.hx line 487
